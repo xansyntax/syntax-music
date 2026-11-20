@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="minute">
+        <item quantity="one">%d minuto</item>
+        <item quantity="other">%d minuto</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="one">%d album</item>
+        <item quantity="other">%d mga album</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="one">%d artista</item>
+        <item quantity="other">%d mga artista</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="one">%d buwan</item>
+        <item quantity="other">%d mga buwan</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="one">%d playlist</item>
+        <item quantity="other">%d mga playlist</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="one">%d kanta</item>
+        <item quantity="other">%d mga kanta</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">%d oras</item>
+        <item quantity="other">%d oras</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="one">%d linggo</item>
+        <item quantity="other">%d mga linggo</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="one">%d taon</item>
+        <item quantity="other">%d mga taon</item>
+    </plurals>
+</resources>

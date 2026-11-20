@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_playlist_song_count">
+        <item quantity="one">%d песен</item>
+        <item quantity="other">%d песни</item>
+    </plurals>
+    <plurals name="band_count">
+        <item quantity="one">%d група</item>
+        <item quantity="other">%d групи</item>
+    </plurals>
+    <plurals name="minute">
+        <item quantity="one">1 минута</item>
+        <item quantity="other">%d минути</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="one">%d албум</item>
+        <item quantity="other">%d албуми</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="one">%d изпълнител</item>
+        <item quantity="other">%d изпълнители</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="one">%d месец</item>
+        <item quantity="other">%d месеци</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="one">%d плейлист</item>
+        <item quantity="other">%d плейлисти</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="one">%d избран</item>
+        <item quantity="other">%d избрани</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="one">%d песен</item>
+        <item quantity="other">%d песни</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">%d време</item>
+        <item quantity="other">%d времена</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="one">%d седмица</item>
+        <item quantity="other">%d седмици</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="one">%d година</item>
+        <item quantity="other">%d години</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 секунда</item>
+        <item quantity="other">%d секунди</item>
+    </plurals>
+</resources>

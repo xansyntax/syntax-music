@@ -1,0 +1,22 @@
+package androidx.compose.foundation.pager;
+
+import androidx.compose.foundation.lazy.layout.LazyLayoutIntervalContent$Interval;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function4;
+
+/* JADX INFO: compiled from: r8-map-id-784ebb21e2544a232bb05d6c6532484f7cac232a67ed266b53301d1128674b41 */
+/* JADX INFO: loaded from: classes.dex */
+public final class PagerIntervalContent implements LazyLayoutIntervalContent$Interval {
+    public final Function4 item;
+    public final Function1 key;
+
+    public PagerIntervalContent(Function1 function1, Function4 function4) {
+        this.key = function1;
+        this.item = function4;
+    }
+
+    @Override // androidx.compose.foundation.lazy.layout.LazyLayoutIntervalContent$Interval
+    public final Function1 getKey() {
+        return this.key;
+    }
+}

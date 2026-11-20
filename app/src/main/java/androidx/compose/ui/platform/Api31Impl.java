@@ -1,0 +1,172 @@
+package androidx.compose.ui.platform;
+
+import android.view.SoundEffectConstants;
+import android.view.View;
+import android.view.translation.ViewTranslationCallback;
+import androidx.collection.IntObjectMap;
+import androidx.collection.MutableScatterMap;
+import androidx.compose.ui.contentcapture.AndroidContentCaptureManager;
+import androidx.compose.ui.semantics.AccessibilityAction;
+import androidx.compose.ui.semantics.AdjustedSemanticsNode;
+import androidx.compose.ui.semantics.SemanticsActions;
+import androidx.compose.ui.semantics.SemanticsProperties;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: r8-map-id-784ebb21e2544a232bb05d6c6532484f7cac232a67ed266b53301d1128674b41 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class Api31Impl {
+
+    /* JADX INFO: compiled from: r8-map-id-784ebb21e2544a232bb05d6c6532484f7cac232a67ed266b53301d1128674b41 */
+    public final class AndroidComposeViewTranslationCallback implements ViewTranslationCallback {
+        public static final AndroidComposeViewTranslationCallback INSTANCE = new AndroidComposeViewTranslationCallback();
+
+        public final boolean onClearTranslation(View view) {
+            Function0 function0;
+            view.getClass();
+            AndroidContentCaptureManager contentCaptureManager$ui = ((AndroidComposeView) view).getContentCaptureManager$ui();
+            contentCaptureManager$ui.getClass();
+            contentCaptureManager$ui.translateStatus = AndroidContentCaptureManager.TranslateStatus.SHOW_ORIGINAL;
+            IntObjectMap currentSemanticsNodes$ui = contentCaptureManager$ui.getCurrentSemanticsNodes$ui();
+            Object[] objArr = currentSemanticsNodes$ui.values;
+            long[] jArr = currentSemanticsNodes$ui.metadata;
+            int length = jArr.length - 2;
+            if (length < 0) {
+                return true;
+            }
+            int i = 0;
+            while (true) {
+                long j = jArr[i];
+                if ((((~j) << 7) & j & (-9187201950435737472L)) != -9187201950435737472L) {
+                    int i2 = 8 - ((~(i - length)) >>> 31);
+                    for (int i3 = 0; i3 < i2; i3++) {
+                        if ((255 & j) < 128) {
+                            MutableScatterMap mutableScatterMap = ((AdjustedSemanticsNode) objArr[(i << 3) + i3]).semanticsNode.unmergedConfig.props;
+                            Object obj = mutableScatterMap.get(SemanticsProperties.IsShowingTextSubstitution);
+                            if (obj == null) {
+                                obj = null;
+                            }
+                            if (obj != null) {
+                                Object obj2 = mutableScatterMap.get(SemanticsActions.ClearTextSubstitution);
+                                AccessibilityAction accessibilityAction = (AccessibilityAction) (obj2 != null ? obj2 : null);
+                                if (accessibilityAction != null && (function0 = (Function0) accessibilityAction.action) != null) {
+                                }
+                            }
+                        }
+                        j >>= 8;
+                    }
+                    if (i2 != 8) {
+                        return true;
+                    }
+                }
+                if (i == length) {
+                    return true;
+                }
+                i++;
+            }
+        }
+
+        public final boolean onHideTranslation(View view) {
+            Function1 function1;
+            view.getClass();
+            AndroidContentCaptureManager contentCaptureManager$ui = ((AndroidComposeView) view).getContentCaptureManager$ui();
+            contentCaptureManager$ui.getClass();
+            contentCaptureManager$ui.translateStatus = AndroidContentCaptureManager.TranslateStatus.SHOW_ORIGINAL;
+            IntObjectMap currentSemanticsNodes$ui = contentCaptureManager$ui.getCurrentSemanticsNodes$ui();
+            Object[] objArr = currentSemanticsNodes$ui.values;
+            long[] jArr = currentSemanticsNodes$ui.metadata;
+            int length = jArr.length - 2;
+            if (length < 0) {
+                return true;
+            }
+            int i = 0;
+            while (true) {
+                long j = jArr[i];
+                if ((((~j) << 7) & j & (-9187201950435737472L)) != -9187201950435737472L) {
+                    int i2 = 8 - ((~(i - length)) >>> 31);
+                    for (int i3 = 0; i3 < i2; i3++) {
+                        if ((255 & j) < 128) {
+                            MutableScatterMap mutableScatterMap = ((AdjustedSemanticsNode) objArr[(i << 3) + i3]).semanticsNode.unmergedConfig.props;
+                            Object obj = mutableScatterMap.get(SemanticsProperties.IsShowingTextSubstitution);
+                            if (obj == null) {
+                                obj = null;
+                            }
+                            if (Intrinsics.areEqual(obj, Boolean.TRUE)) {
+                                Object obj2 = mutableScatterMap.get(SemanticsActions.ShowTextSubstitution);
+                                AccessibilityAction accessibilityAction = (AccessibilityAction) (obj2 != null ? obj2 : null);
+                                if (accessibilityAction != null && (function1 = (Function1) accessibilityAction.action) != null) {
+                                }
+                            }
+                        }
+                        j >>= 8;
+                    }
+                    if (i2 != 8) {
+                        return true;
+                    }
+                }
+                if (i == length) {
+                    return true;
+                }
+                i++;
+            }
+        }
+
+        public final boolean onShowTranslation(View view) {
+            Function1 function1;
+            view.getClass();
+            AndroidContentCaptureManager contentCaptureManager$ui = ((AndroidComposeView) view).getContentCaptureManager$ui();
+            contentCaptureManager$ui.getClass();
+            contentCaptureManager$ui.translateStatus = AndroidContentCaptureManager.TranslateStatus.SHOW_TRANSLATED;
+            IntObjectMap currentSemanticsNodes$ui = contentCaptureManager$ui.getCurrentSemanticsNodes$ui();
+            Object[] objArr = currentSemanticsNodes$ui.values;
+            long[] jArr = currentSemanticsNodes$ui.metadata;
+            int length = jArr.length - 2;
+            if (length < 0) {
+                return true;
+            }
+            int i = 0;
+            while (true) {
+                long j = jArr[i];
+                if ((((~j) << 7) & j & (-9187201950435737472L)) != -9187201950435737472L) {
+                    int i2 = 8 - ((~(i - length)) >>> 31);
+                    for (int i3 = 0; i3 < i2; i3++) {
+                        if ((255 & j) < 128) {
+                            MutableScatterMap mutableScatterMap = ((AdjustedSemanticsNode) objArr[(i << 3) + i3]).semanticsNode.unmergedConfig.props;
+                            Object obj = mutableScatterMap.get(SemanticsProperties.IsShowingTextSubstitution);
+                            if (obj == null) {
+                                obj = null;
+                            }
+                            if (Intrinsics.areEqual(obj, Boolean.FALSE)) {
+                                Object obj2 = mutableScatterMap.get(SemanticsActions.ShowTextSubstitution);
+                                AccessibilityAction accessibilityAction = (AccessibilityAction) (obj2 != null ? obj2 : null);
+                                if (accessibilityAction != null && (function1 = (Function1) accessibilityAction.action) != null) {
+                                }
+                            }
+                        }
+                        j >>= 8;
+                    }
+                    if (i2 != 8) {
+                        return true;
+                    }
+                }
+                if (i == length) {
+                    return true;
+                }
+                i++;
+            }
+        }
+    }
+
+    public static final void clearViewTranslationCallback(View view) {
+        view.clearViewTranslationCallback();
+    }
+
+    public static final int getConstantForFocusDirection(int i, boolean z) {
+        return SoundEffectConstants.getConstantForFocusDirection(i, z);
+    }
+
+    public static final void setViewTranslationCallback(View view) {
+        view.setViewTranslationCallback(AndroidComposeViewTranslationCallback.INSTANCE);
+    }
+}

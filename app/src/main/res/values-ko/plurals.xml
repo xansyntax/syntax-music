@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_playlist_song_count">
+        <item quantity="other">%d곡</item>
+    </plurals>
+    <plurals name="band_count">
+        <item quantity="other">%d 밴드</item>
+    </plurals>
+    <plurals name="minute">
+        <item quantity="other">%d분</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="other">%d 앨범</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="other">%d 아티스트</item>
+    </plurals>
+    <plurals name="n_channel">
+        <item quantity="other">채널 %d개</item>
+    </plurals>
+    <plurals name="n_episode">
+        <item quantity="other">에피소드 %d개</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="other">%d개월</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="other">%d 재생목록</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d 선택됨</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="other">%d곡</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="other">%d회</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="other">%d주</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="other">%d년</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="other">%d초</item>
+    </plurals>
+</resources>

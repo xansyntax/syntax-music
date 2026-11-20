@@ -1,0 +1,18 @@
+# Gradle & Build Outputs
+.gradle/
+build/
+app/build/
+*.apk
+*.aab
+
+# Local & IDE Config
+local.properties
+.idea/
+*.iml
+.DS_Store
+
+# Signing Keys & Secrets
+*.jks
+*.keystore
+keystore.properties
+google-services.json

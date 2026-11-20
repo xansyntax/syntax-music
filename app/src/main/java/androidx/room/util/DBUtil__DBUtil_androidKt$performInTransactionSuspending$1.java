@@ -1,0 +1,22 @@
+package androidx.room.util;
+
+import androidx.room.RoomDatabase;
+import com.metrolist.music.db.DatabaseDao_Impl;
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+
+/* JADX INFO: compiled from: r8-map-id-784ebb21e2544a232bb05d6c6532484f7cac232a67ed266b53301d1128674b41 */
+/* JADX INFO: loaded from: classes.dex */
+public final class DBUtil__DBUtil_androidKt$performInTransactionSuspending$1 extends ContinuationImpl {
+    public RoomDatabase L$0;
+    public SuspendLambda L$1;
+    public int label;
+    public /* synthetic */ Object result;
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        this.result = obj;
+        this.label |= Integer.MIN_VALUE;
+        return DatabaseDao_Impl.AnonymousClass17.performInTransactionSuspending(null, null, this);
+    }
+}

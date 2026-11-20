@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="minute">
+        <item quantity="one">ఒక నిమిషం</item>
+        <item quantity="other">%d నిమిషాలు</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="one">%d సంకలనం</item>
+        <item quantity="other">%d సంకలనాలు</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="one">%d కళాకారుడు</item>
+        <item quantity="other">%d కళాకారులు</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="one">%d నెల</item>
+        <item quantity="other">%d నెలలు</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="one">%d ప్లేలిస్ట్</item>
+        <item quantity="other">%d ప్లేలిస్ట్‌లు</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="one">%d ఎంచుకోబడింది</item>
+        <item quantity="other">%d ఎంచుకోబడినవి</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="one">%d పాట</item>
+        <item quantity="other">%dపాటలు</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">%d సారి</item>
+        <item quantity="other">%d సార్లు</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="one">%d వారం</item>
+        <item quantity="other">%d వారాలు</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="one">%d సంవత్సరం</item>
+        <item quantity="other">%d ఏళ్లు</item>
+    </plurals>
+</resources>

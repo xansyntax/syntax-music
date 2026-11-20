@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_playlist_song_count">
+        <item quantity="other">เพลง %d</item>
+    </plurals>
+    <plurals name="band_count">
+        <item quantity="other">%d แบนด์</item>
+    </plurals>
+    <plurals name="minute">
+        <item quantity="other">%d นาที</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="other">%d อัลบั้ม</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="other">%d ศิลปิน</item>
+    </plurals>
+    <plurals name="n_channel">
+        <item quantity="other">%d ช่อง</item>
+    </plurals>
+    <plurals name="n_episode">
+        <item quantity="other">%d ตอน</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="other">%d เดือน</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="other">%d เพลย์ลิสต์</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">เลือกแล้ว %d รายการ</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="other">%d เพลง</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="other">%d ครั้ง</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="other">%d สัปดาห์</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="other">%d ปี</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="other">%d วินาที</item>
+    </plurals>
+</resources>

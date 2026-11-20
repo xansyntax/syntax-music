@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="minute">
+        <item quantity="one">%d minuutti</item>
+        <item quantity="other">%d minuuttia</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="one">%d albumi</item>
+        <item quantity="other">%d albumia</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="one">%d artisti</item>
+        <item quantity="other">%d artistia</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="one">%d kuukausi</item>
+        <item quantity="other">%d kuukautta</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="one">%d soittolista</item>
+        <item quantity="other">%d soittolistaa</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="one">%d valittu</item>
+        <item quantity="other">%d kappaletta valittu</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="one">%d kappale</item>
+        <item quantity="other">%d kappaletta</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="one">%d viikko</item>
+        <item quantity="other">%d viikkoa</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="one">%d vuosi</item>
+        <item quantity="other">%d vuotta</item>
+    </plurals>
+</resources>

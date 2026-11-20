@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="minute">
+        <item quantity="one">1 minutë</item>
+        <item quantity="other">%d minuta</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="one">%d album</item>
+        <item quantity="other">%d albume</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="one">%d artist</item>
+        <item quantity="other">%d artistë</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="one">%d muaj</item>
+        <item quantity="other">%d muaj</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="one">%d listë për luajtje</item>
+        <item quantity="other">%d lista për luajte</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="one">e zgjedhur</item>
+        <item quantity="other">%d të zgjedhura</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="one">%d këngë</item>
+        <item quantity="other">%d këngë</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">%d herë</item>
+        <item quantity="other">%d herë</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="one">%d javë</item>
+        <item quantity="other">%d javë</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="one">%d vit</item>
+        <item quantity="other">%d vite</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 sekondë</item>
+        <item quantity="other">%d sekonda</item>
+    </plurals>
+</resources>

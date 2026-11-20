@@ -1,0 +1,19 @@
+package androidx.compose.ui.platform;
+
+import android.view.View;
+
+/* JADX INFO: compiled from: r8-map-id-784ebb21e2544a232bb05d6c6532484f7cac232a67ed266b53301d1128674b41 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class Api35Impl {
+    public static final void setContentSensitivity(View view, boolean z) {
+        if (z) {
+            view.setContentSensitivity(1);
+        } else {
+            view.setContentSensitivity(0);
+        }
+    }
+
+    public static final void setRequestedFrameRate(View view, float f) {
+        view.setRequestedFrameRate(f);
+    }
+}

@@ -1,0 +1,71 @@
+package kotlin.jvm.internal;
+
+import androidx.fragment.app.Fragment$5$$ExternalSyntheticOutline0;
+import java.io.Serializable;
+import kotlin.reflect.KDeclarationContainer;
+
+/* JADX INFO: compiled from: r8-map-id-784ebb21e2544a232bb05d6c6532484f7cac232a67ed266b53301d1128674b41 */
+/* JADX INFO: loaded from: classes2.dex */
+public abstract class AdaptedFunctionReference implements FunctionBase, Serializable {
+    private final int arity;
+    private final int flags;
+    private final boolean isTopLevel;
+    private final String name;
+    private final Class owner;
+    protected final Object receiver;
+    private final String signature;
+
+    public AdaptedFunctionReference(int i, Object obj, Class cls, String str, String str2, int i2) {
+        this.receiver = obj;
+        this.owner = cls;
+        this.name = str;
+        this.signature = str2;
+        this.isTopLevel = (i2 & 1) == 1;
+        this.arity = i;
+        this.flags = i2 >> 1;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof AdaptedFunctionReference)) {
+            return false;
+        }
+        AdaptedFunctionReference adaptedFunctionReference = (AdaptedFunctionReference) obj;
+        return this.isTopLevel == adaptedFunctionReference.isTopLevel && this.arity == adaptedFunctionReference.arity && this.flags == adaptedFunctionReference.flags && Intrinsics.areEqual(this.receiver, adaptedFunctionReference.receiver) && Intrinsics.areEqual(this.owner, adaptedFunctionReference.owner) && this.name.equals(adaptedFunctionReference.name) && this.signature.equals(adaptedFunctionReference.signature);
+    }
+
+    @Override // kotlin.jvm.internal.FunctionBase
+    public int getArity() {
+        return this.arity;
+    }
+
+    public KDeclarationContainer getOwner() {
+        Class cls = this.owner;
+        if (cls == null) {
+            return null;
+        }
+        if (!this.isTopLevel) {
+            return Reflection.getOrCreateKotlinClass(cls);
+        }
+        Reflection.factory.getClass();
+        return new PackageReference(cls);
+    }
+
+    public int hashCode() {
+        Object obj = this.receiver;
+        int iHashCode = (obj != null ? obj.hashCode() : 0) * 31;
+        Class cls = this.owner;
+        return ((((Fragment$5$$ExternalSyntheticOutline0.m(Fragment$5$$ExternalSyntheticOutline0.m((iHashCode + (cls != null ? cls.hashCode() : 0)) * 31, 31, this.name), 31, this.signature) + (this.isTopLevel ? 1231 : 1237)) * 31) + this.arity) * 31) + this.flags;
+    }
+
+    public String toString() {
+        Reflection.factory.getClass();
+        return ReflectionFactory.renderLambdaToString(this);
+    }
+
+    public AdaptedFunctionReference(int i, Class cls, String str, String str2, int i2) {
+        this(i, CallableReference.NO_RECEIVER, cls, str, str2, i2);
+    }
+}

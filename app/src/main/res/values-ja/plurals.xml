@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_playlist_song_count">
+        <item quantity="other">%d曲</item>
+    </plurals>
+    <plurals name="band_count">
+        <item quantity="other">%dバンド</item>
+    </plurals>
+    <plurals name="minute">
+        <item quantity="other">%d分</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="other">%d件のアルバム</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="other">%d人のアーティスト</item>
+    </plurals>
+    <plurals name="n_channel">
+        <item quantity="other">%dチャンネル</item>
+    </plurals>
+    <plurals name="n_episode">
+        <item quantity="other">%dエピソード</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="other">%dか月</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="other">%d件のプレイリスト</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="other">%d個を選択中</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="other">%d曲</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="other">%d回</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="other">%d週間</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="other">%d年</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="other">%d秒</item>
+    </plurals>
+</resources>

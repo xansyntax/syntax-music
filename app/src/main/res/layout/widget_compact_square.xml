@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/Theme.Widget.Metrolist"
+    android:id="@android:id/background"
+    android:background="@drawable/widget_background"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/widget_compact_album_art"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/album_art"/>
+        <FrameLayout
+            android:layout_gravity="bottom|center_horizontal"
+            android:id="@+id/widget_compact_play_container"
+            android:background="@drawable/widget_play_button_circular"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="8dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/widget_compact_play_pause"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_widget_play_low"
+                android:contentDescription="@string/play_pause"/>
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

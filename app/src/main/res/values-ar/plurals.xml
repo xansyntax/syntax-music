@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_playlist_song_count">
+        <item quantity="one">%d أُغنية</item>
+        <item quantity="few">%d أغاني</item>
+        <item quantity="many">%d أُغنية</item>
+        <item quantity="other">%d أُغنية</item>
+    </plurals>
+    <plurals name="band_count">
+        <item quantity="zero">%d نطاق</item>
+        <item quantity="one">%d نطاق</item>
+        <item quantity="two">%d نطاقين</item>
+        <item quantity="few">%d نطاقات</item>
+        <item quantity="many">%d نطاقًا</item>
+        <item quantity="other">%d نطاق</item>
+    </plurals>
+    <plurals name="minute">
+        <item quantity="zero">%d دقيقة</item>
+        <item quantity="one">%d دقيقة</item>
+        <item quantity="two">%d دقيقة</item>
+        <item quantity="few">%d دقائق</item>
+        <item quantity="many">%d دقيقة</item>
+        <item quantity="other">%d دقيقة</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="zero">%d ألبومات</item>
+        <item quantity="one">ألبوم</item>
+        <item quantity="two">ألبومان</item>
+        <item quantity="few">%d ألبومات</item>
+        <item quantity="many">%d ألبوم</item>
+        <item quantity="other">%d ألبوم</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="zero">%d فنانون</item>
+        <item quantity="one">فنان</item>
+        <item quantity="two">فنانان</item>
+        <item quantity="few">%d فنانون</item>
+        <item quantity="many">%d فنان</item>
+        <item quantity="other">%d فنان</item>
+    </plurals>
+    <plurals name="n_channel">
+        <item quantity="zero">%d قناة</item>
+        <item quantity="one">%d قناة</item>
+        <item quantity="two">%d قناة</item>
+        <item quantity="few">%d قناة</item>
+        <item quantity="many">%d قنوات</item>
+        <item quantity="other">%d قنوات</item>
+    </plurals>
+    <plurals name="n_episode">
+        <item quantity="zero">%d حلقة</item>
+        <item quantity="one">%d حلقة</item>
+        <item quantity="two">%d حلقتان</item>
+        <item quantity="few">%d حلقات</item>
+        <item quantity="many">%d حلقة</item>
+        <item quantity="other">%d حلقة</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="zero">%d شهور</item>
+        <item quantity="one">شهر</item>
+        <item quantity="two">شهران</item>
+        <item quantity="few">%d شهور</item>
+        <item quantity="many">%d شهر</item>
+        <item quantity="other">%d شهر</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="zero">%d قوائم أغاني</item>
+        <item quantity="one">قائمة أغاني</item>
+        <item quantity="two">قائمتا أغاني</item>
+        <item quantity="few">%d قوائم أغاني</item>
+        <item quantity="many">%d قائمة أغاني</item>
+        <item quantity="other">%d قائمة أغاني</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="zero">%d تم اختياره</item>
+        <item quantity="one">%d تم اختياره</item>
+        <item quantity="two">%d تم اختيارهم</item>
+        <item quantity="few">%d تم اختيارها</item>
+        <item quantity="many">%d تم اختيارها</item>
+        <item quantity="other">%d تم اختيارهم</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="zero">%d أغاني</item>
+        <item quantity="one">أغنية</item>
+        <item quantity="two">أغنيتان</item>
+        <item quantity="few">%d أغاني</item>
+        <item quantity="many">%d أغنية</item>
+        <item quantity="other">%d أغنية</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="zero">لا مرات</item>
+        <item quantity="one">%d مرة</item>
+        <item quantity="two">%d مرتان</item>
+        <item quantity="few">%d مرات</item>
+        <item quantity="many">%d مرة</item>
+        <item quantity="other">%d مرة</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="zero">%d أسابيع</item>
+        <item quantity="one">أسبوع</item>
+        <item quantity="two">أسبوعان</item>
+        <item quantity="few">%d أسابيع</item>
+        <item quantity="many">%d أسبوع</item>
+        <item quantity="other">%d أسبوع</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="zero">%d أعوام</item>
+        <item quantity="one">عام</item>
+        <item quantity="two">عامان</item>
+        <item quantity="few">%d أعوام</item>
+        <item quantity="many">%d عام</item>
+        <item quantity="other">%d عام</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="zero">لا ثوانٍ</item>
+        <item quantity="one">%d ثانية</item>
+        <item quantity="two">%d ثانيتان</item>
+        <item quantity="few">%d ثوانٍ</item>
+        <item quantity="many">%d ثانية</item>
+        <item quantity="other">%d ثانية</item>
+    </plurals>
+</resources>
