@@ -257,7 +257,7 @@
     <string name="integrations">Інтэграцыі</string>
     <string name="keep_screen_on_when_player_is_expanded">Не выключаць экран калі плэер разгорнуты</string>
     <string name="last_fm_send_likes">Сінхранізаваць адзнакі «Падабаецца»</string>
-    <string name="last_fm_send_likes_description">Дадаваць ці прыбіраць адзнаку «Любімае» на Last.fm, калі ставіцца ці здымаецца адзнака «Падабаецца» ў Auralys</string>
+    <string name="last_fm_send_likes_description">Дадаваць ці прыбіраць адзнаку «Любімае» на Last.fm, калі ставіцца ці здымаецца адзнака «Падабаецца» ў Syntax Music</string>
     <string name="last_song_listened">На аснове апошняга праслуханага трэка</string>
     <string name="last_week">На тым тыдні</string>
     <string name="lastfm_integration">Інтэграцыя з Last.fm</string>

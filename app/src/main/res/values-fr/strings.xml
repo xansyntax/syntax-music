@@ -222,7 +222,7 @@
     <string name="crash_close">Fermer</string>
     <string name="crash_description">Une erreur inattendue s\'est produite. Veuillez partager le rapport d\'erreur afin de nous aider à résoudre le problème</string>
     <string name="crash_no_log">Aucun rapport d\'incident disponible</string>
-    <string name="crash_report_subject">Rapport d\'incident Auralys</string>
+    <string name="crash_report_subject">Rapport d\'incident Syntax Music</string>
     <string name="crash_share_logs">Partager les journaux</string>
     <string name="crash_share_title">Partager le rapport d\'incident</string>
     <string name="crash_title">L\'application a planté</string>
@@ -301,7 +301,7 @@
     <string name="discord_error_loopback_unbound">Impossible d\'ouvrir un port de rappel local. Veuillez en libérer un et réessayer.</string>
     <string name="discord_error_no_browser">Aucun navigateur n\'a été détecté pour effectuer l\'autorisation Discord.</string>
     <string name="discord_error_token_refresh_failed">La session Discord a expiré. Veuillez vous reconnecter.</string>
-    <string name="discord_information_warning">Auralys utilise les API publiques OAuth2 et Gateway de Discord pour partager ce que vous écoutez. L\'autorisation se produit à travers une session de navigateur locale qui se ferme après avoir capturé le code — rien n\'est envoyé à des serveur tiers. Votre jeton est enregistré sous forme encryptée sur votre appareil et n\'est jamais partagé. Auralys se connecte directement à wss://gateway.discord.gg pour publier votre activité, et ne demande que l\'accès minimum requis (sdk.social_layer_presence).</string>
+    <string name="discord_information_warning">Syntax Music utilise les API publiques OAuth2 et Gateway de Discord pour partager ce que vous écoutez. L\'autorisation se produit à travers une session de navigateur locale qui se ferme après avoir capturé le code — rien n\'est envoyé à des serveur tiers. Votre jeton est enregistré sous forme encryptée sur votre appareil et n\'est jamais partagé. Syntax Music se connecte directement à wss://gateway.discord.gg pour publier votre activité, et ne demande que l\'accès minimum requis (sdk.social_layer_presence).</string>
     <string name="discord_integration">Intégration à Discord</string>
     <string name="discord_presence">Présence</string>
     <string name="discord_rpc_preview">Aperçu de Rich Presence</string>
@@ -496,10 +496,10 @@
     <string name="kick_user_desc">Supprimer cette personne de la session</string>
     <string name="kmp_upgrade_action">Essayez KMP</string>
     <string name="kmp_upgrade_later">Pas maintenant</string>
-    <string name="kmp_upgrade_title">Auralys KMP %s est disponible</string>
-    <string name="kmp_upgrade_warning">Auralys KMP est encore en cours de développement. Vous pourriez rencontrer des bugs ou des fonctionnalités incomplètes.</string>
+    <string name="kmp_upgrade_title">Syntax Music KMP %s est disponible</string>
+    <string name="kmp_upgrade_warning">Syntax Music KMP est encore en cours de développement. Vous pourriez rencontrer des bugs ou des fonctionnalités incomplètes.</string>
     <string name="last_fm_send_likes">Synchroniser les favoris et les éléments non favoris</string>
-    <string name="last_fm_send_likes_description">Ajoutez ou retirez des titres de vos favoris sur Last.fm lorsque vous les ajoutez ou les retirez de vos favoris dans Auralys</string>
+    <string name="last_fm_send_likes_description">Ajoutez ou retirez des titres de vos favoris sur Last.fm lorsque vous les ajoutez ou les retirez de vos favoris dans Syntax Music</string>
     <string name="last_song_listened">En fonction du dernier titre que vous avez écouté</string>
     <string name="last_week">La semaine dernière</string>
     <string name="lastfm_integration">Intégration Last.fm</string>
@@ -519,7 +519,7 @@
     <string name="link_copied">Lien copié dans le presse-papiers</string>
     <string name="list_bullet">•</string>
     <string name="listen_history">Historique d\'écoute</string>
-    <string name="listen_on_metrolist">Écoutez sur Auralys</string>
+    <string name="listen_on_metrolist">Écoutez sur Syntax Music</string>
     <string name="listen_together">Écouter ensemble</string>
     <string name="listen_together_auto_approval_joins">Approuver automatiquement les demandes d\'adhésion</string>
     <string name="listen_together_auto_approval_joins_desc">Approuver automatiquement les demandes d\'adhésion sans les examiner manuellement</string>
@@ -629,7 +629,7 @@
     <string name="media3_controls_seek_to_next_description">Accéder à l\'élément suivant</string>
     <string name="media3_controls_seek_to_previous_description">Accéder à l\'élément précédent</string>
     <string name="media_id">Identifiant du média</string>
-    <string name="metrolist">AURALYS</string>
+    <string name="metrolist">SYNTAX MUSIC</string>
     <string name="mime_type">Type MIME</string>
     <string name="mini_player">Mini-lecteur</string>
     <string name="mini_player_background_not_available">Indisponible lorsque le nouveau design du mini-lecteur est désactivé</string>
@@ -712,7 +712,7 @@
     <string name="play_all">Tout lire</string>
     <string name="play_next">Lire ensuite</string>
     <string name="play_next_desc">Lire le titre suivant dans la file d\'attente</string>
-    <string name="play_on_app">Jouer sur Auralys</string>
+    <string name="play_on_app">Jouer sur Syntax Music</string>
     <string name="play_pause">Lecture/Pause</string>
     <string name="player">Lecteur</string>
     <string name="player_and_audio">Lecteur et audio</string>
@@ -935,8 +935,8 @@
     <string name="system_equalizer">Égaliseur système</string>
     <string name="system_equalizer_desc">Ouvrir l\'égaliseur intégré d\'Android</string>
     <string name="tab">Onglet</string>
-    <string name="tap_to_open">Appuyez pour ouvrir Auralys</string>
-    <string name="tap_to_play">Appuyez pour ouvrir Auralys</string>
+    <string name="tap_to_open">Appuyez pour ouvrir Syntax Music</string>
+    <string name="tap_to_play">Appuyez pour ouvrir Syntax Music</string>
     <string name="tap_to_recognize">Appuyez pour reconnaître</string>
     <string name="template_percent">%1$d pour cent.</string>
     <string name="tempo_and_pitch">Tempo et hauteur tonale</string>
@@ -973,7 +973,7 @@
     <string name="unpin">Détacher</string>
     <string name="unpin_from_speed_dial">Détacher de l\'Accès Rapide</string>
     <string name="update_action">Mettre à jour</string>
-    <string name="update_available_message">Auralys %s est prêt à être téléchargé.</string>
+    <string name="update_available_message">Syntax Music %s est prêt à être téléchargé.</string>
     <string name="update_available_title">Mise à jour disponible</string>
     <string name="update_channel_desc">Notifications concernant les nouvelles versions de l\'application</string>
     <string name="update_channel_name">Mises à jour de l\'application</string>

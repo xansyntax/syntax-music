@@ -6,7 +6,7 @@
         android:shortcutId="search"
         android:shortcutShortLabel="@string/search">
         <intent
-            android:targetPackage="com.auralyst.app"
+            android:targetPackage="com.xansyntax.music"
             android:action="com.metrolist.music.action.SEARCH"
             android:targetClass="com.metrolist.music.MainActivity"/>
     </shortcut>
@@ -16,7 +16,7 @@
         android:shortcutId="library"
         android:shortcutShortLabel="@string/filter_library">
         <intent
-            android:targetPackage="com.auralyst.app"
+            android:targetPackage="com.xansyntax.music"
             android:action="com.metrolist.music.action.LIBRARY"
             android:targetClass="com.metrolist.music.MainActivity"/>
     </shortcut>

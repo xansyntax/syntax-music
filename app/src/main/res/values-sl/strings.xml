@@ -172,7 +172,7 @@
     <string name="integrations">Integracije</string>
     <string name="keep_listening">Nadaljuj z poslušanjem</string>
     <string name="last_fm_send_likes">Pošlji všečke/nevšečke</string>
-    <string name="last_fm_send_likes_description">Dodaj/odstrani pesmi med priljubljenimi na Last.fm, ko jih všečkaš/odvšečkaš v Auralysu</string>
+    <string name="last_fm_send_likes_description">Dodaj/odstrani pesmi med priljubljenimi na Last.fm, ko jih všečkaš/odvšečkaš v Syntax Musicu</string>
     <string name="last_song_listened">Na podlagi zadnje poslušane pesmi</string>
     <string name="last_week">Prejšnji teden</string>
     <string name="lastfm_integration">Integracija z Last.fm</string>

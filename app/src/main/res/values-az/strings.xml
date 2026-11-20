@@ -186,7 +186,7 @@
     <string name="crash_close">Bağla</string>
     <string name="crash_description">Gözlənilməz xəta baş verdi. Problemi düzəltməyimizə kömək etmək üçün qəza hesabatını paylaşın</string>
     <string name="crash_no_log">Qəza qeydi mövcud deyil</string>
-    <string name="crash_report_subject">Auralys qəza hesabatı</string>
+    <string name="crash_report_subject">Syntax Music qəza hesabatı</string>
     <string name="crash_share_logs">Jurnalları paylaşın</string>
     <string name="crash_share_title">Qəza hesabatını paylaşın</string>
     <string name="crash_title">Tətbiq çökdü</string>
@@ -260,7 +260,7 @@
     <string name="discord_error_loopback_unbound">Yerli geri çağırış portunu açmaq mümkün olmadı. Zəhmət olmasa, bir portu boşaldın və yenidən cəhd edin.</string>
     <string name="discord_error_no_browser">Discord avtorizasiyasını tamamlamaq üçün heç bir brauzer tapılmadı.</string>
     <string name="discord_error_token_refresh_failed">Discord sessiyasının müddəti bitib. Zəhmət olmasa, yenidən qoşulun.</string>
-    <string name="discord_information_warning">Auralys dinlədiyiniz musiqini paylaşmaq üçün Discord-un açıq OAuth2 və Gateway API-lərindən istifadə edir. Avtorizasiya kodu əldə edildikdən sonra avtomatik bağlanan lokal brauzer sessiyası vasitəsilə həyata keçirilir — heç bir məlumat üçüncü tərəf serverlərinə göndərilmir. Tokeniniz bu cihazda şifrələnmiş parametrlərdə saxlanılır və heç vaxt paylaşılmır. Auralys fəaliyyətinizi yayımlamaq üçün birbaşa wss://gateway.discord.gg ünvanına qoşulur və yalnız tələb olunan minimum əhatə dairəsini (sdk.social_layer_presence) istəyir.</string>
+    <string name="discord_information_warning">Syntax Music dinlədiyiniz musiqini paylaşmaq üçün Discord-un açıq OAuth2 və Gateway API-lərindən istifadə edir. Avtorizasiya kodu əldə edildikdən sonra avtomatik bağlanan lokal brauzer sessiyası vasitəsilə həyata keçirilir — heç bir məlumat üçüncü tərəf serverlərinə göndərilmir. Tokeniniz bu cihazda şifrələnmiş parametrlərdə saxlanılır və heç vaxt paylaşılmır. Syntax Music fəaliyyətinizi yayımlamaq üçün birbaşa wss://gateway.discord.gg ünvanına qoşulur və yalnız tələb olunan minimum əhatə dairəsini (sdk.social_layer_presence) istəyir.</string>
     <string name="discord_integration">Discord inteqrasiyası</string>
     <string name="discord_presence">Mövcudluq</string>
     <string name="discord_rpc_preview">Zəngin status önizləməsi</string>
@@ -437,10 +437,10 @@
     <string name="kick_user_desc">Bu şəxsi sessiyadan kənarlaşdır</string>
     <string name="kmp_upgrade_action">KMP sınayın</string>
     <string name="kmp_upgrade_later">İndi yox</string>
-    <string name="kmp_upgrade_title">Auralys KMP %s mövcuddur</string>
-    <string name="kmp_upgrade_warning">Auralys KMP hələ də inkişaf mərhələsindədir. Xətalarla və ya natamam funksiyalarla qarşılaşa bilərsiniz.</string>
+    <string name="kmp_upgrade_title">Syntax Music KMP %s mövcuddur</string>
+    <string name="kmp_upgrade_warning">Syntax Music KMP hələ də inkişaf mərhələsindədir. Xətalarla və ya natamam funksiyalarla qarşılaşa bilərsiniz.</string>
     <string name="last_fm_send_likes">Sevilən və sevilməyənləri sinxronlaşdırın</string>
-    <string name="last_fm_send_likes_description">Auralys-də mahnıları bəyəndikdə və ya bəyənməkdən imtina etdikdə, Last.fm-də həmin mahnıları bəyənin və ya bəyənmədiyizi ləğv edin</string>
+    <string name="last_fm_send_likes_description">Syntax Music-də mahnıları bəyəndikdə və ya bəyənməkdən imtina etdikdə, Last.fm-də həmin mahnıları bəyənin və ya bəyənmədiyizi ləğv edin</string>
     <string name="last_song_listened">Dinlədiyiniz son mahnıya əsasən</string>
     <string name="last_week">Keçən həftə</string>
     <string name="lastfm_integration">Last.fm inteqrasiyası</string>
@@ -458,7 +458,7 @@
     <string name="line_by_line_option_title">Dili sətir-sətir müəyyən et</string>
     <string name="link_copied">Link bufetdə kopyalandı</string>
     <string name="list_bullet">•</string>
-    <string name="listen_on_metrolist">Auralys dinləyin</string>
+    <string name="listen_on_metrolist">Syntax Music dinləyin</string>
     <string name="listen_together">Birlikdə dinləyin</string>
     <string name="listen_together_auto_approval_joins">Qoşulma sorğularını avtomatik təsdiqləyin</string>
     <string name="listen_together_auto_approval_joins_desc">Qoşulma sorğularını əl ilə nəzərdən keçirmədən avtomatik təsdiqləyin</string>
@@ -562,7 +562,7 @@
     <string name="media3_controls_seek_to_next_description">Növbəti elementə keçin</string>
     <string name="media3_controls_seek_to_previous_description">Əvvəlki elementə keçin</string>
     <string name="media_id">Media ID</string>
-    <string name="metrolist">AURALYS</string>
+    <string name="metrolist">SYNTAX MUSIC</string>
     <string name="mime_type">MIME növü</string>
     <string name="mini_player">Mini pleyer</string>
     <string name="mini_player_background_not_available">Yeni mini-pleyer dizaynı deaktiv edildikdə əlçatan deyil</string>
@@ -636,7 +636,7 @@
     <string name="play_all">Hamısını oynat</string>
     <string name="play_next">Növbətini oynat</string>
     <string name="play_next_desc">Növbədəkini oynat</string>
-    <string name="play_on_app">Auralys oynayın</string>
+    <string name="play_on_app">Syntax Music oynayın</string>
     <string name="play_pause">Oynat/Dayandır</string>
     <string name="player_background_blur">Bulanti</string>
     <string name="player_background_solid">Bütöv</string>
@@ -830,8 +830,8 @@
     <string name="system_equalizer">Sistem ekvalayzeri</string>
     <string name="system_equalizer_desc">Android daxili ekvalayzerini açın</string>
     <string name="tab">Tab</string>
-    <string name="tap_to_open">Auralys açmaq üçün toxunun</string>
-    <string name="tap_to_play">Auralys açmaq üçün toxunun</string>
+    <string name="tap_to_open">Syntax Music açmaq üçün toxunun</string>
+    <string name="tap_to_play">Syntax Music açmaq üçün toxunun</string>
     <string name="tap_to_recognize">Tanımaq üçün toxunun</string>
     <string name="template_percent">%1$d faiz.</string>
     <string name="tempo_and_pitch">Temp və ton</string>
@@ -862,7 +862,7 @@
     <string name="unpin">Sancağı çıxarın</string>
     <string name="unpin_from_speed_dial">Sürətli yığım siyahısından ayır</string>
     <string name="update_action">Yeniləmə</string>
-    <string name="update_available_message">Auralys %s yükləməyə hazırdır.</string>
+    <string name="update_available_message">Syntax Music %s yükləməyə hazırdır.</string>
     <string name="update_available_title">Yeni yeniləmə mövcuddur</string>
     <string name="update_channel_desc">Tətbiqin yeni versiyaları haqqında bildirişlər</string>
     <string name="update_channel_name">Tətbiq yeniləmələri</string>

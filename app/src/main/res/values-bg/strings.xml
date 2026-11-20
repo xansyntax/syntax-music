@@ -200,7 +200,7 @@
     <string name="crash_close">Затвори</string>
     <string name="crash_description">Възникна неочаквана грешка. Моля, споделете доклада за срива, за да ни помогнете да отстраним проблема</string>
     <string name="crash_no_log">Няма наличен доклад за срив</string>
-    <string name="crash_report_subject">Доклад за срив на Auralys</string>
+    <string name="crash_report_subject">Доклад за срив на Syntax Music</string>
     <string name="crash_share_logs">Сподели логове</string>
     <string name="crash_share_title">Сподели доклада за срива</string>
     <string name="crash_title">Приложението спря да работи</string>
@@ -271,7 +271,7 @@
     <string name="discord_error_loopback_unbound">Неуспешно отваряне на локален callback порт. Моля, освободете порта и опитайте отново.</string>
     <string name="discord_error_no_browser">Не е открит браузър да довърши авторизацията с Discord.</string>
     <string name="discord_error_token_refresh_failed">Discord сесията ви е изтекла. Моля опитайте отново.</string>
-    <string name="discord_information_warning">Auralys използва публичните OAuth2 и Gateway API на Discord, за да споделя какво слушаш. Авторизирането става чрез локална браузер сесия, която се затваря след като взима нужния код — нищо не се изпраща до сървъри на 3‐ти страни. Вашият токен се запазва на устройството ви криптирани натройки и никоха не се споделя. Auralys директно се свързва с wss://gateway.discord.gg за да публикува вашата активността ви и използва само най-минималния обхват от права (sdk.social_layer_presence).</string>
+    <string name="discord_information_warning">Syntax Music използва публичните OAuth2 и Gateway API на Discord, за да споделя какво слушаш. Авторизирането става чрез локална браузер сесия, която се затваря след като взима нужния код — нищо не се изпраща до сървъри на 3‐ти страни. Вашият токен се запазва на устройството ви криптирани натройки и никоха не се споделя. Syntax Music директно се свързва с wss://gateway.discord.gg за да публикува вашата активността ви и използва само най-минималния обхват от права (sdk.social_layer_presence).</string>
     <string name="discord_integration">Discord интеграция</string>
     <string name="discord_presence">Състояние</string>
     <string name="discord_rpc_preview">Преглед на Rich Presence</string>
@@ -453,10 +453,10 @@
     <string name="kick_user_desc">Премахни този човек от сесията</string>
     <string name="kmp_upgrade_action">Надстройте до KMP</string>
     <string name="kmp_upgrade_later">Не сега</string>
-    <string name="kmp_upgrade_title">Auralys KMP %s е наличен</string>
-    <string name="kmp_upgrade_warning">Auralys KMP е в ранен достъп. Някои функции може да не работят, да са непълни или да се променят без предизвестие.</string>
+    <string name="kmp_upgrade_title">Syntax Music KMP %s е наличен</string>
+    <string name="kmp_upgrade_warning">Syntax Music KMP е в ранен достъп. Някои функции може да не работят, да са непълни или да се променят без предизвестие.</string>
     <string name="last_fm_send_likes">Синхронизирай Харесвани и Нехаресвани</string>
-    <string name="last_fm_send_likes_description">Добавяне/премахване на любими в Last.fm, когато харесате/премахнете песен в Auralys</string>
+    <string name="last_fm_send_likes_description">Добавяне/премахване на любими в Last.fm, когато харесате/премахнете песен в Syntax Music</string>
     <string name="last_song_listened">На база последно слушана песен</string>
     <string name="last_week">Миналата седмица</string>
     <string name="lastfm_integration">Интеграция с Last.fm</string>
@@ -476,7 +476,7 @@
     <string name="link_copied">Линкът е копиран в клипборда</string>
     <string name="list_bullet">•</string>
     <string name="listen_history">История на слушане</string>
-    <string name="listen_on_metrolist">Слушай в Auralys</string>
+    <string name="listen_on_metrolist">Слушай в Syntax Music</string>
     <string name="listen_together">Слушайте Заедно</string>
     <string name="listen_together_auto_approval_joins">Автоматично одобрявай заявките за влизане</string>
     <string name="listen_together_auto_approval_joins_desc">Автоматично одобрява заявките за влизане без да трябва да ги проверявате ръчно</string>
@@ -580,7 +580,7 @@
     <string name="media3_controls_seek_to_next_description">Придвижване към следващия елемент</string>
     <string name="media3_controls_seek_to_previous_description">Придвижване към предишния елемент</string>
     <string name="media_id">ID на медия</string>
-    <string name="metrolist">AURALYS</string>
+    <string name="metrolist">SYNTAX MUSIC</string>
     <string name="mime_type">Тип MIME</string>
     <string name="mini_player">Мини-плейър</string>
     <string name="mini_player_background_not_available">Не работи когато новият дизайн ма мини-плейърът е изключен</string>
@@ -658,7 +658,7 @@
     <string name="play_all">Пусни всички</string>
     <string name="play_next">Изпълни следващ</string>
     <string name="play_next_desc">Пусни следващата песен в опашката</string>
-    <string name="play_on_app">Пусни в Auralys</string>
+    <string name="play_on_app">Пусни в Syntax Music</string>
     <string name="play_pause">Пусни/Пауза</string>
     <string name="player">Плейър</string>
     <string name="player_and_audio">Плейър и аудио</string>
@@ -861,8 +861,8 @@
     <string name="system_equalizer">Системен еквалайзер</string>
     <string name="system_equalizer_desc">Отвори на Android вградения еквалайзер</string>
     <string name="tab">Раздел</string>
-    <string name="tap_to_open">Натисни да отвориш Auralys</string>
-    <string name="tap_to_play">Натисни да отвориш Auralys</string>
+    <string name="tap_to_open">Натисни да отвориш Syntax Music</string>
+    <string name="tap_to_play">Натисни да отвориш Syntax Music</string>
     <string name="tap_to_recognize">Натисни за да разпознаеш</string>
     <string name="template_percent">%1$d процента.</string>
     <string name="tempo_and_pitch">Темпо и височина</string>

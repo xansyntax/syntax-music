@@ -222,7 +222,7 @@
     <string name="crash_close">Đóng</string>
     <string name="crash_description">Đã xảy ra lỗi không mong muốn. Vui lòng chia sẻ báo cáo sự cố để giúp chúng tôi khắc phục lỗi</string>
     <string name="crash_no_log">Không có nhật ký sự cố</string>
-    <string name="crash_report_subject">Báo cáo sự cố Auralys</string>
+    <string name="crash_report_subject">Báo cáo sự cố Syntax Music</string>
     <string name="crash_share_logs">Chia sẻ nhật ký</string>
     <string name="crash_share_title">Chia sẻ báo cáo sự cố</string>
     <string name="crash_title">Ứng dụng bị sập</string>
@@ -301,7 +301,7 @@
     <string name="discord_error_loopback_unbound">Không thể mở cổng phản hồi nội bộ. Vui lòng giải phóng một cổng và thử lại.</string>
     <string name="discord_error_no_browser">Không tìm thấy trình duyệt nào để hoàn tất ủy quyền Discord.</string>
     <string name="discord_error_token_refresh_failed">Phiên đăng nhập Discord đã hết hạn. Vui lòng kết nối lại.</string>
-    <string name="discord_information_warning">Auralys sử dụng API OAuth2 công khai và Gateway của Discord để chia sẻ nội dung bạn đang nghe. Quá trình ủy quyền diễn ra thông qua một phiên trình duyệt cục bộ và tự động đóng sau khi nhận mã — không có dữ liệu nào được gửi đến máy chủ bên thứ ba. Mã token của bạn được lưu trữ trên thiết bị này trong phần cài đặt bảo mật mã hóa và không bao giờ được chia sẻ. Auralys kết nối trực tiếp đến wss://gateway.discord.gg để cập nhật hoạt động của bạn, và chỉ yêu cầu các quyền tối thiểu cần thiết (sdk.social_layer_presence).</string>
+    <string name="discord_information_warning">Syntax Music sử dụng API OAuth2 công khai và Gateway của Discord để chia sẻ nội dung bạn đang nghe. Quá trình ủy quyền diễn ra thông qua một phiên trình duyệt cục bộ và tự động đóng sau khi nhận mã — không có dữ liệu nào được gửi đến máy chủ bên thứ ba. Mã token của bạn được lưu trữ trên thiết bị này trong phần cài đặt bảo mật mã hóa và không bao giờ được chia sẻ. Syntax Music kết nối trực tiếp đến wss://gateway.discord.gg để cập nhật hoạt động của bạn, và chỉ yêu cầu các quyền tối thiểu cần thiết (sdk.social_layer_presence).</string>
     <string name="discord_integration">Tích hợp Discord</string>
     <string name="discord_presence">Hiện diện</string>
     <string name="discord_rpc_preview">Xem trước Rich Presence</string>
@@ -496,10 +496,10 @@
     <string name="kick_user_desc">Loại người này khỏi phiên</string>
     <string name="kmp_upgrade_action">Thử KMP</string>
     <string name="kmp_upgrade_later">Để sau</string>
-    <string name="kmp_upgrade_title">Đã có phiên bản Auralys KMP %s</string>
-    <string name="kmp_upgrade_warning">Ứng dụng Auralys KMP vẫn đang trong quá trình phát triển. Bạn có thể gặp phải lỗi hoặc các tính năng chưa hoàn thiện.</string>
+    <string name="kmp_upgrade_title">Đã có phiên bản Syntax Music KMP %s</string>
+    <string name="kmp_upgrade_warning">Ứng dụng Syntax Music KMP vẫn đang trong quá trình phát triển. Bạn có thể gặp phải lỗi hoặc các tính năng chưa hoàn thiện.</string>
     <string name="last_fm_send_likes">Đồng bộ bài hát Yêu thích và Không yêu thích</string>
-    <string name="last_fm_send_likes_description">Tự động Yêu thích hoặc Bỏ yêu thích bài hát trên Last.fm khi bạn thích hoặc bỏ thích chúng trên Auralys</string>
+    <string name="last_fm_send_likes_description">Tự động Yêu thích hoặc Bỏ yêu thích bài hát trên Last.fm khi bạn thích hoặc bỏ thích chúng trên Syntax Music</string>
     <string name="last_song_listened">Dựa trên bài hát cuối cùng bạn đã nghe</string>
     <string name="last_week">Tuần trước</string>
     <string name="lastfm_integration">Tích hợp Last.fm</string>
@@ -519,7 +519,7 @@
     <string name="link_copied">Link đã được sao chép vào bộ nhớ đệm</string>
     <string name="list_bullet">•</string>
     <string name="listen_history">Lịch sử nghe</string>
-    <string name="listen_on_metrolist">Nghe trên Auralys</string>
+    <string name="listen_on_metrolist">Nghe trên Syntax Music</string>
     <string name="listen_together">Nghe cùng nhau</string>
     <string name="listen_together_auto_approval_joins">Tự động duyệt yêu cầu tham gia</string>
     <string name="listen_together_auto_approval_joins_desc">Tự động phê duyệt yêu cầu tham gia thay vì xem xét thủ công</string>
@@ -629,7 +629,7 @@
     <string name="media3_controls_seek_to_next_description">Tua đến mục tiếp theo</string>
     <string name="media3_controls_seek_to_previous_description">Tua về mục trước</string>
     <string name="media_id">ID phương tiện</string>
-    <string name="metrolist">AURALYS</string>
+    <string name="metrolist">SYNTAX MUSIC</string>
     <string name="mime_type">Định dạng</string>
     <string name="mini_player">Trình phát mini</string>
     <string name="mini_player_background_not_available">Không khả dụng khi thiết kế trình phát thu nhỏ (mini-player) mới bị vô hiệu hóa</string>
@@ -712,7 +712,7 @@
     <string name="play_all">Phát tất cả</string>
     <string name="play_next">Phát bài tiếp theo</string>
     <string name="play_next_desc">Thêm vào đầu danh sách phát trong danh sách hàng chờ</string>
-    <string name="play_on_app">Phát trên Auralys</string>
+    <string name="play_on_app">Phát trên Syntax Music</string>
     <string name="play_pause">Phát/Tạm dừng</string>
     <string name="player">Trình phát</string>
     <string name="player_and_audio">Trình phát và âm thanh</string>
@@ -935,8 +935,8 @@
     <string name="system_equalizer">Bộ chỉnh âm hệ thống</string>
     <string name="system_equalizer_desc">Mở bộ chỉnh âm tích hợp sẵn của Android</string>
     <string name="tab">Thẻ</string>
-    <string name="tap_to_open">Chạm để mở Auralys</string>
-    <string name="tap_to_play">Ấn để mở Auralys</string>
+    <string name="tap_to_open">Chạm để mở Syntax Music</string>
+    <string name="tap_to_play">Ấn để mở Syntax Music</string>
     <string name="tap_to_recognize">Ấn để nhận dạng</string>
     <string name="template_percent">%1$d%%.</string>
     <string name="tempo_and_pitch">Nhịp độ và Cao độ</string>
@@ -970,7 +970,7 @@
     <string name="unpin">Bỏ ghim</string>
     <string name="unpin_from_speed_dial">Bỏ ghim khỏi kệ Phát nhanh</string>
     <string name="update_action">Cập nhật</string>
-    <string name="update_available_message">Auralys %s đã sẵn sàng để tải xuống.</string>
+    <string name="update_available_message">Syntax Music %s đã sẵn sàng để tải xuống.</string>
     <string name="update_available_title">Đã có bản cập nhật mới</string>
     <string name="update_channel_desc">Thông báo về phiên bản mới của ứng dụng</string>
     <string name="update_channel_name">Cập nhật ứng dụng</string>

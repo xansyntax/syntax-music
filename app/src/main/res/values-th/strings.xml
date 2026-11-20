@@ -214,7 +214,7 @@
     <string name="crash_close">ปิด</string>
     <string name="crash_description">เกิดข้อผิดพลาดที่ไม่คาดคิด โปรดแชร์รายงานข้อขัดข้องเพื่อช่วยให้เราแก้ไขปัญหา</string>
     <string name="crash_no_log">ไม่มีบันทึกข้อขัดข้อง</string>
-    <string name="crash_report_subject">รายงานข้อขัดข้องของ Auralys</string>
+    <string name="crash_report_subject">รายงานข้อขัดข้องของ Syntax Music</string>
     <string name="crash_share_logs">แชร์บันทึกข้อขัดข้อง</string>
     <string name="crash_share_title">แชร์รายงานข้อขัดข้อง</string>
     <string name="crash_title">แอปหยุดทำงาน</string>
@@ -479,7 +479,7 @@
     <string name="kick_user">นำออก</string>
     <string name="kick_user_desc">นำบุคคลนี้ออกจากเซสชัน</string>
     <string name="last_fm_send_likes">ส่งสถานะถูกใจและยกเลิกถูกใจ</string>
-    <string name="last_fm_send_likes_description">กด Love หรือ Unlove เพลงใน Last.fm เมื่อมีการกดถูกใจหรือยกเลิกถูกใจใน Auralys</string>
+    <string name="last_fm_send_likes_description">กด Love หรือ Unlove เพลงใน Last.fm เมื่อมีการกดถูกใจหรือยกเลิกถูกใจใน Syntax Music</string>
     <string name="last_song_listened">อิงจากเพลงล่าสุดที่ฟัง</string>
     <string name="last_week">สัปดาห์ที่แล้ว</string>
     <string name="lastfm_integration">การเชื่อมต่อ Last.fm</string>
@@ -499,7 +499,7 @@
     <string name="link_copied">คัดลอกลิงก์แล้ว</string>
     <string name="list_bullet">•</string>
     <string name="listen_history">ประวัติการฟัง</string>
-    <string name="listen_on_metrolist">ฟังบน Auralys</string>
+    <string name="listen_on_metrolist">ฟังบน Syntax Music</string>
     <string name="listen_together">ฟังเพลงร่วมกัน</string>
     <string name="listen_together_auto_approval_joins">อนุมัติคำขอเข้าร่วมอัตโนมัติ</string>
     <string name="listen_together_auto_approval_joins_desc">อนุมัติคำขอเข้าร่วมโดยอัตโนมัติโดยไม่ต้องตรวจสอบด้วยตนเอง</string>
@@ -608,7 +608,7 @@
     <string name="media3_controls_seek_to_next_description">กรอไปยังรายการถัดไป</string>
     <string name="media3_controls_seek_to_previous_description">กรอไปยังรายการก่อนหน้า</string>
     <string name="media_id">รหัสสื่อ</string>
-    <string name="metrolist">AURALYS</string>
+    <string name="metrolist">SYNTAX MUSIC</string>
     <string name="mime_type">ประเภท MIME</string>
     <string name="mini_player">มินิเพลเยอร์</string>
     <string name="mini_player_background_not_available">ไม่สามารถใช้งานได้เมื่อปิดดีไซน์มินิเพลเยอร์แบบใหม่</string>
@@ -691,7 +691,7 @@
     <string name="play_all">เล่นทั้งหมด</string>
     <string name="play_next">เล่นถัดไป</string>
     <string name="play_next_desc">เล่นลำดับถัดไป</string>
-    <string name="play_on_app">เล่นบน Auralys</string>
+    <string name="play_on_app">เล่นบน Syntax Music</string>
     <string name="play_pause">เล่น/หยุด</string>
     <string name="player">เครื่องเล่น</string>
     <string name="player_and_audio">เครื่องเล่นและเสียง</string>
@@ -907,8 +907,8 @@
     <string name="system_equalizer">อีควอไลเซอร์ของระบบ</string>
     <string name="system_equalizer_desc">เปิดอีควอไลเซอร์ของระบบ Android</string>
     <string name="tab">แท็บ</string>
-    <string name="tap_to_open">แตะเพื่อเปิด Auralys</string>
-    <string name="tap_to_play">แตะเพื่อเปิด Auralys</string>
+    <string name="tap_to_open">แตะเพื่อเปิด Syntax Music</string>
+    <string name="tap_to_play">แตะเพื่อเปิด Syntax Music</string>
     <string name="tap_to_recognize">แตะเพื่อค้นหาเพลง</string>
     <string name="template_percent">%1$d เปอร์เซ็นต์</string>
     <string name="tempo_and_pitch">ความเร็วและคีย์เสียง</string>

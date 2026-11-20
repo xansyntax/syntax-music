@@ -169,7 +169,7 @@
     <string name="crash_close">Sluit</string>
     <string name="crash_description">’n Onverwagte fout het voorgekom. Deel asseblief die ineenstortingsverslag om ons te help om die probleem op te los</string>
     <string name="crash_no_log">Geen ineenstortingslog beskikbaar nie</string>
-    <string name="crash_report_subject">Auralys-ineenstortingsverslag</string>
+    <string name="crash_report_subject">Syntax Music-ineenstortingsverslag</string>
     <string name="crash_share_logs">Deel logs</string>
     <string name="crash_share_title">Deel ineenstortingsverslag</string>
     <string name="crash_title">Toepassing het vasgeloop</string>
@@ -240,7 +240,7 @@
     <string name="discord_error_loopback_unbound">Kon nie \'n plaaslike terugbelpoort oopmaak nie. Maak asseblief een vry en probeer weer.</string>
     <string name="discord_error_no_browser">Geen blaaier is gevind om Discord-magtiging te voltooi nie.</string>
     <string name="discord_error_token_refresh_failed">Discord-sessie het verval. Maak asseblief weer verbinding.</string>
-    <string name="discord_information_warning">Auralys gebruik Discord se publieke OAuth2- en Gateway-API\'s om te deel waarna jy luister. Magtiging vind plaas deur \'n plaaslike blaaier-sessie wat homself toemaak nadat die kode opgevang is — niks word na derdeparty-bedieners gestuur nie. Jou teken word op hierdie toestel in versleutelde voorkeure gestoor en word nooit gedeel nie. Auralys maak direk kontak met wss://gateway.discord.gg om jou aktiwiteit te publiseer, en versoek slegs die minimum omvang wat benodig word (sdk.social_layer_presence).</string>
+    <string name="discord_information_warning">Syntax Music gebruik Discord se publieke OAuth2- en Gateway-API\'s om te deel waarna jy luister. Magtiging vind plaas deur \'n plaaslike blaaier-sessie wat homself toemaak nadat die kode opgevang is — niks word na derdeparty-bedieners gestuur nie. Jou teken word op hierdie toestel in versleutelde voorkeure gestoor en word nooit gedeel nie. Syntax Music maak direk kontak met wss://gateway.discord.gg om jou aktiwiteit te publiseer, en versoek slegs die minimum omvang wat benodig word (sdk.social_layer_presence).</string>
     <string name="discord_integration">Discord-integrasie</string>
     <string name="discord_presence">Teenwoordigheid</string>
     <string name="discord_rpc_preview">Rich Presence-voorbeeld</string>
@@ -391,10 +391,10 @@
     <string name="kick_user_desc">Verwyder hierdie persoon uit die sessie</string>
     <string name="kmp_upgrade_action">Gradeer op na KMP</string>
     <string name="kmp_upgrade_later">Nie nou nie</string>
-    <string name="kmp_upgrade_title">Auralys KMP %s is beskikbaar</string>
-    <string name="kmp_upgrade_warning">Auralys KMP is in vroeë toegang. Kenmerke kan stukkend, onvolledig wees, of sonder kennisgewing verander.</string>
+    <string name="kmp_upgrade_title">Syntax Music KMP %s is beskikbaar</string>
+    <string name="kmp_upgrade_warning">Syntax Music KMP is in vroeë toegang. Kenmerke kan stukkend, onvolledig wees, of sonder kennisgewing verander.</string>
     <string name="last_fm_send_likes">Sinkroniseer Gunstelinge en Nie-gunstelinge</string>
-    <string name="last_fm_send_likes_description">Merk liedjies as gunstelinge of verwyder gunsteling-status in Last.fm wanneer jy daarvan hou of nie meer daarvan hou nie in Auralys</string>
+    <string name="last_fm_send_likes_description">Merk liedjies as gunstelinge of verwyder gunsteling-status in Last.fm wanneer jy daarvan hou of nie meer daarvan hou nie in Syntax Music</string>
     <string name="last_song_listened">Gebaseer op die laaste liedjie waarna jy geluister het</string>
     <string name="lastfm_integration">Last.fm-integrasie</string>
     <string name="lastfm_now_playing">Stuur Speel nou-status</string>
@@ -407,7 +407,7 @@
     <string name="line_by_line_option_title">Bespeur taal reël-vir-reël</string>
     <string name="link_copied">Skakel na knipbord gekopieer</string>
     <string name="list_bullet">•</string>
-    <string name="listen_on_metrolist">Luister op Auralys</string>
+    <string name="listen_on_metrolist">Luister op Syntax Music</string>
     <string name="listen_together">Luister Saam</string>
     <string name="listen_together_auto_approval_joins">Keur versoeke om aan te sluit outomaties goed</string>
     <string name="listen_together_auto_approval_joins_desc">Keur versoeke om aan te sluit outomaties goed sonder om hulle handmatig te hersien</string>
@@ -508,7 +508,7 @@
     <string name="media3_controls_play_description">Speel</string>
     <string name="media3_controls_seek_to_next_description">Soek tot by volgende item</string>
     <string name="media3_controls_seek_to_previous_description">Soek tot by vorige item</string>
-    <string name="metrolist">AURALYS</string>
+    <string name="metrolist">SYNTAX MUSIC</string>
     <string name="mini_player">Minispeler</string>
     <string name="mini_player_background_not_available">Onbeskikbaar wanneer die nuwe minispeler-ontwerp gedeaktiveer is</string>
     <string name="mini_player_background_style">Minispeler-agtergrondstyl</string>
@@ -574,7 +574,7 @@
     <string name="pin_to_speed_dial">Vaspen aan snelkies</string>
     <string name="play_all">Speel alles</string>
     <string name="play_next_desc">Speel volgende in die tou</string>
-    <string name="play_on_app">Speel op Auralys</string>
+    <string name="play_on_app">Speel op Syntax Music</string>
     <string name="play_pause">Speel/Pauseer</string>
     <string name="player_background_blur">Vervaag</string>
     <string name="player_background_solid">Solied</string>
@@ -729,8 +729,8 @@
     <string name="system_equalizer">Stelselequalizer</string>
     <string name="system_equalizer_desc">Maak Android se ingeboude equalizer oop</string>
     <string name="tab">Oortjie</string>
-    <string name="tap_to_open">Tik om Auralys oop te maak</string>
-    <string name="tap_to_play">Tik om Auralys oop te maak</string>
+    <string name="tap_to_open">Tik om Syntax Music oop te maak</string>
+    <string name="tap_to_play">Tik om Syntax Music oop te maak</string>
     <string name="tap_to_recognize">Tik om te herken</string>
     <string name="template_percent">%1$d persent.</string>
     <string name="tertiary_color_style">Tersiêre kleur</string>

@@ -222,7 +222,7 @@
     <string name="crash_close">Kapat</string>
     <string name="crash_description">Beklenmedik bir hata oluştu. Sorunu düzeltmemize yardımcı olmak için lütfen hata raporunu paylaşın</string>
     <string name="crash_no_log">Çökme kayıtları mevcut değil</string>
-    <string name="crash_report_subject">Auralys hata raporu</string>
+    <string name="crash_report_subject">Syntax Music hata raporu</string>
     <string name="crash_share_logs">Kayıtları paylaş</string>
     <string name="crash_share_title">Hata raporlarını paylaş</string>
     <string name="crash_title">Uygulama çöktü</string>
@@ -301,7 +301,7 @@
     <string name="discord_error_loopback_unbound">Yerel callback port\'u açılamadı. Lütfen bir port\'u serbest bırakıp tekrar deneyin.</string>
     <string name="discord_error_no_browser">Discord yetkilendirmesini tamamlamak için tarayıcı bulunamadı.</string>
     <string name="discord_error_token_refresh_failed">Discord oturumunun süresi doldu. Lütfen yeniden bağlanın.</string>
-    <string name="discord_information_warning">Auralys, ne dinlediğinizi paylaşmak için Discord\'un herkese açık OAuth2 ve Gateway API\'lerini kullanır. Yetkilendirme, kodu aldıktan sonra kendini kapatan yerel bir tarayıcı oturumu üzerinden yapılır; üçüncü taraf sunuculara hiçbir şey gönderilmez. Token\'ınız bu cihazda şifrelenmiş tercihlerde saklanır ve asla paylaşılmaz. Auralys, etkinliğinizi yayımlamak için doğrudan wss://gateway.discord.gg adresine bağlanır ve yalnızca gereken minimum kapsamı ister (sdk.social_layer_presence).</string>
+    <string name="discord_information_warning">Syntax Music, ne dinlediğinizi paylaşmak için Discord\'un herkese açık OAuth2 ve Gateway API\'lerini kullanır. Yetkilendirme, kodu aldıktan sonra kendini kapatan yerel bir tarayıcı oturumu üzerinden yapılır; üçüncü taraf sunuculara hiçbir şey gönderilmez. Token\'ınız bu cihazda şifrelenmiş tercihlerde saklanır ve asla paylaşılmaz. Syntax Music, etkinliğinizi yayımlamak için doğrudan wss://gateway.discord.gg adresine bağlanır ve yalnızca gereken minimum kapsamı ister (sdk.social_layer_presence).</string>
     <string name="discord_integration">Discord entegrasyonu</string>
     <string name="discord_presence">Durum</string>
     <string name="discord_rpc_preview">Rich Presence önizlemesi</string>
@@ -495,10 +495,10 @@
     <string name="kick_user_desc">Bu kişiyi oturumdan çıkar</string>
     <string name="kmp_upgrade_action">KMP\'yi dene</string>
     <string name="kmp_upgrade_later">Şimdi değil</string>
-    <string name="kmp_upgrade_title">Auralys %s KMP sürümü kullanılabilir</string>
-    <string name="kmp_upgrade_warning">Auralys KMP şu anda geliştirme aşamasındadır. Hatalara veya tamamlanmamış özelliklere denk gelebilirsiniz.</string>
+    <string name="kmp_upgrade_title">Syntax Music %s KMP sürümü kullanılabilir</string>
+    <string name="kmp_upgrade_warning">Syntax Music KMP şu anda geliştirme aşamasındadır. Hatalara veya tamamlanmamış özelliklere denk gelebilirsiniz.</string>
     <string name="last_fm_send_likes">Beğenilenleri ve beğenilmeyenleri eşitle</string>
-    <string name="last_fm_send_likes_description">Auralys\'te bir şarkıyı beğendiğinizde veya beğenmediğinizde bu Last.fm\'de güncellenir</string>
+    <string name="last_fm_send_likes_description">Syntax Music\'te bir şarkıyı beğendiğinizde veya beğenmediğinizde bu Last.fm\'de güncellenir</string>
     <string name="last_song_listened">Dinlediğiniz son şarkıya göre</string>
     <string name="last_week">Geçen hafta</string>
     <string name="lastfm_integration">Last.fm Entegrasyonu</string>
@@ -518,7 +518,7 @@
     <string name="link_copied">Bağlantı panoya kopyalandı</string>
     <string name="list_bullet">•</string>
     <string name="listen_history">Dinleme geçmişi</string>
-    <string name="listen_on_metrolist">Auralys\'te dinle</string>
+    <string name="listen_on_metrolist">Syntax Music\'te dinle</string>
     <string name="listen_together">Birlikte Dinle</string>
     <string name="listen_together_auto_approval_joins">Katılma isteklerini otomatik onayla</string>
     <string name="listen_together_auto_approval_joins_desc">Katılma isteklerini manuel olarak incelemeden otomatik olarak onayla</string>
@@ -628,7 +628,7 @@
     <string name="media3_controls_seek_to_next_description">Sonraki öğeye sar</string>
     <string name="media3_controls_seek_to_previous_description">Önceki öğeye sar</string>
     <string name="media_id">Medya kimliği</string>
-    <string name="metrolist">AURALYS</string>
+    <string name="metrolist">SYNTAX MUSIC</string>
     <string name="mime_type">MIME türü</string>
     <string name="mini_player">Mini oynatıcı</string>
     <string name="mini_player_background_not_available">Yeni mini oynatıcı tasarımı devre dışıyken kullanılamaz</string>
@@ -711,7 +711,7 @@
     <string name="play_all">Tümünü oynat</string>
     <string name="play_next">Bir sonra çal</string>
     <string name="play_next_desc">Sırada sonraki olarak çal</string>
-    <string name="play_on_app">Auralys\'te Oynat</string>
+    <string name="play_on_app">Syntax Music\'te Oynat</string>
     <string name="play_pause">Oynat/Duraklat</string>
     <string name="player">Oynatıcı</string>
     <string name="player_and_audio">Müzik çalar ve ses</string>
@@ -934,8 +934,8 @@
     <string name="system_equalizer">Sistem ekolayzırı</string>
     <string name="system_equalizer_desc">Android\'in içinde gelen ekolayzeri aç</string>
     <string name="tab">Sekme</string>
-    <string name="tap_to_open">Auralys\'i açmak için dokun</string>
-    <string name="tap_to_play">Auralys\'i açmak için dokun</string>
+    <string name="tap_to_open">Syntax Music\'i açmak için dokun</string>
+    <string name="tap_to_play">Syntax Music\'i açmak için dokun</string>
     <string name="tap_to_recognize">Tanımlamak için dokunun</string>
     <string name="template_percent">Yüzde %1$d.</string>
     <string name="tempo_and_pitch">Tempo ve Perde</string>
@@ -975,7 +975,7 @@
     <string name="unpin">Sabitlemeyi kaldır</string>
     <string name="unpin_from_speed_dial">Hızlı aramadan kaldır</string>
     <string name="update_action">Güncelle</string>
-    <string name="update_available_message">Auralys %s indirmeye hazır.</string>
+    <string name="update_available_message">Syntax Music %s indirmeye hazır.</string>
     <string name="update_available_title">Yeni güncelleme kullanılabilir</string>
     <string name="update_channel_desc">Yeni uygulama sürümleri hakkında bildirimler</string>
     <string name="update_channel_name">Uygulama güncellemeleri</string>

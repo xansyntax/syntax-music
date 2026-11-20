@@ -186,7 +186,7 @@
     <string name="integrations">Hopflettingar</string>
     <string name="keep_listening">Hald fram med å lyda</string>
     <string name="last_fm_send_likes">Send likar/mislikar</string>
-    <string name="last_fm_send_likes_description">Elska/avelska songar i Last.fm når dei vert lika/mislika i Auralys</string>
+    <string name="last_fm_send_likes_description">Elska/avelska songar i Last.fm når dei vert lika/mislika i Syntax Music</string>
     <string name="last_song_listened">Basert på siste song høyrd på</string>
     <string name="last_week">Førre veke</string>
     <string name="lastfm_integration">Hopfletting med Last.fm</string>
@@ -398,7 +398,7 @@
     <string name="sync_playlist_desc">Synkroniser spelelista med YouTube Music</string>
     <string name="system_default">Systemføreval</string>
     <string name="system_equalizer">Systemljodutjemnar</string>
-    <string name="tap_to_open">Trykk for å opna Auralys</string>
+    <string name="tap_to_open">Trykk for å opna Syntax Music</string>
     <string name="tempo_and_pitch">Snøggleik og tonehøgd</string>
     <string name="tertiary_color_style">Tredjelet</string>
     <string name="text_color">Tekstlet</string>

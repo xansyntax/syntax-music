@@ -91,7 +91,7 @@
     <string name="edit">Muokkaa</string>
     <string name="edit_playlist">Muokkaa soittolistaa</string>
     <string name="edit_song">Muokkaa kappaletta</string>
-    <string name="enable_discord_rpc">Tämä on Discord-integraatio-ominaisuus, se tarkoittaa Auralys-toiminnan näyttämistä Discord-tililläsi</string>
+    <string name="enable_discord_rpc">Tämä on Discord-integraatio-ominaisuus, se tarkoittaa Syntax Music-toiminnan näyttämistä Discord-tililläsi</string>
     <string name="enable_dynamic_theme">Ota dynaaminen teema käyttöön</string>
     <string name="enable_kugou">Ota KuGou-sanoitukset käyttöön</string>
     <string name="enable_lrclib">Ota LrcLib-lyriikantarjoaja käyttöön</string>

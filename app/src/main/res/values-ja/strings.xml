@@ -222,7 +222,7 @@
     <string name="crash_close">閉じる</string>
     <string name="crash_description">予期しないエラーが発生しました。問題の解決に役立てるため、クラッシュレポートを共有してください</string>
     <string name="crash_no_log">クラッシュログがありません</string>
-    <string name="crash_report_subject">Auralysのクラッシュレポート</string>
+    <string name="crash_report_subject">Syntax Musicのクラッシュレポート</string>
     <string name="crash_share_logs">クラッシュログを共有</string>
     <string name="crash_share_title">クラッシュレポートを共有</string>
     <string name="crash_title">アプリがクラッシュしました</string>
@@ -301,7 +301,7 @@
     <string name="discord_error_loopback_unbound">ローカルコールバックポートを開けませんでした。ポートを解放してから、もう一度お試しください。</string>
     <string name="discord_error_no_browser">Discord の認証を完了するためのブラウザが見つかりませんでした。</string>
     <string name="discord_error_token_refresh_failed">Discord のセッションの期限が切れました。再接続してください。</string>
-    <string name="discord_information_warning">Auralysは、あなたが聴いているものを共有するためにDiscordの公開OAuth2 APIおよびGateway APIを使用します。認可はローカルのブラウザセッションを通じて行われ、コードを取得した後はそのセッションは自動的に閉じられます — サードパーティのサーバーに何かが送信されることはありません。あなたのトークンはこのデバイス上の暗号化された設定に保存され、共有されることは決してありません。Auralysはあなたのアクティビティを公開するためにwss://gateway.discord.ggに直接接続し、必要な最小限のスコープ（sdk.social_layer_presence）のみをリクエストします。</string>
+    <string name="discord_information_warning">Syntax Musicは、あなたが聴いているものを共有するためにDiscordの公開OAuth2 APIおよびGateway APIを使用します。認可はローカルのブラウザセッションを通じて行われ、コードを取得した後はそのセッションは自動的に閉じられます — サードパーティのサーバーに何かが送信されることはありません。あなたのトークンはこのデバイス上の暗号化された設定に保存され、共有されることは決してありません。Syntax Musicはあなたのアクティビティを公開するためにwss://gateway.discord.ggに直接接続し、必要な最小限のスコープ（sdk.social_layer_presence）のみをリクエストします。</string>
     <string name="discord_integration">Discordと連携</string>
     <string name="discord_presence">プレゼンス</string>
     <string name="discord_rpc_preview">再生状況のプレビュー</string>
@@ -495,10 +495,10 @@
     <string name="kick_user_desc">このユーザーをセッションから削除します</string>
     <string name="kmp_upgrade_action">KMP を試用する</string>
     <string name="kmp_upgrade_later">今はしない</string>
-    <string name="kmp_upgrade_title">Auralys KMP %s が利用可能です</string>
-    <string name="kmp_upgrade_warning">Auralys KMP はまだ開発途中です。 バグや機能の動作不良に遭遇する可能性があります。</string>
+    <string name="kmp_upgrade_title">Syntax Music KMP %s が利用可能です</string>
+    <string name="kmp_upgrade_warning">Syntax Music KMP はまだ開発途中です。 バグや機能の動作不良に遭遇する可能性があります。</string>
     <string name="last_fm_send_likes">高評価/低評価を反映</string>
-    <string name="last_fm_send_likes_description">Auralysで曲に高評価/低評価をつけると、Last.fmでもラブ/アンラブされます</string>
+    <string name="last_fm_send_likes_description">Syntax Musicで曲に高評価/低評価をつけると、Last.fmでもラブ/アンラブされます</string>
     <string name="last_song_listened">最後に聴いた曲</string>
     <string name="last_week">先週</string>
     <string name="lastfm_integration">Last.fmと連携</string>
@@ -518,7 +518,7 @@
     <string name="link_copied">リンクをクリップボードにコピーしました</string>
     <string name="list_bullet">•</string>
     <string name="listen_history">再生履歴</string>
-    <string name="listen_on_metrolist">Auralysで聴く</string>
+    <string name="listen_on_metrolist">Syntax Musicで聴く</string>
     <string name="listen_together">Listen Together</string>
     <string name="listen_together_auto_approval_joins">参加リクエストを自動で承認</string>
     <string name="listen_together_auto_approval_joins_desc">参加リクエストを手動で確認せず、自動的に承認します</string>
@@ -628,7 +628,7 @@
     <string name="media3_controls_seek_to_next_description">次のアイテムに移動</string>
     <string name="media3_controls_seek_to_previous_description">前のアイテムに移動</string>
     <string name="media_id">メディアID</string>
-    <string name="metrolist">AURALYS</string>
+    <string name="metrolist">SYNTAX MUSIC</string>
     <string name="mime_type">MIMEタイプ</string>
     <string name="mini_player">ミニプレーヤー</string>
     <string name="mini_player_background_not_available">新しいミニプレーヤーのデザインを使用していない場合は変更できません</string>
@@ -711,7 +711,7 @@
     <string name="play_all">すべて再生</string>
     <string name="play_next">次に再生</string>
     <string name="play_next_desc">キューの先頭に追加します</string>
-    <string name="play_on_app">Auralysで再生</string>
+    <string name="play_on_app">Syntax Musicで再生</string>
     <string name="play_pause">再生/停止</string>
     <string name="player">プレーヤー</string>
     <string name="player_and_audio">プレーヤーとオーディオ</string>
@@ -934,8 +934,8 @@
     <string name="system_equalizer">システムイコライザー</string>
     <string name="system_equalizer_desc">Android標準のイコライザー設定を開きます</string>
     <string name="tab">タブ</string>
-    <string name="tap_to_open">タップしてAuralysを開く</string>
-    <string name="tap_to_play">タップしてAuralysを開く</string>
+    <string name="tap_to_open">タップしてSyntax Musicを開く</string>
+    <string name="tap_to_play">タップしてSyntax Musicを開く</string>
     <string name="tap_to_recognize">タップして開始</string>
     <string name="template_percent">%1$dパーセント。</string>
     <string name="tempo_and_pitch">再生速度と音程</string>
@@ -969,7 +969,7 @@
     <string name="unpin">ピン留めを解除</string>
     <string name="unpin_from_speed_dial">クイック再生のピン留めを解除</string>
     <string name="update_action">アップデート</string>
-    <string name="update_available_message">Auralys %s は既にダウンロードする準備ができています。</string>
+    <string name="update_available_message">Syntax Music %s は既にダウンロードする準備ができています。</string>
     <string name="update_available_title">新規アップデートが利用可能です</string>
     <string name="update_channel_desc">新しいアプリのバージョンの通知</string>
     <string name="update_channel_name">アプリをアップデート</string>

@@ -194,7 +194,7 @@
     <string name="crash_close">סגור</string>
     <string name="crash_description">אירעה שגיאה בלתי צפויה. אנא שתף את דוח הקריסה כדי לעזור לנו לפתור את הבעיה.</string>
     <string name="crash_no_log">אין יומן קריסה זמין</string>
-    <string name="crash_report_subject">דוח התרסקות Auralys</string>
+    <string name="crash_report_subject">דוח התרסקות Syntax Music</string>
     <string name="crash_share_logs">שתף יומנים</string>
     <string name="crash_share_title">שתף דוח קריסה</string>
     <string name="crash_title">האפליקציה קרסה</string>
@@ -400,7 +400,7 @@
     <string name="kick_user">קיק</string>
     <string name="kick_user_desc">הסר אדם זה מהסשן</string>
     <string name="last_fm_send_likes">שלח לייקים/סילוק לייקים</string>
-    <string name="last_fm_send_likes_description">שירי אהבתי/לא אהבתי ב-Last.fm כשהם מקבלים לייק/לא לייק ב-Auralys</string>
+    <string name="last_fm_send_likes_description">שירי אהבתי/לא אהבתי ב-Last.fm כשהם מקבלים לייק/לא לייק ב-Syntax Music</string>
     <string name="last_song_listened">בהתבסס על השיר האחרון שהאזנתי לו</string>
     <string name="last_week">בשבוע האחרון</string>
     <string name="lastfm_integration">שילוב Last.fm</string>
@@ -420,7 +420,7 @@
     <string name="link_copied">הקישור הועתק ללוח</string>
     <string name="list_bullet">•</string>
     <string name="listen_history">היסטוריית האזנה</string>
-    <string name="listen_on_metrolist">האזן ב-Auralys</string>
+    <string name="listen_on_metrolist">האזן ב-Syntax Music</string>
     <string name="listen_together">האזינו יחד</string>
     <string name="listen_together_auto_approval_joins">אישור אוטומטי של בקשות הצטרפות</string>
     <string name="listen_together_auto_approval_joins_desc">אישור אוטומטי של בקשות הצטרפות במקום סקירה ידנית שלהן</string>
@@ -591,7 +591,7 @@
     <string name="play_all">נגן הכל</string>
     <string name="play_next">הפעל הבא</string>
     <string name="play_next_desc">הוסף לראש התור שלך</string>
-    <string name="play_on_app">נגן ב-Auralys</string>
+    <string name="play_on_app">נגן ב-Syntax Music</string>
     <string name="play_pause">הפעלה/השהיה</string>
     <string name="player">נגן</string>
     <string name="player_and_audio">נגן ושמע</string>
@@ -779,8 +779,8 @@
     <string name="system_default">ברירת מחדל מערכת</string>
     <string name="system_equalizer">אקולייזר מערכת</string>
     <string name="tab">כרטיסייה</string>
-    <string name="tap_to_open">הקש כדי לפתוח את Auralys</string>
-    <string name="tap_to_play">הקש כדי לפתוח את Auralys</string>
+    <string name="tap_to_open">הקש כדי לפתוח את Syntax Music</string>
+    <string name="tap_to_play">הקש כדי לפתוח את Syntax Music</string>
     <string name="tap_to_recognize">הקש כדי לזהות</string>
     <string name="template_percent">%1$d אחוזים.</string>
     <string name="tempo_and_pitch">קצב וגובה צליל</string>

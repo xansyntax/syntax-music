@@ -375,7 +375,7 @@
     <string name="kick_user">Вигнати</string>
     <string name="kick_user_desc">Виключити цього користувача з сеансу</string>
     <string name="last_fm_send_likes">Надіслати вподобання/не вподобання</string>
-    <string name="last_fm_send_likes_description">Пісні, які подобається/не подобається, на Last.fm, коли вони вподобані/зняті з Auralys</string>
+    <string name="last_fm_send_likes_description">Пісні, які подобається/не подобається, на Last.fm, коли вони вподобані/зняті з Syntax Music</string>
     <string name="last_song_listened">На основі останньої прослуханої пісні</string>
     <string name="last_week">Минулого тижня</string>
     <string name="lastfm_integration">Інтеграція з Last.fm</string>
@@ -557,7 +557,7 @@
     <string name="play_all">Відтворити все</string>
     <string name="play_next">Відтворити наступним</string>
     <string name="play_next_desc">Додати на початок черги</string>
-    <string name="play_on_app">Відтворити в Auralys</string>
+    <string name="play_on_app">Відтворити в Syntax Music</string>
     <string name="play_pause">Відтворення/Пауза</string>
     <string name="player">Плеєр</string>
     <string name="player_and_audio">Плеєр та аудіо</string>
@@ -744,8 +744,8 @@
     <string name="system_equalizer">Системний еквалайзер</string>
     <string name="system_equalizer_desc">Відкриває вбудований еквалайзер Android</string>
     <string name="tab">Вкладка</string>
-    <string name="tap_to_open">Натисніть, щоб відкрити Auralys</string>
-    <string name="tap_to_play">Натисніть, щоб відкрити Auralys</string>
+    <string name="tap_to_open">Натисніть, щоб відкрити Syntax Music</string>
+    <string name="tap_to_play">Натисніть, щоб відкрити Syntax Music</string>
     <string name="tap_to_recognize">Торкніться, щоб розпізнати</string>
     <string name="template_percent">Відсотків: %1$d.</string>
     <string name="tempo_and_pitch">Темп і висота тону</string>

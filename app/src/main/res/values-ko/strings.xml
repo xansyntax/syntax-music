@@ -212,7 +212,7 @@
     <string name="crash_close">닫기</string>
     <string name="crash_description">예상치 못한 오류가 발생했습니다. 문제 해결을 위해 오류 보고서를 공유해 주시면 감사하겠습니다</string>
     <string name="crash_no_log">사용 가능한 오류 로그가 없습니다</string>
-    <string name="crash_report_subject">Auralys 오류 보고서</string>
+    <string name="crash_report_subject">Syntax Music 오류 보고서</string>
     <string name="crash_share_logs">로그 공유</string>
     <string name="crash_share_title">오류 보고서 공유</string>
     <string name="crash_title">앱 오류 발생</string>
@@ -461,10 +461,10 @@
     <string name="kick_user_desc">이 사용자를 세션에서 내보냅니다</string>
     <string name="kmp_upgrade_action">KMP로 업그레이드</string>
     <string name="kmp_upgrade_later">지금은 안 함</string>
-    <string name="kmp_upgrade_title">Auralys KMP %s을(를) 사용할 수 있습니다</string>
-    <string name="kmp_upgrade_warning">Auralys KMP는 얼리 액세스 버전입니다. 일부 기능이 작동하지 않거나, 완전하지 않을 수 있으며, 사전 공지 없이 변경될 수 있습니다.</string>
+    <string name="kmp_upgrade_title">Syntax Music KMP %s을(를) 사용할 수 있습니다</string>
+    <string name="kmp_upgrade_warning">Syntax Music KMP는 얼리 액세스 버전입니다. 일부 기능이 작동하지 않거나, 완전하지 않을 수 있으며, 사전 공지 없이 변경될 수 있습니다.</string>
     <string name="last_fm_send_likes">\'좋아요\' 및 \'싫어요\' 동기화</string>
-    <string name="last_fm_send_likes_description">Auralys에서 곡에 좋아요 또는 싫어요를 표시하면 Last.fm에도 동일하게 반영합니다</string>
+    <string name="last_fm_send_likes_description">Syntax Music에서 곡에 좋아요 또는 싫어요를 표시하면 Last.fm에도 동일하게 반영합니다</string>
     <string name="last_song_listened">마지막으로 들은 곡 기준</string>
     <string name="last_week">저번 주</string>
     <string name="lastfm_integration">Last.fm 연동</string>
@@ -484,7 +484,7 @@
     <string name="link_copied">링크를 클립보드에 복사했습니다</string>
     <string name="list_bullet">•</string>
     <string name="listen_history">다시 듣기</string>
-    <string name="listen_on_metrolist">Auralys로 재생</string>
+    <string name="listen_on_metrolist">Syntax Music로 재생</string>
     <string name="listen_together">Listen Together</string>
     <string name="listen_together_auto_approval_joins">참여 요청 자동 승인</string>
     <string name="listen_together_auto_approval_joins_desc">참여 요청을 확인하지 않고 자동으로 승인합니다</string>
@@ -588,7 +588,7 @@
     <string name="media3_controls_seek_to_next_description">다음 항목 찾기</string>
     <string name="media3_controls_seek_to_previous_description">이전 항목 찾기</string>
     <string name="media_id">미디어 ID</string>
-    <string name="metrolist">AURALYS</string>
+    <string name="metrolist">SYNTAX MUSIC</string>
     <string name="mime_type">MIME 타입</string>
     <string name="mini_player">미니 플레이어</string>
     <string name="mini_player_background_not_available">\'새로운 미니 플레이어 디자인\'이 활성화된 경우에만 사용할 수 있습니다</string>
@@ -670,7 +670,7 @@
     <string name="play_all">전곡 재생</string>
     <string name="play_next">다음 노래 재생</string>
     <string name="play_next_desc">대기열 다음 곡으로 재생</string>
-    <string name="play_on_app">Auralys로 재생</string>
+    <string name="play_on_app">Syntax Music로 재생</string>
     <string name="play_pause">재생/일시중지</string>
     <string name="player">플레이어</string>
     <string name="player_and_audio">플레이어 및 오디오</string>
@@ -889,8 +889,8 @@
     <string name="system_equalizer">시스템 이퀄라이저</string>
     <string name="system_equalizer_desc">Android 내장 이퀄라이저 열기</string>
     <string name="tab">탭</string>
-    <string name="tap_to_open">Auralys 열기</string>
-    <string name="tap_to_play">Auralys 열기</string>
+    <string name="tap_to_open">Syntax Music 열기</string>
+    <string name="tap_to_play">Syntax Music 열기</string>
     <string name="tap_to_recognize">탭하여 노래 검색</string>
     <string name="template_percent">%1$d퍼센트</string>
     <string name="tempo_and_pitch">템포와 피치</string>

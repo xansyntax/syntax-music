@@ -249,7 +249,7 @@
     <string name="keep_listening">Počúvať ďalej</string>
     <string name="keep_screen_on_when_player_is_expanded">Ponechať obrazovku zapnutú, keď je prehrávač rozbalený</string>
     <string name="last_fm_send_likes">Odoslať označenia Páči sa mi to/Nepáči sa mi to</string>
-    <string name="last_fm_send_likes_description">Piesne, ktoré sa mi páčia/nepáčia, sa mi páčia na Last.fm, keď sa mi páčia/nepáčia na Auralyse</string>
+    <string name="last_fm_send_likes_description">Piesne, ktoré sa mi páčia/nepáčia, sa mi páčia na Last.fm, keď sa mi páčia/nepáčia na Syntax Musice</string>
     <string name="last_song_listened">Na základe poslednej počúvanej skladby</string>
     <string name="last_week">Minulý týždeň</string>
     <string name="lastfm_integration">Integrácia s Last.fm</string>
@@ -318,7 +318,7 @@
     <string name="media3_controls_seek_to_next_description">Hľadať v ďalšej položke</string>
     <string name="media3_controls_seek_to_previous_description">Hľadať v predchádzajúcej položke</string>
     <string name="media_id">ID médiá</string>
-    <string name="metrolist">AURALYS</string>
+    <string name="metrolist">SYNTAX MUSIC</string>
     <string name="mime_type">Typ MIME</string>
     <string name="mini_player">Mini-prehrávač</string>
     <string name="mini_player_background_not_available">Nedostupné keď nový mini-player dizajn je zapnutý.</string>

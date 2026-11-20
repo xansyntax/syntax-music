@@ -117,7 +117,7 @@
     <string name="edit_playlist">Muuda esitusloendit</string>
     <string name="edit_playlist_cover">Muuda esitusloendi kaanepilti</string>
     <string name="edit_song">Muuda lugu</string>
-    <string name="enable_discord_rpc">Näita oma tegevust Auralys rakenduses Discordi olekuteatena</string>
+    <string name="enable_discord_rpc">Näita oma tegevust Syntax Music rakenduses Discordi olekuteatena</string>
     <string name="enable_dynamic_theme">Kasuta dünaamilist kujundust</string>
     <string name="enable_kugou">Kasuta laulusõnade kuvamiseks teenusepakkujat KuGou</string>
     <string name="enable_lrclib">Kasuta laulusõnade kuvamiseks teenusepakkujat LrcLib</string>

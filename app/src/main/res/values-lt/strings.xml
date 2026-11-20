@@ -174,7 +174,7 @@
     <string name="integrations">Integracijos</string>
     <string name="keep_screen_on_when_player_is_expanded">Palikti ekraną įjungtą, kai grotuvas padidintas</string>
     <string name="last_fm_send_likes">Siųsti Mėgiamus/Nemėgiamus</string>
-    <string name="last_fm_send_likes_description">Mylėti/Nemylėti dainas Last.fm kai jos yra susietos su Mėgiamomis/Nemėgiamomis Auralys</string>
+    <string name="last_fm_send_likes_description">Mylėti/Nemylėti dainas Last.fm kai jos yra susietos su Mėgiamomis/Nemėgiamomis Syntax Music</string>
     <string name="last_song_listened">Remiantis paskutine klausyta daina</string>
     <string name="lastfm_integration">Last.fm integracija</string>
     <string name="lastfm_now_playing">Siųsti dabar grojančią dainą</string>
@@ -353,7 +353,7 @@
     <string name="sync_playlist_desc">Sinchronizuoti grojaraštį su YouTube Muzika</string>
     <string name="system_equalizer">Sistemos ekvalaizeris</string>
     <string name="tab">Tabuliavimo klavišas</string>
-    <string name="tap_to_open">Spauskite, kad atidarytumėte „Auralys”</string>
+    <string name="tap_to_open">Spauskite, kad atidarytumėte „Syntax Music”</string>
     <string name="template_percent">Procentų: %1$d.</string>
     <string name="tertiary_color_style">Tretinė spalva</string>
     <string name="text_color">Teksto spalva</string>

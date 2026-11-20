@@ -217,7 +217,7 @@
     <string name="crash_close">Bezárás</string>
     <string name="crash_description">Váratlan hiba történt. Kérjük, ossza meg az összeomlási jelentést, hogy megoldahassuk a problémát</string>
     <string name="crash_no_log">Nincs elérhető összeomlási jelentés</string>
-    <string name="crash_report_subject">Auralys összeomlási jelentés</string>
+    <string name="crash_report_subject">Syntax Music összeomlási jelentés</string>
     <string name="crash_share_logs">Naplók megosztása</string>
     <string name="crash_share_title">Összeomlási jelentés megosztása</string>
     <string name="crash_title">App összeomlott</string>
@@ -296,7 +296,7 @@
     <string name="discord_error_loopback_unbound">Nem sikerült megnyitni egy helyi visszahívási portot. Kérlek, szabadíts fel egyet, és próbáld újra.</string>
     <string name="discord_error_no_browser">Nem található böngésző a Discord-engedélyezés befejezéséhez.</string>
     <string name="discord_error_token_refresh_failed">A Discord-munkamenet lejárt. Kérlek, csatlakozz újra.</string>
-    <string name="discord_information_warning">A Auralys a Discord nyilvános OAuth2 és Gateway API-jait használja annak megosztására, hogy mit hallgatsz. Az engedélyezés egy helyi böngészőmunkameneten keresztül történik, amely a kód rögzítése után bezárja önmagát – semmi sem kerül kiküldésre harmadik fél szervereire. A tokenedet ez az eszköz titkosított beállítások között tárolja, és soha nem kerül megosztásra. A Auralys közvetlenül csatlakozik a wss://gateway.discord.gg-hez a tevékenységed közzétételéhez, és csak a minimálisan szükséges hatókört kéri (sdk.social_layer_presence).</string>
+    <string name="discord_information_warning">A Syntax Music a Discord nyilvános OAuth2 és Gateway API-jait használja annak megosztására, hogy mit hallgatsz. Az engedélyezés egy helyi böngészőmunkameneten keresztül történik, amely a kód rögzítése után bezárja önmagát – semmi sem kerül kiküldésre harmadik fél szervereire. A tokenedet ez az eszköz titkosított beállítások között tárolja, és soha nem kerül megosztásra. A Syntax Music közvetlenül csatlakozik a wss://gateway.discord.gg-hez a tevékenységed közzétételéhez, és csak a minimálisan szükséges hatókört kéri (sdk.social_layer_presence).</string>
     <string name="discord_integration">Discord integráció</string>
     <string name="discord_presence">Jelenlét</string>
     <string name="discord_rpc_preview">Rich Presence előnézet</string>
@@ -485,10 +485,10 @@
     <string name="kick_user_desc">Személy eltávolítása a munkamenetből</string>
     <string name="kmp_upgrade_action">Frissítés KMP-re</string>
     <string name="kmp_upgrade_later">Most nem</string>
-    <string name="kmp_upgrade_title">A Auralys KMP %s elérhető</string>
-    <string name="kmp_upgrade_warning">A Auralys KMP korai hozzáférésű verzió. A funkciók hibásak, hiányosak lehetnek, vagy előzetes értesítés nélkül változhatnak.</string>
+    <string name="kmp_upgrade_title">A Syntax Music KMP %s elérhető</string>
+    <string name="kmp_upgrade_warning">A Syntax Music KMP korai hozzáférésű verzió. A funkciók hibásak, hiányosak lehetnek, vagy előzetes értesítés nélkül változhatnak.</string>
     <string name="last_fm_send_likes">Kedveltek és nem kedveltek szinkronizálása</string>
-    <string name="last_fm_send_likes_description">A Auralys-ben kedvelt és nem kedvelt dalok hasonlóan jelennek meg Last-fm-en is</string>
+    <string name="last_fm_send_likes_description">A Syntax Music-ben kedvelt és nem kedvelt dalok hasonlóan jelennek meg Last-fm-en is</string>
     <string name="last_song_listened">Vegye alapul a legutolsó lejátszott dalt</string>
     <string name="last_week">Múlt héten</string>
     <string name="lastfm_integration">Last.fm integráció</string>
@@ -508,7 +508,7 @@
     <string name="link_copied">Hivatkozás vágólapra másolva</string>
     <string name="list_bullet">•</string>
     <string name="listen_history">Hallgatás előzmény</string>
-    <string name="listen_on_metrolist">Meghallgatás Auralys-en</string>
+    <string name="listen_on_metrolist">Meghallgatás Syntax Music-en</string>
     <string name="listen_together">Közös Hallgatás</string>
     <string name="listen_together_auto_approval_joins">Csatlakozási kérelmek automatikus elfogadása</string>
     <string name="listen_together_auto_approval_joins_desc">Automatikusan fogadja el a csatlakozási kérelmeket a kézi átvizsgálás helyett</string>
@@ -617,7 +617,7 @@
     <string name="media3_controls_seek_to_next_description">Ugrás a következő elemre</string>
     <string name="media3_controls_seek_to_previous_description">Ugrás az előző elemre</string>
     <string name="media_id">Média id</string>
-    <string name="metrolist">AURALYS</string>
+    <string name="metrolist">SYNTAX MUSIC</string>
     <string name="mime_type">MIME típus</string>
     <string name="mini_player">Mini-lejátszó</string>
     <string name="mini_player_background_not_available">Nem elérhető a kikapcsolt új mini-lejátszó stílus esetén</string>
@@ -700,7 +700,7 @@
     <string name="play_all">Összes lejátszása</string>
     <string name="play_next">Következő</string>
     <string name="play_next_desc">A lista következő elemének lejátszása</string>
-    <string name="play_on_app">Lejátszás Auralys-en</string>
+    <string name="play_on_app">Lejátszás Syntax Music-en</string>
     <string name="play_pause">Lejátszás/Szünet</string>
     <string name="player">Lejátszó</string>
     <string name="player_and_audio">Lejátszó és hang</string>
@@ -917,8 +917,8 @@
     <string name="system_equalizer">Rendszer hangszínszabályzója</string>
     <string name="system_equalizer_desc">Az Android beépített hangszínszabályzójának megnyitása</string>
     <string name="tab">Lap</string>
-    <string name="tap_to_open">Koppintson a Auralys megnyitásához</string>
-    <string name="tap_to_play">Koppintson a Auralys megnyitásához</string>
+    <string name="tap_to_open">Koppintson a Syntax Music megnyitásához</string>
+    <string name="tap_to_play">Koppintson a Syntax Music megnyitásához</string>
     <string name="tap_to_recognize">Koppintson a felismeréshez</string>
     <string name="template_percent">%1$d százalék.</string>
     <string name="tempo_and_pitch">Tempó és Hangszín</string>

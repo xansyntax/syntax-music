@@ -222,7 +222,7 @@
     <string name="crash_close">關閉</string>
     <string name="crash_description">發生意外錯誤。請提供崩潰報告，以便我們修復問題</string>
     <string name="crash_no_log">沒有可用的崩潰日誌</string>
-    <string name="crash_report_subject">Auralys 崩潰報告</string>
+    <string name="crash_report_subject">Syntax Music 崩潰報告</string>
     <string name="crash_share_logs">分享日誌</string>
     <string name="crash_share_title">分享崩潰報告</string>
     <string name="crash_title">應用程式崩潰</string>
@@ -301,7 +301,7 @@
     <string name="discord_error_loopback_unbound">無法開啟本機回呼通訊埠，請釋出可用通訊埠後再試一次。</string>
     <string name="discord_error_no_browser">找不到可用的瀏覽器以進行 Discord 授權。</string>
     <string name="discord_error_token_refresh_failed">Discord 授權已失效，請重新連結。</string>
-    <string name="discord_information_warning">Auralys 使用 Discord 的公開 OAuth2 和 Gateway API 來分享您正在聆聽的音樂。授權流程完全在您本機的瀏覽器視窗中進行，並於取得授權碼後自動關閉，不會向第三方伺服器發送任何資訊。您的憑證儲存在此裝置的加密偏好設定中，絕不對外洩漏。 Auralys 直接連接到 wss://gateway.discord.gg 來同步您的聆聽動態，且僅申請顯示狀態所需的最低權限範圍 (sdk.social_layer_presence)。</string>
+    <string name="discord_information_warning">Syntax Music 使用 Discord 的公開 OAuth2 和 Gateway API 來分享您正在聆聽的音樂。授權流程完全在您本機的瀏覽器視窗中進行，並於取得授權碼後自動關閉，不會向第三方伺服器發送任何資訊。您的憑證儲存在此裝置的加密偏好設定中，絕不對外洩漏。 Syntax Music 直接連接到 wss://gateway.discord.gg 來同步您的聆聽動態，且僅申請顯示狀態所需的最低權限範圍 (sdk.social_layer_presence)。</string>
     <string name="discord_integration">Discord 整合</string>
     <string name="discord_presence">在場</string>
     <string name="discord_rpc_preview">播放狀態預覽</string>
@@ -492,10 +492,10 @@
     <string name="kick_user_desc">從對話中移除該使用者</string>
     <string name="kmp_upgrade_action">嘗試 KMP</string>
     <string name="kmp_upgrade_later">暫不升級</string>
-    <string name="kmp_upgrade_title">Auralys KMP %s 現已推出</string>
-    <string name="kmp_upgrade_warning">Auralys KMP 還在開發中。你可能會遇到功能有缺陷、不完整或變更。</string>
+    <string name="kmp_upgrade_title">Syntax Music KMP %s 現已推出</string>
+    <string name="kmp_upgrade_warning">Syntax Music KMP 還在開發中。你可能會遇到功能有缺陷、不完整或變更。</string>
     <string name="last_fm_send_likes">同步喜歡和不喜歡歌曲</string>
-    <string name="last_fm_send_likes_description">同步 Auralys 喜歡/不喜歡歌曲到 Last.fm</string>
+    <string name="last_fm_send_likes_description">同步 Syntax Music 喜歡/不喜歡歌曲到 Last.fm</string>
     <string name="last_song_listened">根據上次聆聽的歌曲</string>
     <string name="last_week">上週</string>
     <string name="lastfm_integration">Last.fm 整合功能</string>
@@ -515,7 +515,7 @@
     <string name="link_copied">連結已複製至剪貼簿</string>
     <string name="list_bullet">•</string>
     <string name="listen_history">觀看記錄</string>
-    <string name="listen_on_metrolist">在 Auralys 收聽</string>
+    <string name="listen_on_metrolist">在 Syntax Music 收聽</string>
     <string name="listen_together">一起聆聽</string>
     <string name="listen_together_auto_approval_joins">自動批准加入請求</string>
     <string name="listen_together_auto_approval_joins_desc">自動批准加入請求，無需手動審核</string>
@@ -625,7 +625,7 @@
     <string name="media3_controls_seek_to_next_description">跳轉到下一個項目</string>
     <string name="media3_controls_seek_to_previous_description">跳轉到上一個項目</string>
     <string name="media_id">Id</string>
-    <string name="metrolist">AURALYS</string>
+    <string name="metrolist">SYNTAX MUSIC</string>
     <string name="mime_type">MIME 類型</string>
     <string name="mini_player">迷你播放器</string>
     <string name="mini_player_background_not_available">停用新迷你播放器後，此功能無法使用</string>
@@ -708,7 +708,7 @@
     <string name="play_all">全部播放</string>
     <string name="play_next">接著播放</string>
     <string name="play_next_desc">在列表中播放下一個</string>
-    <string name="play_on_app">在 Auralys 上播放</string>
+    <string name="play_on_app">在 Syntax Music 上播放</string>
     <string name="play_pause">播放/暫停</string>
     <string name="player">播放器</string>
     <string name="player_and_audio">播放與音訊</string>
@@ -931,8 +931,8 @@
     <string name="system_equalizer">系統等化器</string>
     <string name="system_equalizer_desc">開啟安卓系統內建的等化器</string>
     <string name="tab">Tab 鍵</string>
-    <string name="tap_to_open">點擊開啟 Auralys</string>
-    <string name="tap_to_play">點擊開啟 Auralys</string>
+    <string name="tap_to_open">點擊開啟 Syntax Music</string>
+    <string name="tap_to_play">點擊開啟 Syntax Music</string>
     <string name="tap_to_recognize">點擊開始</string>
     <string name="template_percent">百分之 %1$d。</string>
     <string name="tempo_and_pitch">速度和音調</string>
@@ -974,7 +974,7 @@
     <string name="unpin">取消固定</string>
     <string name="unpin_from_speed_dial">從快速撥號中取消固定</string>
     <string name="update_action">更新</string>
-    <string name="update_available_message">Auralys%s 已經準備好下載了。</string>
+    <string name="update_available_message">Syntax Music%s 已經準備好下載了。</string>
     <string name="update_available_title">有新的可用更新</string>
     <string name="update_channel_desc">新版本更新通知</string>
     <string name="update_channel_name">應用程式更新</string>

@@ -231,7 +231,7 @@
     <string name="integrations">Integrazioak</string>
     <string name="keep_screen_on_when_player_is_expanded">Mantendu pantaila piztuta erreproduzitzailea handituta dagoenean</string>
     <string name="last_fm_send_likes">Gustokoak eta Ez Gustokoak sinkronizatu</string>
-    <string name="last_fm_send_likes_description">Gustoko edo Ez Gustoko eman abestiei Last.fm-n Auralysen hala egitean</string>
+    <string name="last_fm_send_likes_description">Gustoko edo Ez Gustoko eman abestiei Last.fm-n Syntax Musicen hala egitean</string>
     <string name="last_song_listened">Enztun duzun azken abestian oinarritua</string>
     <string name="lastfm_integration">Last.fm</string>
     <string name="lastfm_now_playing">Bidali Orain Entzuten estatusa</string>
@@ -448,8 +448,8 @@
     <string name="system_equalizer">Sistemaren ekualizadorea</string>
     <string name="system_equalizer_desc">Ireki Android-en jatorrizko ekualizadorea</string>
     <string name="tab">Fitxa</string>
-    <string name="tap_to_open">Sakatu Auralys irekitzeko</string>
-    <string name="tap_to_play">Sakatu Auralys irekitzeko</string>
+    <string name="tap_to_open">Sakatu Syntax Music irekitzeko</string>
+    <string name="tap_to_play">Sakatu Syntax Music irekitzeko</string>
     <string name="template_percent">Ehuneko %1$d.</string>
     <string name="tertiary_color_style">Hirugarren kolorea</string>
     <string name="text_color">Testu kolorea</string>

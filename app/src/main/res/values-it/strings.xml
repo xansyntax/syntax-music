@@ -222,7 +222,7 @@
     <string name="crash_close">Chiudi</string>
     <string name="crash_description">Si è verificato un errore inaspettato. Condividi il rapporto sugli arresti anomali per aiutarci a risolvere il problema</string>
     <string name="crash_no_log">Nessun log di errore disponibile</string>
-    <string name="crash_report_subject">Rapporto di errore Auralys</string>
+    <string name="crash_report_subject">Rapporto di errore Syntax Music</string>
     <string name="crash_share_logs">Condividi i registri</string>
     <string name="crash_share_title">Condividi rapporto di errore</string>
     <string name="crash_title">Applicazione bloccata</string>
@@ -301,7 +301,7 @@
     <string name="discord_error_loopback_unbound">Non è stato possibile aprire una porta callback locale. Per favore liberane una e riprova.</string>
     <string name="discord_error_no_browser">Nessun browser trovato per completare l\'autorizzazione per Discord.</string>
     <string name="discord_error_token_refresh_failed">La sessione Discord è scaduta. Per favore riconnettiti.</string>
-    <string name="discord_information_warning">Auralys utilizza l\'OAuth2 pubblico e le API gateway di Discord per condividere ciò che stai ascoltando. L\'autorizzazione avviene tramite una sessione nel browser locale che si chiude automaticamente dopo aver acquisito il codice — nulla viene inviato a server di terze parti. Il tuo token viene memorizzato su questo dispositivo nelle preferenze crittografate e non viene mai condiviso. Auralys si connette direttamente a wss://gateway.discord.gg per pubblicare la tua attività e richiede solo l\'ambito minimo di applicazione necessario (sdk.social_layer_presence).</string>
+    <string name="discord_information_warning">Syntax Music utilizza l\'OAuth2 pubblico e le API gateway di Discord per condividere ciò che stai ascoltando. L\'autorizzazione avviene tramite una sessione nel browser locale che si chiude automaticamente dopo aver acquisito il codice — nulla viene inviato a server di terze parti. Il tuo token viene memorizzato su questo dispositivo nelle preferenze crittografate e non viene mai condiviso. Syntax Music si connette direttamente a wss://gateway.discord.gg per pubblicare la tua attività e richiede solo l\'ambito minimo di applicazione necessario (sdk.social_layer_presence).</string>
     <string name="discord_integration">Integrazione Discord</string>
     <string name="discord_presence">Presenza</string>
     <string name="discord_rpc_preview">Anteprima Rich Presence</string>
@@ -496,10 +496,10 @@
     <string name="kick_user_desc">Rimuovi questa persona dalla sessione</string>
     <string name="kmp_upgrade_action">Prova la versione KMP</string>
     <string name="kmp_upgrade_later">Non ora</string>
-    <string name="kmp_upgrade_title">Auralys KMP %s è disponibile</string>
-    <string name="kmp_upgrade_warning">Auralys KMP è ancora in sviluppo. Potresti riscontrare bug o funzionalità incomplete.</string>
+    <string name="kmp_upgrade_title">Syntax Music KMP %s è disponibile</string>
+    <string name="kmp_upgrade_warning">Syntax Music KMP è ancora in sviluppo. Potresti riscontrare bug o funzionalità incomplete.</string>
     <string name="last_fm_send_likes">Sincronizza Mi piace e Non mi piace</string>
-    <string name="last_fm_send_likes_description">Mi piace o non mi piace di brani Last.fm quando ti piacciono o non ti piacciono in Auralys</string>
+    <string name="last_fm_send_likes_description">Mi piace o non mi piace di brani Last.fm quando ti piacciono o non ti piacciono in Syntax Music</string>
     <string name="last_song_listened">Basato sull\'ultimo brano ascoltato</string>
     <string name="last_week">Settimana scorsa</string>
     <string name="lastfm_integration">Integrazione con Last.fm</string>
@@ -519,7 +519,7 @@
     <string name="link_copied">Link copiato negli appunti</string>
     <string name="list_bullet">•</string>
     <string name="listen_history">Cronologia degli ascolti</string>
-    <string name="listen_on_metrolist">Ascolta su Auralys</string>
+    <string name="listen_on_metrolist">Ascolta su Syntax Music</string>
     <string name="listen_together">Ascolta insieme</string>
     <string name="listen_together_auto_approval_joins">Approva automaticamente le richieste di adesione</string>
     <string name="listen_together_auto_approval_joins_desc">Approva automaticamente le richieste di adesione senza esaminarle manualmente</string>
@@ -629,7 +629,7 @@
     <string name="media3_controls_seek_to_next_description">Vai all\'elemento successivo</string>
     <string name="media3_controls_seek_to_previous_description">Vai all\'elemento precedente</string>
     <string name="media_id">ID media</string>
-    <string name="metrolist">AURALYS</string>
+    <string name="metrolist">SYNTAX MUSIC</string>
     <string name="mime_type">Tipo MIME</string>
     <string name="mini_player">Mini lettore</string>
     <string name="mini_player_background_not_available">Non disponibile quando il nuovo mini lettore è disabilitato</string>
@@ -712,7 +712,7 @@
     <string name="play_all">Riproduci tutto</string>
     <string name="play_next">Riproduci come successiva</string>
     <string name="play_next_desc">Suona il prossimo in coda</string>
-    <string name="play_on_app">Riproduci su Auralys</string>
+    <string name="play_on_app">Riproduci su Syntax Music</string>
     <string name="play_pause">Play/Pausa</string>
     <string name="player">Lettore</string>
     <string name="player_and_audio">Riproduttore e audio</string>
@@ -935,8 +935,8 @@
     <string name="system_equalizer">Equalizzatore di sistema</string>
     <string name="system_equalizer_desc">Apri l\'equalizzatore integrato di Android</string>
     <string name="tab">Scheda</string>
-    <string name="tap_to_open">Premi per aprire Auralys</string>
-    <string name="tap_to_play">Premi per aprire Auralys</string>
+    <string name="tap_to_open">Premi per aprire Syntax Music</string>
+    <string name="tap_to_play">Premi per aprire Syntax Music</string>
     <string name="tap_to_recognize">Tocca per riconoscere</string>
     <string name="template_percent">%1$d percento.</string>
     <string name="tempo_and_pitch">Tempo e tono</string>
@@ -973,7 +973,7 @@
     <string name="unpin">Sblocca</string>
     <string name="unpin_from_speed_dial">Sblocca dalla selezione rapida</string>
     <string name="update_action">Aggiorna</string>
-    <string name="update_available_message">Auralys %s è pronto per essere scaricato.</string>
+    <string name="update_available_message">Syntax Music %s è pronto per essere scaricato.</string>
     <string name="update_available_title">Nuovo aggiornamento disponibile</string>
     <string name="update_channel_desc">Notifiche sulle nuove versioni app</string>
     <string name="update_channel_name">Aggiornamenti dell\'app</string>

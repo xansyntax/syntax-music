@@ -170,7 +170,7 @@
     <string name="crash_close">Tancar</string>
     <string name="crash_description">S\'ha produït un error inesperat. Per favor, enviï\'ns l\'informe de fallida per a ajudar-nos a solucionar el problema.</string>
     <string name="crash_no_log">No hi ha registres de fallida disponibles</string>
-    <string name="crash_report_subject">Informe de Fallida de Auralys</string>
+    <string name="crash_report_subject">Informe de Fallida de Syntax Music</string>
     <string name="crash_share_logs">Compartir Registres</string>
     <string name="crash_share_title">Enviar l\'informe de fallida</string>
     <string name="crash_title">L\'aplicació ha fallat</string>
@@ -410,7 +410,7 @@
     <string name="kick_user">Fer fora</string>
     <string name="kick_user_desc">Expulsar a aquesta persona de la sala</string>
     <string name="last_fm_send_likes">Enviar Agrada/No m\'agrada</string>
-    <string name="last_fm_send_likes_description">Indicar que M\'agrada/No m\'agrada a Last.fm en indicar M\'agrada/No m\'agrada a Auralys</string>
+    <string name="last_fm_send_likes_description">Indicar que M\'agrada/No m\'agrada a Last.fm en indicar M\'agrada/No m\'agrada a Syntax Music</string>
     <string name="last_song_listened">Basat en l\'última cançó escoltada</string>
     <string name="last_week">Última setmana</string>
     <string name="lastfm_integration">Integració amb Last.fm</string>
@@ -532,7 +532,7 @@
     <string name="media3_controls_seek_to_next_description">Ves a l\'element següent</string>
     <string name="media3_controls_seek_to_previous_description">Ves a l\'element anterior</string>
     <string name="media_id">Id. multimèdia</string>
-    <string name="metrolist">AURALYS</string>
+    <string name="metrolist">SYNTAX MUSIC</string>
     <string name="mime_type">Tipus MIME</string>
     <string name="mini_player">Mini Reproductor</string>
     <string name="misc">Miscel·lània</string>
@@ -611,7 +611,7 @@
     <string name="play_all">Reproduir tot</string>
     <string name="play_next">Reprodueix a continuació</string>
     <string name="play_next_desc">Afegir al començament de la cua</string>
-    <string name="play_on_app">Reprodueix amb Auralys</string>
+    <string name="play_on_app">Reprodueix amb Syntax Music</string>
     <string name="play_pause">Reprodueix/Pausa</string>
     <string name="player">Reproductor</string>
     <string name="player_and_audio">Reproductor i àudio</string>
@@ -808,8 +808,8 @@
     <string name="system_default">Valor per defecte del sistema</string>
     <string name="system_equalizer">Equalitzador del sistema</string>
     <string name="tab">Pestanya</string>
-    <string name="tap_to_open">Toqueu per obrir el Auralys</string>
-    <string name="tap_to_play">Prem per obrir Auralys</string>
+    <string name="tap_to_open">Toqueu per obrir el Syntax Music</string>
+    <string name="tap_to_play">Prem per obrir Syntax Music</string>
     <string name="tap_to_recognize">Toca per identificar</string>
     <string name="template_percent">%1$d per cent</string>
     <string name="tempo_and_pitch">Tempo i to</string>
