@@ -16,3 +16,6 @@ local.properties
 *.keystore
 keystore.properties
 google-services.json
+
+# Signed Release Output
+release/
