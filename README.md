@@ -1,18 +1,20 @@
 # Syntax Music
 
-Custom Android music client built with Material 3 and a refined dark UI.
+Minimalist Android music player designed with Material 3 and a deep navy-dark aesthetic for distraction-free listening.
 
-## Highlights
-- **Clean About & Developer Card**: Balanced vertical alignment, streamlined version badge (`1.0.0`), and direct social link.
-- **Compact Search Bar**: Single-line search capsule without layout jumps.
-- **Minimalist Dark Aesthetic**: Deep navy-slate surfaces with distraction-free playback controls.
+## Overview
+**Syntax Music** combines seamless online music streaming and local audio playback inside a clean, responsive interface. Built for daily listeners who value visual clarity, fast search, and smooth playback controls without unnecessary clutter.
 
-## Build & Install
-1. Open the repository or build via Gradle:
-   ```bash
-   ./gradlew assembleRelease
-   ```
-2. Install the generated APK from `app/build/outputs/apk/release/`.
+## Key Features
+- **Hybrid Playback**: Stream online tracks or play local offline audio files from device storage.
+- **Distraction-Free Now Playing**: Fullscreen player view with synchronized lyrics, queue management, and smooth Material 3 transitions.
+- **Smart Library & Playlists**: Organize personal playlists, liked tracks, albums, and artists effortlessly.
+- **Instant Search Capsule**: Compact, single-line search bar for quick discovery across songs, albums, and artists.
+- **Refined Dark Interface**: Deep slate-navy color palette, balanced typography, and a clean developer profile card.
+
+## Release
+- **Current Version**: `v1.0.0` (Signed Release)
+- **Platform**: Android
 
 ## Author
-- **xansyntax** — [GitHub](https://github.com/xansyntax)
+- **Awwal Rahmadillah Putra** ([@xansyntax](https://github.com/xansyntax))
