@@ -1,0 +1,2 @@
+ui-showcase/res/** linguist-vendored
+*.kt linguist-detectable=true
