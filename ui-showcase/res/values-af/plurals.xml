@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_playlist_song_count">
+        <item quantity="one">%d liedjie</item>
+        <item quantity="other">%d liedjies</item>
+    </plurals>
+    <plurals name="band_count">
+        <item quantity="one">%d-band</item>
+        <item quantity="other">%d-bande</item>
+    </plurals>
+    <plurals name="n_channel">
+        <item quantity="one">%d-kanaal</item>
+        <item quantity="other">%d-kanale</item>
+    </plurals>
+    <plurals name="n_episode">
+        <item quantity="one">%d-episode</item>
+        <item quantity="other">%d-episodes</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">%d keer</item>
+        <item quantity="other">%d keer</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 sekonde</item>
+        <item quantity="other">%d sekondes</item>
+    </plurals>
+</resources>

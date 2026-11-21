@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="minute">
+        <item quantity="one">1 minut</item>
+        <item quantity="other">%d minutit</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="one">%d album</item>
+        <item quantity="other">%d albumit</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="one">%d esitaja</item>
+        <item quantity="other">%d esitajat</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="one">%d kuu</item>
+        <item quantity="other">%d kuud</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="one">%d esitusloend</item>
+        <item quantity="other">%d esitusloendit</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="one">%d valitud</item>
+        <item quantity="other">%d valitud</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="one">%d lugu</item>
+        <item quantity="other">%d lugu</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">%d kord</item>
+        <item quantity="other">%d korda</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="one">%d nädal</item>
+        <item quantity="other">%d nädalat</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="one">%d aasta</item>
+        <item quantity="other">%d aastat</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 sekund</item>
+        <item quantity="other">%d sekundit</item>
+    </plurals>
+</resources>

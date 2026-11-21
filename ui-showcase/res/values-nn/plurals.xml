@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="band_count">
+        <item quantity="one">%d band</item>
+        <item quantity="other">%d band</item>
+    </plurals>
+    <plurals name="minute">
+        <item quantity="one">1 minutt</item>
+        <item quantity="other">%d minutt</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="one">%d album</item>
+        <item quantity="other">%d album</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="one">%d artist</item>
+        <item quantity="other">%d artistar</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="one">%d månad</item>
+        <item quantity="other">%d månader</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="one">%d speleliste</item>
+        <item quantity="other">%d spelelister</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="one">%d vald</item>
+        <item quantity="other">%d valde</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="one">%d song</item>
+        <item quantity="other">%d songar</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">%d gong</item>
+        <item quantity="other">%d gonger</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="one">%d veke</item>
+        <item quantity="other">%d veker</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="one">%d år</item>
+        <item quantity="other">%d år</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 sekund</item>
+        <item quantity="other">%d sekund</item>
+    </plurals>
+</resources>

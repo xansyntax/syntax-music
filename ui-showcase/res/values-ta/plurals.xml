@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="minute">
+        <item quantity="one">1 மணித்துளி</item>
+        <item quantity="other">%d நிமிடங்கள்</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="one">%d ஆல்பம்</item>
+        <item quantity="other">%d ஆல்பங்கள்</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="one">%d கலைஞர்</item>
+        <item quantity="other">%d கலைஞர்கள்</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="one">%d மாதம்</item>
+        <item quantity="other">%d மாதங்கள்</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="one">%d பிளேலிச்ட்</item>
+        <item quantity="other">%d பிளேலிச்ட்கள்</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="one">%d தேர்ந்தெடுக்கப்பட்டது</item>
+        <item quantity="other">%d தேர்ந்தெடுக்கப்பட்டன</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="one">%d பாடல்</item>
+        <item quantity="other">%d பாடல்கள்</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="one">%d வாரம்</item>
+        <item quantity="other">%d வாரங்கள்</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="one">%d ஆண்டு</item>
+        <item quantity="other">%d ஆண்டுகள்</item>
+    </plurals>
+</resources>

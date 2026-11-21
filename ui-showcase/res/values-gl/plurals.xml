@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_playlist_song_count">
+        <item quantity="one">%d canción</item>
+        <item quantity="other">%d cancións</item>
+    </plurals>
+    <plurals name="band_count">
+        <item quantity="one">%d banda</item>
+        <item quantity="other">%d bandas</item>
+    </plurals>
+    <plurals name="n_channel">
+        <item quantity="one">%d canle</item>
+        <item quantity="other">%d canles</item>
+    </plurals>
+    <plurals name="n_episode">
+        <item quantity="one">%d episodio</item>
+        <item quantity="other">%d episodios</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">%d vez</item>
+        <item quantity="other">%d veces</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 segundo</item>
+        <item quantity="other">%d segundos</item>
+    </plurals>
+</resources>

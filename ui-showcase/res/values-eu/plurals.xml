@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_playlist_song_count">
+        <item quantity="one">Abesti %d</item>
+        <item quantity="other">%d abesti</item>
+    </plurals>
+    <plurals name="band_count">
+        <item quantity="one">Banda %d</item>
+        <item quantity="other">%d banda</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">Aldi %d</item>
+        <item quantity="other">%d aldi</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">Segundu %d</item>
+        <item quantity="other">%d segundu</item>
+    </plurals>
+</resources>

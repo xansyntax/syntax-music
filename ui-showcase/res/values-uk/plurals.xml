@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_playlist_song_count">
+        <item quantity="one">%d пісня</item>
+        <item quantity="few">%d пісні</item>
+        <item quantity="many">%d пісень</item>
+        <item quantity="other">%d пісень</item>
+    </plurals>
+    <plurals name="band_count">
+        <item quantity="one">%d діапазон</item>
+        <item quantity="few">%d діапазони</item>
+        <item quantity="many">%d діапазонів</item>
+        <item quantity="other">%d діапазонів</item>
+    </plurals>
+    <plurals name="minute">
+        <item quantity="one">%d хвилина</item>
+        <item quantity="few">%d хвилини</item>
+        <item quantity="many">%d хвилин</item>
+        <item quantity="other">%d хвилин</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="one">%d альбом</item>
+        <item quantity="few">%d альбоми</item>
+        <item quantity="many">%d альбомів</item>
+        <item quantity="other">%d альбомів</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="one">%d виконавець</item>
+        <item quantity="few">%d виконавця</item>
+        <item quantity="many">%d виконавців</item>
+        <item quantity="other">%d виконавців</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="one">%d місяць</item>
+        <item quantity="few">%d місяці</item>
+        <item quantity="many">%d місяців</item>
+        <item quantity="other">%d місяців</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="one">%d плейлист</item>
+        <item quantity="few">%d плейлисти</item>
+        <item quantity="many">%d плейлистів</item>
+        <item quantity="other">%d плейлистів</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="one">%d вибрано</item>
+        <item quantity="few">%d вибране</item>
+        <item quantity="many">%d вибрані</item>
+        <item quantity="other">%d вибрані</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="one">%d композиція</item>
+        <item quantity="few">%d композиції</item>
+        <item quantity="many">%d композицій</item>
+        <item quantity="other">%d композицій</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">%d раз</item>
+        <item quantity="few">%d рази</item>
+        <item quantity="many">%d разів</item>
+        <item quantity="other">%d разів</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="one">%d тиждень</item>
+        <item quantity="few">%d тижні</item>
+        <item quantity="many">%d тижнів</item>
+        <item quantity="other">%d тижнів</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="one">%d рік</item>
+        <item quantity="few">%d роки</item>
+        <item quantity="many">%d років</item>
+        <item quantity="other">%d років</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%d секунда</item>
+        <item quantity="few">%d секунди</item>
+        <item quantity="many">%d cекунд</item>
+        <item quantity="other">%d cекунд</item>
+    </plurals>
+</resources>

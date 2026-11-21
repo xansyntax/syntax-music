@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_playlist_song_count">
+        <item quantity="one">%d שיר</item>
+        <item quantity="two">%d שירים</item>
+        <item quantity="other">%d שירים</item>
+    </plurals>
+    <plurals name="band_count">
+        <item quantity="one">%d פס</item>
+        <item quantity="two">%d פסים</item>
+        <item quantity="other">%d פסים</item>
+    </plurals>
+    <plurals name="minute">
+        <item quantity="one">דקה 1</item>
+        <item quantity="two">%d דקות</item>
+        <item quantity="other">%d דקות</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="one">אלבום %d</item>
+        <item quantity="two">%d אלבומים</item>
+        <item quantity="other">%d אלבומים</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="one">אמן %d</item>
+        <item quantity="two">%d אמנים</item>
+        <item quantity="other">%d אמנים</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="one">חודש %d</item>
+        <item quantity="two">%d חודשים</item>
+        <item quantity="other">%d חודשים</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="one">פלייליסט %d</item>
+        <item quantity="two">%d פלייליסטים</item>
+        <item quantity="other">%d פלייליסטים</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="one">%d נבחר</item>
+        <item quantity="two">%d נבחרו</item>
+        <item quantity="other">%d נבחרו</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="one">שיר %d</item>
+        <item quantity="two">%d שירים</item>
+        <item quantity="other">%d שירים</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">פעם אחת</item>
+        <item quantity="two">%d פעמים</item>
+        <item quantity="other">%d פעמים</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="one">שבוע %d</item>
+        <item quantity="two">%d שבועות</item>
+        <item quantity="other">%d שבועות</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="one">שנה %d</item>
+        <item quantity="two">%d שנים</item>
+        <item quantity="other">%d שנים</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">שנייה אחת</item>
+        <item quantity="two">%d שניות</item>
+        <item quantity="other">%d sשניות</item>
+    </plurals>
+</resources>

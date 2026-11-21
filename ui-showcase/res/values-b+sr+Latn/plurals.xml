@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="minute">
+        <item quantity="one">%d minut</item>
+        <item quantity="few">%d minuta</item>
+        <item quantity="other">%d minuta</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="one">%d album</item>
+        <item quantity="few">%d albuma</item>
+        <item quantity="other">%d albuma</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="one">%d izvođač</item>
+        <item quantity="few">%d izvođača</item>
+        <item quantity="other">%d izvođača</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="one">%d mesec</item>
+        <item quantity="few">%d meseca</item>
+        <item quantity="other">%d meseci</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="one">%d plejlista</item>
+        <item quantity="few">%d plejliste</item>
+        <item quantity="other">%d plejlisti</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="one">%d izabran</item>
+        <item quantity="few">%d izabrana</item>
+        <item quantity="other">%d izabrano</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="one">%d pesma</item>
+        <item quantity="few">%d pesme</item>
+        <item quantity="other">%d pesama</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">%d vremena</item>
+        <item quantity="few">%d vremena</item>
+        <item quantity="other">%d vremena</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="one">%d nedelja</item>
+        <item quantity="few">%d nedelje</item>
+        <item quantity="other">%d nedelja</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="one">%d godina</item>
+        <item quantity="few">%d godine</item>
+        <item quantity="other">%d godina</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%d sekunda</item>
+        <item quantity="few">%d sekunde</item>
+        <item quantity="other">%d sekundi</item>
+    </plurals>
+</resources>

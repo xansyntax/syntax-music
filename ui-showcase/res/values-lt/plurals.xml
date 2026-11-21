@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="band_count">
+        <item quantity="one">%d juosta</item>
+        <item quantity="few">%d juostos</item>
+        <item quantity="many">%d juostų</item>
+        <item quantity="other">%d juostų</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">%d kartą</item>
+        <item quantity="few">%d kartus</item>
+        <item quantity="many">%d kartų</item>
+        <item quantity="other">%d kartų</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%d sekundė</item>
+        <item quantity="few">%d sekundės</item>
+        <item quantity="many">%d sekundžių</item>
+        <item quantity="other">%d sekundžių</item>
+    </plurals>
+</resources>

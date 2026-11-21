@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="n_channel">
+        <item quantity="one">%d kanal</item>
+        <item quantity="two">%d kanala</item>
+        <item quantity="few">%d kanali</item>
+        <item quantity="other">%d kanalov</item>
+    </plurals>
+    <plurals name="n_episode">
+        <item quantity="one">%d epizoda</item>
+        <item quantity="two">%d epizodi</item>
+        <item quantity="few">%d epizode</item>
+        <item quantity="other">%d epizod</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="one">%d izbran</item>
+        <item quantity="two">%d izbrana</item>
+        <item quantity="few">%d izbrani</item>
+        <item quantity="other">%d izbranih</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">%dkrat</item>
+        <item quantity="two">%dkrat</item>
+        <item quantity="few">%dkrat</item>
+        <item quantity="other">%dkrat</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%d sekunda</item>
+        <item quantity="two">%d sekundi</item>
+        <item quantity="few">%d sekunde</item>
+        <item quantity="other">%d sekund</item>
+    </plurals>
+</resources>

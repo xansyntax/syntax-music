@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_playlist_song_count">
+        <item quantity="one">%d şarkı</item>
+        <item quantity="other">%d şarkı</item>
+    </plurals>
+    <plurals name="band_count">
+        <item quantity="one">%d bant</item>
+        <item quantity="other">%d bant</item>
+    </plurals>
+    <plurals name="minute">
+        <item quantity="one">1 dakika</item>
+        <item quantity="other">%d dakika</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="one">%d albüm</item>
+        <item quantity="other">%d albümler</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="one">%d sanatçı</item>
+        <item quantity="other">%d sanatçılar</item>
+    </plurals>
+    <plurals name="n_channel">
+        <item quantity="one">%d kanal</item>
+        <item quantity="other">%d kanal</item>
+    </plurals>
+    <plurals name="n_episode">
+        <item quantity="one">%d bölüm</item>
+        <item quantity="other">%d bölüm</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="one">%d ay</item>
+        <item quantity="other">%d aylar</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="one">%d çalma listesi</item>
+        <item quantity="other">%d çalma listeleri</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="one">%d seçildi</item>
+        <item quantity="other">%d seçililer</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="one">%d şarkı</item>
+        <item quantity="other">%d şarkılar</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">%d kez</item>
+        <item quantity="other">%d kez</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="one">%d hafta</item>
+        <item quantity="other">%d haftalar</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="one">%d yıl</item>
+        <item quantity="other">%d yıllar</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 saniye</item>
+        <item quantity="other">%d saniye</item>
+    </plurals>
+</resources>

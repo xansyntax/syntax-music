@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_playlist_song_count">
+        <item quantity="one">%d skladba</item>
+        <item quantity="few">%d skladby</item>
+        <item quantity="many">%d skladeb</item>
+        <item quantity="other">%d skladeb</item>
+    </plurals>
+    <plurals name="band_count">
+        <item quantity="one">%d pásmo</item>
+        <item quantity="few">%d pásma</item>
+        <item quantity="many">%d pásem</item>
+        <item quantity="other">%d pásem</item>
+    </plurals>
+    <plurals name="minute">
+        <item quantity="one">1 minuta</item>
+        <item quantity="few">%d minuty</item>
+        <item quantity="other">%d minut</item>
+    </plurals>
+    <plurals name="n_album">
+        <item quantity="one">%d album</item>
+        <item quantity="few">%d alba</item>
+        <item quantity="other">%d alb</item>
+    </plurals>
+    <plurals name="n_artist">
+        <item quantity="one">%d umělec</item>
+        <item quantity="few">%d umělci</item>
+        <item quantity="other">%d umělců</item>
+    </plurals>
+    <plurals name="n_channel">
+        <item quantity="one">%d kanál</item>
+        <item quantity="few">%d kanály</item>
+        <item quantity="many">%d kanálů</item>
+        <item quantity="other">%d kanálů</item>
+    </plurals>
+    <plurals name="n_episode">
+        <item quantity="one">%d epizoda</item>
+        <item quantity="few">%d epizody</item>
+        <item quantity="many">%d epizod</item>
+        <item quantity="other">%d epizod</item>
+    </plurals>
+    <plurals name="n_month">
+        <item quantity="one">%d měsíc</item>
+        <item quantity="few">%d měsíce</item>
+        <item quantity="other">%d měsíců</item>
+    </plurals>
+    <plurals name="n_playlist">
+        <item quantity="one">%d playlist</item>
+        <item quantity="few">%d playlisty</item>
+        <item quantity="other">%d playlistů</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="one">Vybrána %d</item>
+        <item quantity="few">Vybrány %d</item>
+        <item quantity="other">Vybráno %d</item>
+    </plurals>
+    <plurals name="n_song">
+        <item quantity="one">%d skladba</item>
+        <item quantity="few">%d skladby</item>
+        <item quantity="other">%d skladeb</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">%dkrát</item>
+        <item quantity="few">%dkrát</item>
+        <item quantity="many">%dkrát</item>
+        <item quantity="other">%dkrát</item>
+    </plurals>
+    <plurals name="n_week">
+        <item quantity="one">%d týden</item>
+        <item quantity="few">%d týdny</item>
+        <item quantity="other">%d týdnů</item>
+    </plurals>
+    <plurals name="n_year">
+        <item quantity="one">%d rok</item>
+        <item quantity="few">%d roky</item>
+        <item quantity="other">%d let</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 sekunda</item>
+        <item quantity="few">%d sekundy</item>
+        <item quantity="many">%d sekund</item>
+        <item quantity="other">%d sekund</item>
+    </plurals>
+</resources>

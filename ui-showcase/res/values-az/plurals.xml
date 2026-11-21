@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_playlist_song_count">
+        <item quantity="one">%d mahnı</item>
+        <item quantity="other">%d mahnılar</item>
+    </plurals>
+    <plurals name="band_count">
+        <item quantity="one">%d qrup</item>
+        <item quantity="other">%d qrup</item>
+    </plurals>
+    <plurals name="n_channel">
+        <item quantity="one">%d kanal</item>
+        <item quantity="other">%d kanal</item>
+    </plurals>
+    <plurals name="n_episode">
+        <item quantity="one">%d-ci epizod</item>
+        <item quantity="other">%d-ci epizod</item>
+    </plurals>
+    <plurals name="n_selected">
+        <item quantity="one">%d seçildi</item>
+        <item quantity="other">%d seçildi</item>
+    </plurals>
+    <plurals name="n_time">
+        <item quantity="one">%d dəfə</item>
+        <item quantity="other">%d dəfələr</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 saniyə</item>
+        <item quantity="other">%d saniyə</item>
+    </plurals>
+</resources>
