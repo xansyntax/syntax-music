@@ -19,3 +19,4 @@ google-services.json
 
 # Signed Release Output
 release/
+decompiled_ref/
