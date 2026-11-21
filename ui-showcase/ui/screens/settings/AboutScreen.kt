@@ -385,15 +385,7 @@ fun AboutScreen(
             }
         )
 
-        Spacer(Modifier.height(48.dp))
-        
-        Text(
-            text = stringResource(R.string.stands_with_palestine),
-            style = MaterialTheme.typography.labelLarge,
-            fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-        )
-        
+
         Spacer(Modifier.height(48.dp))
     }
 
