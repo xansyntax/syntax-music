@@ -5,8 +5,8 @@ on:
   push:
     paths:
       - "desktop/**"
-      - "innertube/**"
-      - "innertubex/**"
+      - "app/src/main/kotlin/com/metrolist/innertube/**"
+      - ".github/workflows/build-desktop.yml"
 
 jobs:
   build-windows:
@@ -17,8 +17,19 @@ jobs:
         with:
           distribution: "temurin"
           java-version: "21"
+      - name: Bundle VLC 64-bit native libraries
+        shell: pwsh
+        run: |
+          $vlcUrl = "https://download.videolan.org/pub/videolan/vlc/3.0.21/win64/vlc-3.0.21-win64.zip"
+          Invoke-WebRequest -Uri $vlcUrl -OutFile vlc.zip
+          Expand-Archive -Path vlc.zip -DestinationPath vlc_tmp -Force
+          $vlcDir = Get-ChildItem -Path vlc_tmp -Directory | Select-Object -First 1
+          New-Item -ItemType Directory -Force -Path "desktop/appResources/windows" | Out-Null
+          Copy-Item "$($vlcDir.FullName)/libvlc.dll" "desktop/appResources/windows/"
+          Copy-Item "$($vlcDir.FullName)/libvlccore.dll" "desktop/appResources/windows/"
+          Copy-Item "$($vlcDir.FullName)/plugins" "desktop/appResources/windows/plugins" -Recurse
       - name: Build Windows MSI & EXE
-        run: ./gradlew :desktop:packageMsi :desktop:packageExe
+        run: ./gradlew :desktop:packageMsi :desktop:packageExe --no-daemon
       - uses: actions/upload-artifact@v4
         with:
           name: Syntax-Music-Windows
@@ -33,7 +44,7 @@ jobs:
           distribution: "temurin"
           java-version: "21"
       - name: Build Linux AppImage & Deb
-        run: ./gradlew :desktop:packageAppImage :desktop:packageDeb
+        run: ./gradlew :desktop:packageAppImage :desktop:packageDeb --no-daemon
       - uses: actions/upload-artifact@v4
         with:
           name: Syntax-Music-Linux
