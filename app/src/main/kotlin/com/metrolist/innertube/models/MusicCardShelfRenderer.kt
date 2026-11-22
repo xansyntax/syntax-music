@@ -4,29 +4,27 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class MusicCardShelfRenderer(
-    val buttons: List<Button>? = null,
-    val contents: List<Content>? = null,
-    val header: Header? = null,
-    val onTap: NavigationEndpoint? = null,
-    val subtitle: Runs? = null,
-    val subtitleBadges: List<Badges>? = null,
-    val thumbnail: ThumbnailRenderer? = null,
-    val title: Runs? = null,
+    val title: Runs,
+    val subtitle: Runs,
+    val thumbnail: ThumbnailRenderer,
+    val header: Header?,
+    val contents: List<Content>?,
+    val buttons: List<Button>,
+    val onTap: NavigationEndpoint,
+    val subtitleBadges: List<Badges>?,
 ) {
+    @Serializable
+    data class Header(
+        val musicCardShelfHeaderBasicRenderer: MusicCardShelfHeaderBasicRenderer,
+    ) {
+        @Serializable
+        data class MusicCardShelfHeaderBasicRenderer(
+            val title: Runs,
+        )
+    }
 
     @Serializable
     data class Content(
-        val musicResponsiveListItemRenderer: MusicResponsiveListItemRenderer? = null,
+        val musicResponsiveListItemRenderer: MusicResponsiveListItemRenderer?,
     )
-
-    @Serializable
-    data class Header(
-        val musicCardShelfHeaderBasicRenderer: MusicCardShelfHeaderBasicRenderer? = null,
-    ) {
-
-        @Serializable
-        data class MusicCardShelfHeaderBasicRenderer(
-            val title: Runs? = null,
-        )
-    }
 }

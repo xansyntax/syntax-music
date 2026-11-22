@@ -4,22 +4,35 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class NavigationEndpoint(
-    val browseEndpoint: BrowseEndpoint? = null,
-    val confirmDialogEndpoint: ConfirmDialogEndpoint? = null,
-    val deletePrivatelyOwnedEntityCommand: DeletePrivatelyOwnedEntityCommand? = null,
-    val feedbackEndpoint: FeedbackEndpoint? = null,
-    val queueAddEndpoint: QueueAddEndpoint? = null,
-    val searchEndpoint: SearchEndpoint? = null,
-    val shareEntityEndpoint: ShareEntityEndpoint? = null,
-    val urlEndpoint: UrlEndpoint? = null,
     val watchEndpoint: WatchEndpoint? = null,
     val watchPlaylistEndpoint: WatchEndpoint? = null,
+    val browseEndpoint: BrowseEndpoint? = null,
+    val searchEndpoint: SearchEndpoint? = null,
+    val queueAddEndpoint: QueueAddEndpoint? = null,
+    val shareEntityEndpoint: ShareEntityEndpoint? = null,
+    val feedbackEndpoint: FeedbackEndpoint? = null,
+    val urlEndpoint: UrlEndpoint? = null,
+    val deletePrivatelyOwnedEntityCommand: DeletePrivatelyOwnedEntityCommand? = null,
+    val confirmDialogEndpoint: ConfirmDialogEndpoint? = null,
 ) {
+    @Serializable
+    data class DeletePrivatelyOwnedEntityCommand(
+        val entityId: String,
+    )
 
     @Serializable
     data class ConfirmDialogEndpoint(
         val content: ConfirmDialogContent? = null,
     ) {
+        @Serializable
+        data class ConfirmDialogContent(
+            val confirmDialogRenderer: ConfirmDialogRenderer? = null,
+        )
+
+        @Serializable
+        data class ConfirmDialogRenderer(
+            val confirmButton: ConfirmButton? = null,
+        )
 
         @Serializable
         data class ConfirmButton(
@@ -35,24 +48,23 @@ data class NavigationEndpoint(
         data class ConfirmCommand(
             val musicDeletePrivatelyOwnedEntityCommand: DeletePrivatelyOwnedEntityCommand? = null,
         )
-
-        @Serializable
-        data class ConfirmDialogContent(
-            val confirmDialogRenderer: ConfirmDialogRenderer? = null,
-        )
-
-        @Serializable
-        data class ConfirmDialogRenderer(
-            val confirmButton: ConfirmButton? = null,
-        )
     }
+    val endpoint: Endpoint?
+        get() =
+            watchEndpoint
+                ?: watchPlaylistEndpoint
+                ?: browseEndpoint
+                ?: searchEndpoint
+                ?: queueAddEndpoint
+                ?: shareEntityEndpoint
 
-    @Serializable
-    data class DeletePrivatelyOwnedEntityCommand(
-        val entityId: String? = null,
-    )
+    val anyWatchEndpoint: WatchEndpoint?
+        get() = watchEndpoint
+            ?: watchPlaylistEndpoint
+
+    val musicVideoType: String?
+        get() = anyWatchEndpoint
+            ?.watchEndpointMusicSupportedConfigs
+            ?.watchEndpointMusicConfig
+            ?.musicVideoType
 }
-
-fun NavigationEndpoint.getMusicVideoType(): String? =
-    watchEndpoint?.watchEndpointMusicSupportedConfigs?.watchEndpointMusicConfig?.musicVideoType
-        ?: watchPlaylistEndpoint?.watchEndpointMusicSupportedConfigs?.watchEndpointMusicConfig?.musicVideoType

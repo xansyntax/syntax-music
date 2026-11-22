@@ -15,8 +15,8 @@ data class SearchSongResponse(
     ) {
         @Serializable
         data class Info(
-            val hash: String,
             val duration: Int,
+            val hash: String,
         )
     }
 }

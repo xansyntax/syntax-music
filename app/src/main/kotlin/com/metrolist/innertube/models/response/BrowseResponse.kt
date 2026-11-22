@@ -1,153 +1,155 @@
 package com.metrolist.innertube.models.response
 
+import com.metrolist.innertube.models.Button
+import com.metrolist.innertube.models.Continuation
+import com.metrolist.innertube.models.GridRenderer
+import com.metrolist.innertube.models.Menu
+import com.metrolist.innertube.models.MusicDetailHeaderRenderer
+import com.metrolist.innertube.models.MusicEditablePlaylistDetailHeaderRenderer
+import com.metrolist.innertube.models.MusicShelfRenderer
+import com.metrolist.innertube.models.ResponseContext
+import com.metrolist.innertube.models.Runs
+import com.metrolist.innertube.models.SectionListRenderer
+import com.metrolist.innertube.models.SubscriptionButton
+import com.metrolist.innertube.models.Tabs
+import com.metrolist.innertube.models.ThumbnailRenderer
 import kotlinx.serialization.Serializable
-import com.metrolist.innertube.models.*
 
 @Serializable
 data class BrowseResponse(
-    val background: ThumbnailRenderer? = null,
-    val contents: Contents? = null,
-    val continuationContents: ContinuationContents? = null,
-    val header: Header? = null,
-    val microformat: Microformat? = null,
-    val onResponseReceivedActions: List<ResponseAction>? = null,
-    val responseContext: ResponseContext? = null,
+    val contents: Contents?,
+    val continuationContents: ContinuationContents?,
+    val onResponseReceivedActions: List<ResponseAction>?,
+    val header: Header?,
+    val microformat: Microformat?,
+    val responseContext: ResponseContext,
+    val background: ThumbnailRenderer?
 ) {
-
     @Serializable
     data class Contents(
-        val sectionListRenderer: SectionListRenderer? = null,
-        val singleColumnBrowseResultsRenderer: Tabs? = null,
-        val twoColumnBrowseResultsRenderer: TwoColumnBrowseResultsRenderer? = null,
+        val singleColumnBrowseResultsRenderer: Tabs?,
+        val sectionListRenderer: SectionListRenderer?,
+        val twoColumnBrowseResultsRenderer: TwoColumnBrowseResultsRenderer?,
+    )
+
+    @Serializable
+    data class TwoColumnBrowseResultsRenderer(
+        val tabs: List<Tabs.Tab?>?,
+        val secondaryContents: SecondaryContents?,
+    )
+    @Serializable
+    data class SecondaryContents(
+        val sectionListRenderer: SectionListRenderer?,
     )
 
     @Serializable
     data class ContinuationContents(
-        val gridContinuation: GridContinuation? = null,
-        val musicPlaylistShelfContinuation: MusicPlaylistShelfContinuation? = null,
-        val musicShelfContinuation: MusicShelfRenderer? = null,
-        val sectionListContinuation: SectionListContinuation? = null,
+        val sectionListContinuation: SectionListContinuation?,
+        val musicPlaylistShelfContinuation: MusicPlaylistShelfContinuation?,
+        val gridContinuation: GridContinuation?,
+        val musicShelfContinuation: MusicShelfRenderer?
     ) {
-
         @Serializable
-        data class GridContinuation(
-            val continuations: List<Continuation>? = null,
-            val items: List<GridRenderer.Item>? = null,
+        data class SectionListContinuation(
+            val contents: List<SectionListRenderer.Content> = emptyList(),
+            val continuations: List<Continuation>?,
         )
 
         @Serializable
         data class MusicPlaylistShelfContinuation(
-            val contents: List<MusicShelfRenderer.Content>? = null,
-            val continuations: List<Continuation>? = null,
+            val contents: List<MusicShelfRenderer.Content> = emptyList(),
+            val continuations: List<Continuation>?,
         )
 
         @Serializable
-        data class SectionListContinuation(
-            val contents: List<SectionListRenderer.Content>? = null,
-            val continuations: List<Continuation>? = null,
-        )
-    }
-
-    @Serializable
-    data class Header(
-        val musicDetailHeaderRenderer: MusicDetailHeaderRenderer? = null,
-        val musicEditablePlaylistDetailHeaderRenderer: MusicEditablePlaylistDetailHeaderRenderer? = null,
-        val musicHeaderRenderer: MusicHeaderRenderer? = null,
-        val musicImmersiveHeaderRenderer: MusicImmersiveHeaderRenderer? = null,
-        val musicVisualHeaderRenderer: MusicVisualHeaderRenderer? = null,
-    ) {
-
-        @Serializable
-        data class Buttons(
-            val menuRenderer: Menu.MenuRenderer? = null,
-        )
-
-        @Serializable
-        data class MusicHeaderRenderer(
-            val buttons: List<Buttons>? = null,
-            val secondSubtitle: Runs? = null,
-            val straplineTextOne: Runs? = null,
-            val straplineThumbnail: MusicThumbnailRenderer? = null,
-            val subtitle: Runs? = null,
-            val thumbnail: MusicThumbnailRenderer? = null,
-            val title: Runs? = null,
-        )
-
-        @Serializable
-        data class MusicImmersiveHeaderRenderer(
-            val description: Runs? = null,
-            val menu: Menu? = null,
-            val monthlyListenerCount: Runs? = null,
-            val playButton: Button? = null,
-            val startRadioButton: Button? = null,
-            val subscriptionButton: SubscriptionButton? = null,
-            val subscriptionButton2: SubscriptionButton2? = null,
-            val thumbnail: ThumbnailRenderer? = null,
-            val title: Runs? = null,
-        ) {
-
-            @Serializable
-            data class SubscriptionButton2(
-                val subscribeButtonRenderer: SubscribeButtonRenderer? = null,
-            ) {
-
-                @Serializable
-                data class SubscribeButtonRenderer(
-                    val subscriberCountWithSubscribeText: Runs? = null,
-                )
-            }
-        }
-
-        @Serializable
-        data class MusicThumbnail(
-            val url: String? = null,
-        )
-
-        @Serializable
-        data class MusicThumbnailRenderer(
-            val musicThumbnailRenderer: MusicThumbnailRenderer? = null,
-            val thumbnails: List<MusicThumbnail>? = null,
-        )
-
-        @Serializable
-        data class MusicVisualHeaderRenderer(
-            val foregroundThumbnail: ThumbnailRenderer? = null,
-            val subscriptionButton: SubscriptionButton? = null,
-            val thumbnail: ThumbnailRenderer? = null,
-            val title: Runs? = null,
-        )
-    }
-
-    @Serializable
-    data class Microformat(
-        val microformatDataRenderer: MicroformatDataRenderer? = null,
-    ) {
-
-        @Serializable
-        data class MicroformatDataRenderer(
-            val urlCanonical: String? = null,
+        data class GridContinuation(
+            val items: List<GridRenderer.Item> = emptyList(),
+            val continuations: List<Continuation>?,
         )
     }
 
     @Serializable
     data class ResponseAction(
-        val appendContinuationItemsAction: ContinuationItems? = null,
+        val appendContinuationItemsAction: ContinuationItems?,
     ) {
-
         @Serializable
         data class ContinuationItems(
-            val continuationItems: List<MusicShelfRenderer.Content>? = null,
+            val continuationItems: List<MusicShelfRenderer.Content>?,
         )
     }
 
     @Serializable
-    data class SecondaryContents(
-        val sectionListRenderer: SectionListRenderer? = null,
-    )
+    data class Header(
+        val musicImmersiveHeaderRenderer: MusicImmersiveHeaderRenderer?,
+        val musicDetailHeaderRenderer: MusicDetailHeaderRenderer?,
+        val musicEditablePlaylistDetailHeaderRenderer: MusicEditablePlaylistDetailHeaderRenderer?,
+        val musicVisualHeaderRenderer: MusicVisualHeaderRenderer?,
+        val musicHeaderRenderer: MusicHeaderRenderer?,
+    ) {
+        @Serializable
+        data class MusicImmersiveHeaderRenderer(
+            val title: Runs,
+            val description: Runs?,
+            val thumbnail: ThumbnailRenderer?,
+            val playButton: Button?,
+            val startRadioButton: Button?,
+            val subscriptionButton: SubscriptionButton?,
+            val menu: Menu,
+            val subscriptionButton2: SubscriptionButton2?,
+            val monthlyListenerCount: Runs? = null,
+        ) {
+            @Serializable
+            data class SubscriptionButton2(
+                val subscribeButtonRenderer: SubscribeButtonRenderer?,
+            ) {
+                @Serializable
+                data class SubscribeButtonRenderer(
+                    val subscriberCountWithSubscribeText: Runs?,
+                )
+            }
+        }
+
+        @Serializable
+        data class MusicVisualHeaderRenderer(
+            val title: Runs,
+            val foregroundThumbnail: ThumbnailRenderer,
+            val thumbnail: ThumbnailRenderer?,
+            val subscriptionButton: SubscriptionButton?,
+        )
+
+        @Serializable
+        data class Buttons(
+            val menuRenderer: Menu.MenuRenderer?,
+        )
+
+        @Serializable
+        data class MusicHeaderRenderer(
+            val buttons: List<Buttons>?,
+            val title: Runs?,
+            val thumbnail: MusicThumbnailRenderer?,
+            val subtitle: Runs?,
+            val secondSubtitle: Runs?,
+            val straplineTextOne: Runs?,
+            val straplineThumbnail: MusicThumbnailRenderer?,
+        )
+        @Serializable
+        data class MusicThumbnail(
+            val url: String?,
+        )
+        @Serializable
+        data class MusicThumbnailRenderer(
+            val musicThumbnailRenderer: MusicThumbnailRenderer,
+            val thumbnails: List<MusicThumbnail>?,
+        )
+    }
 
     @Serializable
-    data class TwoColumnBrowseResultsRenderer(
-        val secondaryContents: SecondaryContents? = null,
-        val tabs: List<Tabs.Tab>? = null,
-    )
+    data class Microformat(
+        val microformatDataRenderer: MicroformatDataRenderer?,
+    ) {
+        @Serializable
+        data class MicroformatDataRenderer(
+            val urlCanonical: String?,
+        )
+    }
 }

@@ -4,17 +4,15 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class ContinuationItemRenderer(
-    val continuationEndpoint: ContinuationEndpoint? = null,
+    val continuationEndpoint: ContinuationEndpoint?,
 ) {
-
     @Serializable
     data class ContinuationEndpoint(
-        val continuationCommand: ContinuationCommand? = null,
+        val continuationCommand: ContinuationCommand?,
     ) {
-
         @Serializable
         data class ContinuationCommand(
-            val token: String? = null,
+            val token: String?,
         )
     }
 }

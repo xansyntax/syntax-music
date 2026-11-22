@@ -1,52 +1,49 @@
 package com.metrolist.innertube.models.response
 
+import com.metrolist.innertube.models.AccountInfo
+import com.metrolist.innertube.models.Runs
+import com.metrolist.innertube.models.Thumbnails
+import com.metrolist.innertube.models.Thumbnail
 import kotlinx.serialization.Serializable
-import com.metrolist.innertube.models.*
 
 @Serializable
 data class AccountMenuResponse(
-    val actions: List<Action>? = null,
+    val actions: List<Action>,
 ) {
-
     @Serializable
     data class Action(
-        val openPopupAction: OpenPopupAction? = null,
+        val openPopupAction: OpenPopupAction,
     ) {
-
         @Serializable
         data class OpenPopupAction(
-            val popup: Popup? = null,
+            val popup: Popup,
         ) {
-
             @Serializable
             data class Popup(
-                val multiPageMenuRenderer: MultiPageMenuRenderer? = null,
+                val multiPageMenuRenderer: MultiPageMenuRenderer,
             ) {
-
                 @Serializable
                 data class MultiPageMenuRenderer(
-                    val header: Header? = null,
+                    val header: Header?,
                 ) {
-
                     @Serializable
                     data class Header(
-                        val activeAccountHeaderRenderer: ActiveAccountHeaderRenderer? = null,
+                        val activeAccountHeaderRenderer: ActiveAccountHeaderRenderer,
                     ) {
-
                         @Serializable
                         data class ActiveAccountHeaderRenderer(
-                            val accountName: Runs? = null,
-                            val accountPhoto: Thumbnails? = null,
-                            val channelHandle: Runs? = null,
-                            val email: Runs? = null,
+                            val accountName: Runs,
+                            val email: Runs?,
+                            val channelHandle: Runs?,
+                            val accountPhoto: Thumbnails,
                         ) {
-                            fun toAccountInfo(): AccountInfo {
-                                val name = accountName?.runs?.firstOrNull()?.text.orEmpty()
-                                val emailStr = email?.runs?.firstOrNull()?.text
-                                val handle = channelHandle?.runs?.firstOrNull()?.text
-                                val photoUrl = accountPhoto?.thumbnails?.lastOrNull()?.url
-                                return AccountInfo(name = name, email = emailStr, channelHandle = handle, thumbnailUrl = photoUrl)
-                            }
+                            fun toAccountInfo() =
+                                AccountInfo(
+                                    name = accountName.runs!!.first().text,
+                                    email = email?.runs?.first()?.text,
+                                    channelHandle = channelHandle?.runs?.first()?.text,
+                                    thumbnailUrl = accountPhoto.thumbnails.lastOrNull()?.url,
+                                )
                         }
                     }
                 }

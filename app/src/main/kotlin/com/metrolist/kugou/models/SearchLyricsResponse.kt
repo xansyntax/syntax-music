@@ -15,7 +15,8 @@ data class SearchLyricsResponse(
     @Serializable
     data class Candidate(
         val id: Long,
-        @SerialName("product_from") val productFrom: String,
+        @SerialName("product_from")
+        val productFrom: String, // Consider choosing '官方推荐歌词'
         val duration: Long,
         val accesskey: String,
     )

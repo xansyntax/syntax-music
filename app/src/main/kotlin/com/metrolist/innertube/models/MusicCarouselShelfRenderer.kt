@@ -4,31 +4,29 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class MusicCarouselShelfRenderer(
-    val contents: List<Content>? = null,
-    val header: Header? = null,
-    val itemSize: String? = null,
-    val numItemsPerColumn: Int? = null,
+    val header: Header?,
+    val contents: List<Content>,
+    val itemSize: String,
+    val numItemsPerColumn: Int?,
 ) {
+    @Serializable
+    data class Header(
+        val musicCarouselShelfBasicHeaderRenderer: MusicCarouselShelfBasicHeaderRenderer,
+    ) {
+        @Serializable
+        data class MusicCarouselShelfBasicHeaderRenderer(
+            val strapline: Runs?,
+            val title: Runs,
+            val thumbnail: ThumbnailRenderer?,
+            val moreContentButton: Button?,
+        )
+    }
 
     @Serializable
     data class Content(
-        val musicMultiRowListItemRenderer: MusicMultiRowListItemRenderer? = null,
-        val musicNavigationButtonRenderer: MusicNavigationButtonRenderer? = null,
-        val musicResponsiveListItemRenderer: MusicResponsiveListItemRenderer? = null,
-        val musicTwoRowItemRenderer: MusicTwoRowItemRenderer? = null,
+        val musicTwoRowItemRenderer: MusicTwoRowItemRenderer?,
+        val musicResponsiveListItemRenderer: MusicResponsiveListItemRenderer?,
+        val musicMultiRowListItemRenderer: MusicMultiRowListItemRenderer?,
+        val musicNavigationButtonRenderer: MusicNavigationButtonRenderer?, // navigation button in explore tab
     )
-
-    @Serializable
-    data class Header(
-        val musicCarouselShelfBasicHeaderRenderer: MusicCarouselShelfBasicHeaderRenderer? = null,
-    ) {
-
-        @Serializable
-        data class MusicCarouselShelfBasicHeaderRenderer(
-            val moreContentButton: Button? = null,
-            val strapline: Runs? = null,
-            val thumbnail: ThumbnailRenderer? = null,
-            val title: Runs? = null,
-        )
-    }
 }

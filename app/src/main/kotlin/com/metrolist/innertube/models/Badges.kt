@@ -4,11 +4,10 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Badges(
-    val musicInlineBadgeRenderer: MusicInlineBadgeRenderer? = null,
+    val musicInlineBadgeRenderer: MusicInlineBadgeRenderer?,
 ) {
-
     @Serializable
     data class MusicInlineBadgeRenderer(
-        val icon: Icon? = null,
+        val icon: Icon,
     )
 }

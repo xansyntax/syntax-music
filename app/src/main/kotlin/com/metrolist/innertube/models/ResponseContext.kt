@@ -4,20 +4,18 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class ResponseContext(
-    val serviceTrackingParams: List<ServiceTrackingParam>? = null,
-    val visitorData: String? = null,
+    val visitorData: String?,
+    val serviceTrackingParams: List<ServiceTrackingParam>?,
 ) {
-
     @Serializable
     data class ServiceTrackingParam(
-        val params: List<Param>? = null,
-        val service: String? = null,
+        val params: List<Param>,
+        val service: String,
     ) {
-
         @Serializable
         data class Param(
-            val key: String? = null,
-            val value: String? = null,
+            val key: String,
+            val value: String,
         )
     }
 }

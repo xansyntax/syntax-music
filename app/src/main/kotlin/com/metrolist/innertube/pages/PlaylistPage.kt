@@ -1,16 +1,11 @@
 package com.metrolist.innertube.pages
 
 import com.metrolist.innertube.models.Album
-import com.metrolist.innertube.models.Artist
 import com.metrolist.innertube.models.MusicResponsiveListItemRenderer
 import com.metrolist.innertube.models.PlaylistItem
-import com.metrolist.innertube.models.Run
 import com.metrolist.innertube.models.SongItem
-import com.metrolist.innertube.models.getMusicVideoType
-import com.metrolist.innertube.models.getPlaylistSetVideoId
-import com.metrolist.innertube.models.getThumbnailUrl
-import com.metrolist.innertube.models.getVideoId
-import com.metrolist.innertube.models.isEpisode
+import com.metrolist.innertube.utils.parseTime
+import timber.log.Timber
 
 data class PlaylistPage(
     val playlist: PlaylistItem,
@@ -19,83 +14,47 @@ data class PlaylistPage(
     val continuation: String?,
 ) {
     companion object {
-        private fun splitRunsBySeparator(runs: List<Run>): List<List<Run>> {
-            val result = mutableListOf<List<Run>>()
-            var current = mutableListOf<Run>()
-            for (run in runs) {
-                if (run.text == " • ") {
-                    result.add(current)
-                    current = mutableListOf()
-                } else {
-                    current.add(run)
-                }
-            }
-            result.add(current)
-            return result
-        }
-
         fun fromMusicResponsiveListItemRenderer(renderer: MusicResponsiveListItemRenderer): SongItem? {
-            val columns = renderer.flexColumns.orEmpty()
-            val title = columns.firstOrNull()
+            val libraryTokens = PageHelper.extractLibraryTokensFromMenuItems(renderer.menu?.menuRenderer?.items)
+
+            val secondaryLineRuns = renderer.flexColumns
+                .getOrNull(1)
                 ?.musicResponsiveListItemFlexColumnRenderer
                 ?.text
                 ?.runs
-                ?.firstOrNull()
-                ?.text ?: return null
-            val videoId = renderer.getVideoId() ?: return null
-            val artistRuns = columns.getOrNull(1)
-                ?.musicResponsiveListItemFlexColumnRenderer
-                ?.text
-                ?.runs
-            val artists = PageHelper.extractArtists(artistRuns)
-            val albumRun = columns.getOrNull(2)
-                ?.musicResponsiveListItemFlexColumnRenderer
-                ?.text
-                ?.runs
-                ?.firstOrNull()
-            val album = albumRun?.navigationEndpoint?.browseEndpoint?.browseId?.let { browseId ->
-                Album(id = browseId, name = albumRun.text.orEmpty())
+
+            val title = renderer.flexColumns.firstOrNull()
+                ?.musicResponsiveListItemFlexColumnRenderer?.text
+                ?.runs?.firstOrNull()?.text ?: return null
+
+            if (secondaryLineRuns == null) {
+                Timber.w("PlaylistPage.fromMusicResponsiveListItemRenderer: Song '$title' - NO SECONDARY LINE (flexColumns[1] is null)")
             }
-            val durationText = renderer.fixedColumns?.firstOrNull()
-                ?.musicResponsiveListItemFlexColumnRenderer
-                ?.text
-                ?.runs
-                ?.firstOrNull()
-                ?.text
-            val duration = durationText?.let { PageHelper.extractDuration(listOf(Run(text = it))) }
-            val thumbnailUrl = renderer.thumbnail?.getThumbnailUrl() ?: return null
-            val explicit = renderer.badges?.any {
-                it.musicInlineBadgeRenderer?.icon?.iconType == "MUSIC_EXPLICIT_BADGE"
-            } == true
-            val tokens = PageHelper.extractLibraryTokensFromMenuItems(renderer.menu?.menuRenderer?.items)
-            val endpoint = renderer.overlay?.musicItemThumbnailOverlayRenderer?.content?.musicPlayButtonRenderer?.playNavigationEndpoint?.watchEndpoint
-            val setVideoId = renderer.getPlaylistSetVideoId() ?: return null
+
+            val artists = PageHelper.extractArtists(secondaryLineRuns)
 
             return SongItem(
-                id = videoId,
+                id = renderer.videoId ?: return null,
                 title = title,
                 artists = artists,
-                album = album,
-                duration = duration,
-                thumbnail = thumbnailUrl,
-                setVideoId = setVideoId,
-                explicit = explicit,
-                endpoint = endpoint,
-                musicVideoType = renderer.getMusicVideoType(),
-                libraryAddToken = tokens.addToken,
-                libraryRemoveToken = tokens.removeToken,
-                isEpisode = renderer.isEpisode(),
+                album = renderer.flexColumns.getOrNull(2)?.musicResponsiveListItemFlexColumnRenderer?.text?.runs?.firstOrNull()?.let {
+                    Album(
+                        name = it.text,
+                        id = it.navigationEndpoint?.browseEndpoint?.browseId ?: return@let null
+                    )
+                },
+                duration = renderer.fixedColumns?.firstOrNull()?.musicResponsiveListItemFlexColumnRenderer?.text?.runs?.firstOrNull()?.text?.parseTime(),
+                musicVideoType = renderer.musicVideoType,
+                thumbnail = renderer.thumbnail?.getThumbnailUrl() ?: return null,
+                explicit = renderer.badges?.find {
+                    it.musicInlineBadgeRenderer?.icon?.iconType == "MUSIC_EXPLICIT_BADGE"
+                } != null,
+                endpoint = renderer.overlay?.musicItemThumbnailOverlayRenderer?.content?.musicPlayButtonRenderer?.playNavigationEndpoint?.watchEndpoint,
+                setVideoId = renderer.playlistSetVideoId ?: return null,
+                libraryAddToken = libraryTokens.addToken,
+                libraryRemoveToken = libraryTokens.removeToken,
+                isEpisode = renderer.isEpisode
             )
-        }
-
-        fun ownerFromDetailSubtitle(runs: List<Run>?): Artist? {
-            val section = runs?.let { splitRunsBySeparator(it).getOrNull(1) } ?: return null
-            PageHelper.extractArtists(section).firstOrNull()?.let { return it }
-            val fallbackRun = splitRunsBySeparator(section).firstOrNull()?.firstOrNull()
-            if (fallbackRun != null && fallbackRun.navigationEndpoint == null && !fallbackRun.text.isNullOrBlank()) {
-                return Artist(id = null, name = fallbackRun.text.trim())
-            }
-            return null
         }
     }
 }

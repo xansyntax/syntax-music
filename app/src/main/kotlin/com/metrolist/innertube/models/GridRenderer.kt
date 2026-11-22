@@ -4,25 +4,23 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class GridRenderer(
-    val continuations: List<Continuation>? = null,
-    val header: Header? = null,
-    val items: List<Item>? = null,
+    val header: Header?,
+    val items: List<Item>,
+    val continuations: List<Continuation>?,
 ) {
-
     @Serializable
     data class Header(
-        val gridHeaderRenderer: GridHeaderRenderer? = null,
+        val gridHeaderRenderer: GridHeaderRenderer,
     ) {
-
         @Serializable
         data class GridHeaderRenderer(
-            val title: Runs? = null,
+            val title: Runs,
         )
     }
 
     @Serializable
     data class Item(
-        val musicNavigationButtonRenderer: MusicNavigationButtonRenderer? = null,
-        val musicTwoRowItemRenderer: MusicTwoRowItemRenderer? = null,
+        val musicNavigationButtonRenderer: MusicNavigationButtonRenderer?,
+        val musicTwoRowItemRenderer: MusicTwoRowItemRenderer?,
     )
 }

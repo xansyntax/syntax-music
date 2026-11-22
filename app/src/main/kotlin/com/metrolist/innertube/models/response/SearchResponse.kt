@@ -1,33 +1,32 @@
 package com.metrolist.innertube.models.response
 
+import com.metrolist.innertube.models.Continuation
+import com.metrolist.innertube.models.MusicResponsiveListItemRenderer
+import com.metrolist.innertube.models.Tabs
 import kotlinx.serialization.Serializable
-import com.metrolist.innertube.models.*
 
 @Serializable
 data class SearchResponse(
-    val contents: Contents? = null,
-    val continuationContents: ContinuationContents? = null,
+    val contents: Contents?,
+    val continuationContents: ContinuationContents?,
 ) {
-
     @Serializable
     data class Contents(
-        val tabbedSearchResultsRenderer: Tabs? = null,
+        val tabbedSearchResultsRenderer: Tabs?,
     )
 
     @Serializable
     data class ContinuationContents(
-        val musicShelfContinuation: MusicShelfContinuation? = null,
+        val musicShelfContinuation: MusicShelfContinuation,
     ) {
-
         @Serializable
         data class MusicShelfContinuation(
-            val contents: List<Content>? = null,
-            val continuations: List<Continuation>? = null,
+            val contents: List<Content>,
+            val continuations: List<Continuation>?,
         ) {
-
             @Serializable
             data class Content(
-                val musicResponsiveListItemRenderer: MusicResponsiveListItemRenderer? = null,
+                val musicResponsiveListItemRenderer: MusicResponsiveListItemRenderer,
             )
         }
     }

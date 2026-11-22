@@ -8,6 +8,7 @@ pluginManagement {
             }
         }
         mavenCentral()
+        maven { setUrl("https://maven.aliyun.com/repository/public") }
         gradlePluginPortal()
     }
 }
@@ -16,6 +17,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { setUrl("https://maven.aliyun.com/repository/public") }
         maven { url = uri("https://jitpack.io") }
         maven { url = uri("https://maven.firstdark.dev/releases") }
     }

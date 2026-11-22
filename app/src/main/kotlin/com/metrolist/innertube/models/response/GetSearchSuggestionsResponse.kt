@@ -1,15 +1,14 @@
 package com.metrolist.innertube.models.response
 
+import com.metrolist.innertube.models.SearchSuggestionsSectionRenderer
 import kotlinx.serialization.Serializable
-import com.metrolist.innertube.models.*
 
 @Serializable
 data class GetSearchSuggestionsResponse(
-    val contents: List<Content>? = null,
+    val contents: List<Content>?,
 ) {
-
     @Serializable
     data class Content(
-        val searchSuggestionsSectionRenderer: SearchSuggestionsSectionRenderer? = null,
+        val searchSuggestionsSectionRenderer: SearchSuggestionsSectionRenderer,
     )
 }
