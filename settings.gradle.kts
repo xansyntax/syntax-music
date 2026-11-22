@@ -25,3 +25,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Syntax Music"
 include(":app")
+include(":desktop")

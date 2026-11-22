@@ -1,0 +1,40 @@
+name: Build Desktop (Linux & Windows)
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "desktop/**"
+      - "innertube/**"
+      - "innertubex/**"
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "21"
+      - name: Build Windows MSI & EXE
+        run: ./gradlew :desktop:packageMsi :desktop:packageExe
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Syntax-Music-Windows
+          path: desktop/build/compose/binaries/main/*/*
+
+  build-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "21"
+      - name: Build Linux AppImage & Deb
+        run: ./gradlew :desktop:packageAppImage :desktop:packageDeb
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Syntax-Music-Linux
+          path: desktop/build/compose/binaries/main/*/*
