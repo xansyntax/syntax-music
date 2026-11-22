@@ -51,7 +51,7 @@ compose.desktop {
 
         val isWindows = System.getProperty("os.name").lowercase().contains("win")
         jvmArgs += listOf(
-            if (isWindows) "-Dskiko.renderApi=DIRECT3D" else if (System.getProperty("os.name").lowercase().contains("win")) "-Dskiko.renderApi=DIRECT3D" else "-Dskiko.renderApi=OPENGL",
+            if (isWindows) "-Dskiko.renderApi=DIRECT3D" else "-Dskiko.renderApi=OPENGL",
             "-Dskiko.fps=165",
             "-Dskiko.vsync.enabled=true",
         )
@@ -63,6 +63,7 @@ compose.desktop {
             description = "Syntax Music - Liquid Glass Desktop Player"
             vendor = "Xan Syntax"
             copyright = "Copyright (C) 2026 Xan Syntax"
+            appResourcesRootDir.set(project.layout.projectDirectory.dir("appResources"))
 
             linux {
                 iconFile.set(project.file("src/main/resources/icon.png"))
@@ -71,9 +72,7 @@ compose.desktop {
                 menuGroup = "AudioVideo;Audio;"
                 appCategory = "AudioVideo"
             }
-            appResourcesRootDir.set(project.layout.projectDirectory.dir("appResources"))
-            appResourcesRootDir.set(project.layout.projectDirectory.dir("appResources"))
-            
+            windows {
                 iconFile.set(project.file("src/main/resources/icon.ico"))
                 menuGroup = "Syntax Music"
                 upgradeUuid = "8f7e4b2a-91c3-4e5d-a8b1-3c9d0e2f1a4b"
@@ -84,10 +83,13 @@ compose.desktop {
 }
 
 tasks.withType<JavaExec> {
-    environment("__GLX_VENDOR_LIBRARY_NAME", "mesa")
-    environment("MESA_LOADER_DRIVER_OVERRIDE", "iris")
+    val isWindows = System.getProperty("os.name").lowercase().contains("win")
+    if (!isWindows) {
+        environment("__GLX_VENDOR_LIBRARY_NAME", "mesa")
+        environment("MESA_LOADER_DRIVER_OVERRIDE", "iris")
+    }
     jvmArgs(
-        "-Dskiko.renderApi=OPENGL",
+        if (isWindows) "-Dskiko.renderApi=DIRECT3D" else "-Dskiko.renderApi=OPENGL",
         "-Dskiko.fps=165",
         "-Dskiko.vsync.enabled=true",
     )
