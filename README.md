@@ -21,6 +21,10 @@ This public repository showcases the Jetpack Compose **Liquid Glass UI** layer a
 - **Audio Engine Controls:** Built-in equalizer, loudness normalization, silence skipping, and playback speed/pitch adjustment.
 - **Android Auto & Account Support:** Native Android Auto integration alongside optional account/token sign-in and scrobbling support.
 
+## Credits
+
+Built upon and inspired by **Metrolist**.
+
 ## Download & Installation
 
 Pre-built signed APK packages are available directly from the **[GitHub Releases](https://github.com/xansyntax/syntax-music/releases/latest)** page.
