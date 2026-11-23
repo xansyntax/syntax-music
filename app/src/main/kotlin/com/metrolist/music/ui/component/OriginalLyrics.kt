@@ -1195,7 +1195,7 @@ fun OriginalLyrics(
                                                         Shadow(
                                                             color = expressiveAccent.copy(alpha = 0.35f * fadeProgress),
                                                             offset = Offset.Zero,
-                                                            blurRadius = 10f * fadeProgress,
+                                                            blurRadius = 0f,
                                                         )
                                                     }
 
@@ -1203,7 +1203,7 @@ fun OriginalLyrics(
                                                         Shadow(
                                                             color = expressiveAccent.copy(alpha = 0.15f),
                                                             offset = Offset.Zero,
-                                                            blurRadius = 6f,
+                                                            blurRadius = 0f,
                                                         )
                                                     }
 
@@ -1271,14 +1271,13 @@ fun OriginalLyrics(
                                                     Shadow(
                                                         color = expressiveAccent.copy(alpha = 0.5f + (0.3f * glowIntensity)),
                                                         offset = Offset.Zero,
-                                                        blurRadius =
-                                                            16f + (12f * glowIntensity),
+                                                        blurRadius = 0f,
                                                     )
                                                 } else if (hasWordPassed) {
                                                     Shadow(
                                                         color = expressiveAccent.copy(alpha = 0.25f),
                                                         offset = Offset.Zero,
-                                                        blurRadius = 8f,
+                                                        blurRadius = 0f,
                                                     )
                                                 } else {
                                                     null
@@ -1342,8 +1341,7 @@ fun OriginalLyrics(
                                                                 Shadow(
                                                                     color = expressiveAccent.copy(alpha = 0.4f * glowIntensity),
                                                                     offset = Offset(0f, 0f),
-                                                                    blurRadius =
-                                                                        14f + (4f * fillProgress),
+                                                                    blurRadius = 0f,
                                                                 ),
                                                         ),
                                                 ) {
@@ -1359,7 +1357,7 @@ fun OriginalLyrics(
                                                                 Shadow(
                                                                     color = expressiveAccent.copy(alpha = 0.4f),
                                                                     offset = Offset(0f, 0f),
-                                                                    blurRadius = 12f,
+                                                                    blurRadius = 0f,
                                                                 ),
                                                         ),
                                                 ) {
@@ -1424,7 +1422,7 @@ fun OriginalLyrics(
                                                     Shadow(
                                                         color = expressiveAccent.copy(alpha = 0.5f + (0.3f * glowIntensity)),
                                                         offset = Offset.Zero,
-                                                        blurRadius = 16f + (12f * glowIntensity),
+                                                        blurRadius = 0f,
                                                     )
 
                                                 withStyle(
@@ -1448,7 +1446,7 @@ fun OriginalLyrics(
                                                                 Shadow(
                                                                     color = expressiveAccent.copy(alpha = 0.25f),
                                                                     offset = Offset.Zero,
-                                                                    blurRadius = 8f,
+                                                                    blurRadius = 0f,
                                                                 ),
                                                         ),
                                                 ) {
@@ -1525,7 +1523,7 @@ fun OriginalLyrics(
                                                         Shadow(
                                                             color = expressiveAccent.copy(alpha = 0.2f + (0.4f * glowIntensity)),
                                                             offset = Offset.Zero,
-                                                            blurRadius = 10f + (12f * glowIntensity),
+                                                            blurRadius = 0f,
                                                         )
                                                     }
 
@@ -1533,7 +1531,7 @@ fun OriginalLyrics(
                                                         Shadow(
                                                             color = expressiveAccent.copy(alpha = 0.2f),
                                                             offset = Offset.Zero,
-                                                            blurRadius = 8f,
+                                                            blurRadius = 0f,
                                                         )
                                                     }
 
@@ -1578,7 +1576,7 @@ fun OriginalLyrics(
 
                                 // Continuous slow pulsing animation
                                 LaunchedEffect(Unit) {
-                                    while (true) {
+                                    if (false) {
                                         pulseProgress.animateTo(
                                             targetValue = 1f,
                                             animationSpec =
@@ -1617,7 +1615,7 @@ fun OriginalLyrics(
                                                         Shadow(
                                                             color = expressiveAccent.copy(alpha = 0.8f * glowIntensity),
                                                             offset = Offset(0f, 0f),
-                                                            blurRadius = 28f * (1f + pulseEffect),
+                                                            blurRadius = 0f,
                                                         ),
                                                     brush = glowBrush,
                                                 ),

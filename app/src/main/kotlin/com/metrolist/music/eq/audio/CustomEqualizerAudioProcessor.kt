@@ -122,11 +122,10 @@ class CustomEqualizerAudioProcessor : BaseAudioProcessor() {
                 2 -> {
                     var left = input.getShort().toDouble() / 32768.0
                     var right = input.getShort().toDouble() / 32768.0
-                    filters.forEach { filter ->
-                        filter.processStereo(left, right).let {
-                            left = it.first
-                            right = it.second
-                        }
+                    for (i in filters.indices) {
+                        val f = filters[i]
+                        left = f.processLeft(left)
+                        right = f.processRight(right)
                     }
                     output.putShort(
                         (left * preampGain * 32768.0)

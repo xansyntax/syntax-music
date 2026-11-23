@@ -172,6 +172,18 @@ class BiquadFilter(
     /**
      * Process stereo samples (left and right channels)
      */
+    fun processLeft(inputLeft: Double): Double {
+        val out = b0 * inputLeft + b1 * x1L + b2 * x2L - a1 * y1L - a2 * y2L
+        x2L = x1L; x1L = inputLeft; y2L = y1L; y1L = out
+        return out
+    }
+
+    fun processRight(inputRight: Double): Double {
+        val out = b0 * inputRight + b1 * x1R + b2 * x2R - a1 * y1R - a2 * y2R
+        x2R = x1R; x1R = inputRight; y2R = y1R; y1R = out
+        return out
+    }
+
     fun processStereo(inputLeft: Double, inputRight: Double): Pair<Double, Double> {
         // Left channel
         val outputLeft = b0 * inputLeft + b1 * x1L + b2 * x2L - a1 * y1L - a2 * y2L

@@ -340,61 +340,6 @@ fun AccountSettings(
                         else if (!showToken) showToken = true
                         else showTokenEditor = true
                     }
-                ),
-                Material3SettingsItem(
-                    title = { Text(stringResource(R.string.more_content)) },
-                    icon = painterResource(R.drawable.cached),
-                    trailingContent = {
-                        Switch(
-                            colors = androidx.compose.material3.SwitchDefaults.colors(
-                                checkedThumbColor = androidx.compose.ui.graphics.Color.White,
-                                checkedTrackColor = androidx.compose.ui.graphics.Color.White.copy(alpha = 0.35f),
-                                checkedIconColor = androidx.compose.ui.graphics.Color.Black,
-                            ),
-                                                        enabled = isLoggedIn,
-                            checked = useLoginForBrowse,
-                            onCheckedChange = {
-                                YouTube.useLoginForBrowse = it
-                                onUseLoginForBrowseChange(it)
-                            },
-                            thumbContent = {
-                                Icon(
-                                    painter = painterResource(
-                                        id = if (useLoginForBrowse) R.drawable.check else R.drawable.close
-                                    ),
-                                    contentDescription = null,
-                                    modifier = Modifier.size(SwitchDefaults.IconSize)
-                                )
-                            }
-                        )
-                    },
-                    enabled = isLoggedIn
-                ),
-                Material3SettingsItem(
-                    title = { Text(stringResource(R.string.yt_sync)) },
-                    icon = painterResource(R.drawable.cached),
-                    trailingContent = {
-                        Switch(
-                            colors = androidx.compose.material3.SwitchDefaults.colors(
-                                checkedThumbColor = androidx.compose.ui.graphics.Color.White,
-                                checkedTrackColor = androidx.compose.ui.graphics.Color.White.copy(alpha = 0.35f),
-                                checkedIconColor = androidx.compose.ui.graphics.Color.Black,
-                            ),
-                                                        enabled = isLoggedIn,
-                            checked = ytmSync,
-                            onCheckedChange = onYtmSyncChange,
-                            thumbContent = {
-                                Icon(
-                                    painter = painterResource(
-                                        id = if (ytmSync) R.drawable.check else R.drawable.close
-                                    ),
-                                    contentDescription = null,
-                                    modifier = Modifier.size(SwitchDefaults.IconSize)
-                                )
-                            }
-                        )
-                    },
-                    enabled = isLoggedIn
                 )
             ),
             useLowContrast = true

@@ -1,12 +1,14 @@
 package com.metrolist.music.ui.theme
 
 import android.graphics.Bitmap
+import android.os.Build
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Shapes
 import androidx.compose.material3.Typography
 import androidx.compose.material3.darkColorScheme
+import androidx.compose.material3.dynamicDarkColorScheme
+import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
@@ -15,6 +17,7 @@ import androidx.compose.runtime.saveable.Saver
 import androidx.compose.runtime.saveable.SaverScope
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -144,40 +147,27 @@ fun MetrolistTheme(
     uiStyle: UiStyle = UiStyle.GLASS,
     content: @Composable () -> Unit
 ) {
+    val context = LocalContext.current
     val isGlass = uiStyle == UiStyle.GLASS
+
     val baseScheme = if (themeColor == DefaultThemeColor) {
-        when {
-            isGlass && darkTheme -> GlassDark
-            isGlass -> GlassLight
-            darkTheme -> PaperDark
-            else -> PaperLight
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
+        } else {
+            when {
+                isGlass && darkTheme -> GlassDark
+                isGlass -> GlassLight
+                darkTheme -> PaperDark
+                else -> PaperLight
+            }
         }
     } else {
-        val dynamic = rememberDynamicColorScheme(
+        rememberDynamicColorScheme(
             seedColor = themeColor,
             isDark = darkTheme,
-            style = PaletteStyle.TonalSpot,
+            style = PaletteStyle.Fidelity,
             specVersion = ColorSpec.SpecVersion.SPEC_2025
         )
-        if (isGlass) {
-            if (darkTheme) {
-                dynamic.copy(
-                    surface = Color(0xFF0E0D12),
-                    background = Color(0xFF0E0D12),
-                    surfaceContainer = Color(0xFF1A1820),
-                    surfaceContainerHigh = Color(0xFF24222C)
-                )
-            } else {
-                dynamic.copy(
-                    surface = Color(0xFFF6F4F8),
-                    background = Color(0xFFF6F4F8),
-                    surfaceContainer = Color(0xFFEBE8F0),
-                    surfaceContainerHigh = Color(0xFFE2DFE8)
-                )
-            }
-        } else {
-            dynamic
-        }
     }
 
     val colorScheme = remember(baseScheme, pureBlack, darkTheme) {
@@ -199,9 +189,13 @@ fun MetrolistTheme(
 }
 
 fun Bitmap.extractThemeColor(): Color {
-    val palette = Palette.from(this).maximumColorCount(8).generate()
-    val defaultArgb = DefaultThemeColor.toArgb()
-    val colorToPopulation = palette.swatches.associate { it.rgb to it.population }
-    val ranked = Score.score(colorToPopulation, 1, defaultArgb, true)
+    val scaled = Bitmap.createScaledBitmap(this, 64, 64, false)
+    val palette = Palette.from(scaled).maximumColorCount(16).generate()
+    val swatches = palette.swatches
+    if (swatches.isEmpty()) return DefaultThemeColor
+
+    val colorToPopulation = swatches.associate { it.rgb to it.population }
+    val fallbackRgb = palette.dominantSwatch?.rgb ?: DefaultThemeColor.toArgb()
+    val ranked = Score.score(colorToPopulation, 1, fallbackRgb, false)
     return Color(ranked.first())
 }

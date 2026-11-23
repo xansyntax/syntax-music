@@ -756,16 +756,9 @@ private fun WordLevelLyrics(
                             val impactRatio = dur.toFloat() / wordLenText
                             val fadeFactor = (sungFactor * 5f).coerceIn(0f, 1f) * ((1f - sungFactor) * 8f).coerceIn(0f, 1f)
                             val impactFactor = (((impactRatio - 100f) / 250f).coerceIn(0f, 1f) * 0.6f + ((dur.toFloat() - 300f) / 1500f).coerceIn(0f, 1f) * 0.4f).coerceIn(0f, 1f) * fadeFactor
-                            if (impactFactor > 0.01f) {
-                                val glowAlpha = (0.35f * impactFactor).coerceIn(0f, 0.4f)
-                                val baseGlowRadius = 12.dp.toPx() * impactFactor                                                                                    
-                                drawIntoCanvas { canvas ->
-                                    glowPaint.maskFilter = BlurMaskFilter(baseGlowRadius, BlurMaskFilter.Blur.NORMAL)
-                                    glowPaint.color = expressiveAccent.copy(alpha = glowAlpha).toArgb()
-                                    glowPaint.textSize = lyricStyle.fontSize.toPx()
-                                    glowPaint.typeface = android.graphics.Typeface.create(android.graphics.Typeface.DEFAULT, android.graphics.Typeface.BOLD)
-                                    canvas.nativeCanvas.drawText(letterLayouts[i].layoutInput.text.text, 0f, letterLayouts[i].firstBaseline, glowPaint)
-                                }
+                            if (impactFactor > 0.05f) {
+                                val glowAlpha = (0.28f * impactFactor).coerceIn(0f, 0.35f)
+                                drawText(letterLayouts[i], color = expressiveAccent.copy(alpha = glowAlpha))
                             }
                         }
                         val baseAlpha = if (isWordSung || charLp > 0.99f) 1f else (focusedAlpha + (1f - focusedAlpha) * sungFactor)
@@ -777,7 +770,7 @@ private fun WordLevelLyrics(
                             if (sWL > 0f) {
                                 clipRect(left = 0f, top = 0f, right = sWL, bottom = charBounds.height) { drawText(letterLayouts[i], color = expressiveAccent) }
                             }
-                            for (j in 0 until 12) {
+                            for (j in 0 until 3) {
                                 val start = sWL + (j * eW / 12f)
                                 val end = (sWL + ((j + 1) * eW / 12f) + 0.5f).coerceAtMost(fXL)
                                 if (end > start) {
