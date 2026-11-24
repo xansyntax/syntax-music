@@ -44,3 +44,7 @@ Pre-built APK packages are available directly from the **[GitHub Releases](https
 3. *(Optional)* Install via ADB:
    ```bash
    adb install -r Syntax-Music-v1.5.0-release.apk
+   
+## License
+
+Copyright (c) 2026 Xan Syntax. All rights reserved. See [LICENSE](LICENSE) for details.
