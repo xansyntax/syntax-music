@@ -16,8 +16,8 @@ android {
         applicationId = "com.xansyntax.music"
         minSdk = 26
         targetSdk = 36
-        versionCode = 140
-        versionName = "1.4.0"
+        versionCode = 141
+        versionName = "1.4.1"
         base.archivesName.set("Syntax-Music-v$versionName")
 
         buildConfigField("String", "BASE_VERSION_NAME", "\"13.7.0\"")
@@ -44,7 +44,8 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -74,6 +75,9 @@ android {
     }
 
     packaging {
+        resources {
+            pickFirsts += listOf("META-INF/services/**", "META-INF/INDEX.LIST", "META-INF/DEPENDENCIES")
+        }
         jniLibs {
             pickFirsts += listOf("**/libdatastore_shared_counter.so", "**/libquickjs.so")
         }

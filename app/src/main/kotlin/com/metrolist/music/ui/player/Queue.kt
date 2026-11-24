@@ -753,7 +753,7 @@ fun Queue(
                         if (pureBlack) {
                             Color.Black
                         } else if (isGlass()) {
-                            background.copy(alpha = 0.88f)
+                            background.copy(alpha = 0.97f)
                         } else {
                             background
                         },
@@ -1067,7 +1067,7 @@ fun Queue(
                         if (pureBlack) {
                             Color.Black
                         } else if (isGlass()) {
-                            background.copy(alpha = 0.92f)
+                            background.copy(alpha = 0.98f)
                         } else {
                             background.copy(alpha = 0.85f)
                         },
@@ -1213,7 +1213,7 @@ fun Queue(
                         if (pureBlack) {
                             Color.Black
                         } else if (isGlass()) {
-                            background.copy(alpha = 0.92f)
+                            background.copy(alpha = 0.98f)
                         } else {
                             background.copy(alpha = 0.85f)
                         },

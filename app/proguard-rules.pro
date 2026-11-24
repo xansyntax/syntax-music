@@ -9,3 +9,29 @@
     public *;
 }
 -keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod
+
+
+# Syntax Music R8/ProGuard Keep Rules
+-keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod
+-keep class com.metrolist.music.BuildConfig { *; }
+-keep class com.metrolist.innertube.** { *; }
+-keep class com.metrolist.kugou.** { *; }
+-keep class com.metrolist.lrclib.** { *; }
+-keepclassmembers class * {
+    @kotlinx.serialization.Serializable <fields>;
+}
+-keep,includedescriptorclasses class com.metrolist.music.**$$serializer { *; }
+-keepclassmembers class com.metrolist.music.** {
+    *** Companion;
+}
+-dontwarn okhttp3.**
+-dontwarn okio.**
+-dontwarn org.conscrypt.**
+-dontwarn org.bouncycastle.**
+-dontwarn org.openjsse.**
+-dontwarn javax.annotation.**
+
+
+-keepnames class kotlinx.coroutines.android.AndroidDispatcherFactory
+-keepnames class kotlinx.coroutines.android.AndroidExceptionPreHandler
+-dontwarn kotlinx.coroutines.**
