@@ -223,7 +223,7 @@
     <string name="create_room">สร้าง</string>
     <string name="creating_room">กำลังสร้างห้อง…</string>
     <string name="credits_collaborator">ผู้ร่วมพัฒนา</string>
-    <string name="credits_license_name">GNU General Public License v3.0</string>
+    <string name="credits_license_name">Proprietary License</string>
     <string name="crop_album_art">ครอบภาพปกอัลบั้ม</string>
     <string name="crop_album_art_desc">บังคับให้เป็นอัตราส่วนสี่เหลี่ยมจัตุรัสโดยครอบตัดภาพตัวอย่างวิดีโอ</string>
     <string name="crossfade">ครอสเฟด</string>

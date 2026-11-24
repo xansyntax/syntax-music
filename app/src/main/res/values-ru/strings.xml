@@ -231,7 +231,7 @@
     <string name="create_room">Создать</string>
     <string name="creating_room">Создание комнаты…</string>
     <string name="credits_collaborator">Соавтор</string>
-    <string name="credits_license_name">GNU General Public License v3.0</string>
+    <string name="credits_license_name">Proprietary License</string>
     <string name="crop_album_art">Обрезать обложку альбома</string>
     <string name="crop_album_art_desc">Принудительно использовать квадратное соотношение сторон, обрезая миниатюры видео</string>
     <string name="crossfade">Кроссфейд</string>

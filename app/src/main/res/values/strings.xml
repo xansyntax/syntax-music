@@ -235,7 +235,7 @@
     <string name="creating_room">Creating room…</string>
     <string name="credits_collaborator">Collaborator</string>
     <string name="credits_developer">Developer</string>
-    <string name="credits_license_name">GNU General Public License v3.0</string>
+    <string name="credits_license_name">Proprietary License</string>
     <string name="crop_album_art">Crop album art</string>
     <string name="crop_album_art_desc">Force a square aspect ratio by cropping video thumbnails</string>
     <string name="crossfade">Crossfade</string>
@@ -1170,7 +1170,7 @@
     <string name="logout_clear">Clear</string>
     <string name="credits_lead_developer">Syntax Music Creator</string>
     <string name="credits_collaborators_section">Collaborators</string>
-    <string name="credits_license_desc">Free, open-source software. You may use, study, share, and improve it</string>
+    <string name="credits_license_desc">Copyright © 2026 Xan Syntax. All rights reserved.</string>
     <string name="credits_discord">Discord server</string>
     <string name="credits_telegram">Telegram channel</string>
     <string name="credits_view_repo">View repository</string>

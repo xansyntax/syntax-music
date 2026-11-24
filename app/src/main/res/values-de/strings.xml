@@ -231,7 +231,7 @@
     <string name="create_room">Erstellen</string>
     <string name="creating_room">Raum wird erstellt…</string>
     <string name="credits_collaborator">Mitwirkender</string>
-    <string name="credits_license_name">GNU General Public License v3.0</string>
+    <string name="credits_license_name">Proprietary License</string>
     <string name="crop_album_art">Albumcover zuschneiden</string>
     <string name="crop_album_art_desc">Quadratisches Seitenverhältnis durch Zuschneiden der Video-Thumnails erzwingen</string>
     <string name="crossfade">Song-Überblendung (Crossfade)</string>

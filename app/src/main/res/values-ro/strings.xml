@@ -231,7 +231,7 @@
     <string name="create_room">Creează</string>
     <string name="creating_room">Se creează camera…</string>
     <string name="credits_collaborator">Colaborator</string>
-    <string name="credits_license_name">Licența Publică Generală GNU v3.0</string>
+    <string name="credits_license_name">Proprietary License</string>
     <string name="crop_album_art">Decupează coperta albumului</string>
     <string name="crop_album_art_desc">Forțează un raport de aspect pătrățos prin decuparea miniaturilor videoclipurilor</string>
     <string name="crossfade">Tranziție lină</string>

@@ -16,8 +16,8 @@ android {
         applicationId = "com.xansyntax.music"
         minSdk = 26
         targetSdk = 36
-        versionCode = 141
-        versionName = "1.4.1"
+        versionCode = 142
+        versionName = "1.4.2"
         base.archivesName.set("Syntax-Music-v$versionName")
 
         buildConfigField("String", "BASE_VERSION_NAME", "\"13.7.0\"")

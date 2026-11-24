@@ -222,7 +222,7 @@
     <string name="create_room">তৈরি করুন</string>
     <string name="creating_room">রুম তৈরি করা হচ্ছে…</string>
     <string name="credits_collaborator">সহযোগী</string>
-    <string name="credits_license_name">GNU জেনারেল পাবলিক লাইসেন্স V3.0</string>
+    <string name="credits_license_name">Proprietary License</string>
     <string name="crop_album_art">অ্যালবাম আর্ট ক্রপ করুন</string>
     <string name="crop_album_art_desc">ভিডিও থাম্বনেইল ক্রপ করে একটি বর্গাকার অ্যাস্পেক্ট রেশিও তৈরি করুন</string>
     <string name="crossfade">ক্রসফেড</string>

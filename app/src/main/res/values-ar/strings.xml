@@ -205,7 +205,7 @@
     <string name="create_room">إنشاء</string>
     <string name="creating_room">إنشاء غرفة…</string>
     <string name="credits_collaborator">متعاون</string>
-    <string name="credits_license_name">رخصة جنو العمومية الإصدار 3.0</string>
+    <string name="credits_license_name">Proprietary License</string>
     <string name="crop_album_art">اقتصاص غلاف الألبوم</string>
     <string name="crop_album_art_desc">فرض نسبة عرض إلى ارتفاع مربعة عن طريق اقتصاص صور معاينة الفيديو</string>
     <string name="crossfade">التلاشي المتقاطع</string>

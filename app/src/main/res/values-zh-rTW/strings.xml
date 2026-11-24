@@ -231,7 +231,7 @@
     <string name="create_room">創建</string>
     <string name="creating_room">正在創建房間…</string>
     <string name="credits_collaborator">合作者</string>
-    <string name="credits_license_name">GNU 通用公共授權 v3.0</string>
+    <string name="credits_license_name">Proprietary License</string>
     <string name="crop_album_art">裁切專輯封面</string>
     <string name="crop_album_art_desc">透過裁切影片縮圖強制使用正方形寬高比</string>
     <string name="crossfade">歌曲淡入淡出</string>

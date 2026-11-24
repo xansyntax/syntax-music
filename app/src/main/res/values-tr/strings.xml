@@ -231,7 +231,7 @@
     <string name="create_room">Oluştur</string>
     <string name="creating_room">Oda oluşturuluyor…</string>
     <string name="credits_collaborator">Katkıda bulunan</string>
-    <string name="credits_license_name">GNU Genel Kamu Lisansı v3.0</string>
+    <string name="credits_license_name">Proprietary License</string>
     <string name="crop_album_art">Albüm resmini kırp</string>
     <string name="crop_album_art_desc">Video küçük resimlerini kırparak kare en boy oranını zorlayın</string>
     <string name="crossfade">Çapraz geçiş</string>

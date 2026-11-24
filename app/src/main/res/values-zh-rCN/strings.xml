@@ -230,7 +230,7 @@
     <string name="create_room">创建</string>
     <string name="creating_room">正在创建房间…</string>
     <string name="credits_collaborator">协作者</string>
-    <string name="credits_license_name">GNU General Public License v3.0</string>
+    <string name="credits_license_name">Proprietary License</string>
     <string name="crop_album_art">裁剪专辑封面</string>
     <string name="crop_album_art_desc">通过裁剪视频缩略图强制使用正方形宽高比</string>
     <string name="crossfade">淡入淡出</string>

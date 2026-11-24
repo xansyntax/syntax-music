@@ -209,7 +209,7 @@
     <string name="create_room">Създай</string>
     <string name="creating_room">Създаване на стая…</string>
     <string name="credits_collaborator">Сътрудник</string>
-    <string name="credits_license_name">Общ публичен лиценз на GNU, версия 3.0</string>
+    <string name="credits_license_name">Proprietary License</string>
     <string name="crop_album_art">Изрязване на обложката на албума</string>
     <string name="crop_album_art_desc">Принудително квадратно съотношение на страните чрез изрязване на миниатюрите на видеоклиповете</string>
     <string name="crossfade">Плавно застъпване (Crossfade)</string>

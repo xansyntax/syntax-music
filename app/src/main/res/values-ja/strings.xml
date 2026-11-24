@@ -231,7 +231,7 @@
     <string name="create_room">作成</string>
     <string name="creating_room">ルームを作成中…</string>
     <string name="credits_collaborator">共同開発者</string>
-    <string name="credits_license_name">GNU一般公衆ライセンス v3.0</string>
+    <string name="credits_license_name">Proprietary License</string>
     <string name="crop_album_art">アルバムアートを切り抜く</string>
     <string name="crop_album_art_desc">動画のサムネイルを切り抜いて正方形の比率にします</string>
     <string name="crossfade">クロスフェード</string>

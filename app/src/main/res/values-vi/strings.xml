@@ -231,7 +231,7 @@
     <string name="create_room">Tạo</string>
     <string name="creating_room">Đang tạo phòng…</string>
     <string name="credits_collaborator">Cộng tác viên</string>
-    <string name="credits_license_name">Giấy phép Công cộng GNU phiên bản 3.0 (GPLv3)</string>
+    <string name="credits_license_name">Proprietary License</string>
     <string name="crop_album_art">Cắt ảnh bìa album</string>
     <string name="crop_album_art_desc">Cắt ảnh thu nhỏ video về tỷ lệ vuông</string>
     <string name="crossfade">Chuyển tiếp mượt mà</string>

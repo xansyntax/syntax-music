@@ -231,7 +231,7 @@
     <string name="create_room">Crear</string>
     <string name="creating_room">Creando sala…</string>
     <string name="credits_collaborator">Colaborador</string>
-    <string name="credits_license_name">GNU General Licencia pública v3.0</string>
+    <string name="credits_license_name">Proprietary License</string>
     <string name="crop_album_art">Recortar portada del álbum</string>
     <string name="crop_album_art_desc">Forzar una relación de aspecto cuadrada recortando miniaturas de vídeo</string>
     <string name="crossfade">Transición suave</string>
