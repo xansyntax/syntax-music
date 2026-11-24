@@ -1,4 +1,4 @@
-readme = """<p align="center">
+<p align="center">
   <img src="assets/logo.svg" alt="Syntax Music Logo" width="112" />
 </p>
 
