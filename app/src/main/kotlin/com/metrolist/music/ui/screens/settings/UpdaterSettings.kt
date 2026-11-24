@@ -65,6 +65,7 @@ fun UpdaterScreen(
     var isChecking by remember { mutableStateOf(false) }
     var updateAvailable by remember { mutableStateOf(false) }
     var latestVersion by remember { mutableStateOf<String?>(null) }
+    var downloadUrl by remember { mutableStateOf<String?>(null) }
     var showChangelog by remember { mutableStateOf(false) }
     var changelogContent by remember { mutableStateOf<String?>(null) }
     var checkError by remember { mutableStateOf<String?>(null) }
@@ -84,6 +85,7 @@ fun UpdaterScreen(
                             latestVersion = releaseInfo.versionName
                             updateAvailable = hasUpdate
                             changelogContent = releaseInfo.description
+                            downloadUrl = Updater.getDownloadUrlForCurrentVariant(releaseInfo)
                         }
                     }.onFailure {
                         checkError = String.format(failedToCheckUpdatesTemplate, it.message ?: "Unknown error")
@@ -211,7 +213,29 @@ fun UpdaterScreen(
                                 )
                             }
                         },
-                        onClick = { if (!isChecking) performManualCheck() },
+                        onClick = {
+                         if (!isChecking) {
+                             val url = downloadUrl
+                             if (updateAvailable && !url.isNullOrBlank()) {
+                                 try {
+                                     val fileName = "Syntax-Music-${latestVersion ?: "update"}.apk".replace(" ", "-")
+                                     val request = android.app.DownloadManager.Request(android.net.Uri.parse(url))
+                                         .setTitle("Syntax Music ${latestVersion ?: "Update"}")
+                                         .setDescription("Downloading application update...")
+                                         .setNotificationVisibility(android.app.DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                                         .setDestinationInExternalPublicDir(android.os.Environment.DIRECTORY_DOWNLOADS, fileName)
+                                     val dm = context.getSystemService(android.content.Context.DOWNLOAD_SERVICE) as android.app.DownloadManager
+                                     dm.enqueue(request)
+                                     android.widget.Toast.makeText(context, "Downloading update in background...", android.widget.Toast.LENGTH_SHORT).show()
+                                 } catch (e: Exception) {
+                                     val intent = android.content.Intent(android.content.Intent.ACTION_VIEW, android.net.Uri.parse(url))
+                                     context.startActivity(intent)
+                                 }
+                             } else {
+                                 performManualCheck()
+                             }
+                         }
+                     },
                     ),
                 ),
         )

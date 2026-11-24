@@ -211,12 +211,13 @@ object Updater {
      * Get the download URL for the correct app variant
      */
     fun getDownloadUrlForCurrentVariant(releaseInfo: ReleaseInfo): String? {
-        val (currentArch, currentVariant) = getCurrentAppVariant()
-        
-        return releaseInfo.assets
-            .find { it.architecture == currentArch && it.variant == currentVariant }
-            ?.downloadUrl
-    }
+     val (currentArch, currentVariant) = getCurrentAppVariant()
+     return releaseInfo.assets
+         .find { it.architecture == currentArch && it.variant == currentVariant }
+         ?.downloadUrl
+         ?: releaseInfo.assets.find { it.variant == currentVariant }?.downloadUrl
+         ?: releaseInfo.assets.firstOrNull()?.downloadUrl
+ }
 
     /**
      * Check if update is needed (respects 2-hour cache)
