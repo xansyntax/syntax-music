@@ -748,7 +748,27 @@ fun Queue(
             modifier =
                 Modifier
                     .fillMaxSize()
-                    .then(if (isGlass()) Modifier.glassOverlay(RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp)) else Modifier.background(background)),
+                    .clip(RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp))
+                    .background(
+                        if (pureBlack) {
+                            Color.Black
+                        } else if (isGlass()) {
+                            background.copy(alpha = 0.88f)
+                        } else {
+                            background
+                        },
+                    )
+                    .then(
+                        if (isGlass() && !pureBlack) {
+                            Modifier.border(
+                                width = 1.dp,
+                                color = TextBackgroundColor.copy(alpha = 0.14f),
+                                shape = RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp),
+                            )
+                        } else {
+                            Modifier
+                        },
+                    ),
         ) {
             LazyColumn(
                 state = lazyListState,
@@ -888,7 +908,15 @@ fun Queue(
                                     modifier =
                                         Modifier
                                             .fillMaxWidth()
-                                            .then(if (isGlass()) Modifier.glassOverlay(RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp)) else Modifier.background(background))
+                                            .padding(horizontal = 8.dp, vertical = 2.dp)
+                                            .clip(RoundedCornerShape(16.dp))
+                                            .background(
+                                                if (isActive) {
+                                                    TextBackgroundColor.copy(alpha = 0.15f)
+                                                } else {
+                                                    Color.Transparent
+                                                },
+                                            )
                                             .combinedClickable(
                                                 onClick = {
                                                     if (inSelectMode) {
@@ -1038,10 +1066,10 @@ fun Queue(
                     .background(
                         if (pureBlack) {
                             Color.Black
+                        } else if (isGlass()) {
+                            background.copy(alpha = 0.92f)
                         } else {
-                            MaterialTheme.colorScheme
-                                .secondaryContainer
-                                .copy(alpha = 0.90f)
+                            background.copy(alpha = 0.85f)
                         },
                     ).windowInsetsPadding(
                         WindowInsets.systemBars
@@ -1184,10 +1212,10 @@ fun Queue(
                     .background(
                         if (pureBlack) {
                             Color.Black
+                        } else if (isGlass()) {
+                            background.copy(alpha = 0.92f)
                         } else {
-                            MaterialTheme.colorScheme
-                                .secondaryContainer
-                                .copy(alpha = 0.90f)
+                            background.copy(alpha = 0.85f)
                         },
                     ).fillMaxWidth()
                     .height(

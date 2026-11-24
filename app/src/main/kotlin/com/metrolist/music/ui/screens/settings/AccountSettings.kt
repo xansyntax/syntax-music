@@ -364,7 +364,7 @@ fun AccountSettings(
                         title = { Text(stringResource(R.string.settings)) },
                         icon = painterResource(R.drawable.settings),
                         showBadge = BuildConfig.UPDATER_AVAILABLE &&
-                            latestVersionName != BuildConfig.BASE_VERSION_NAME,
+                            Updater.isUpdateAvailable(BuildConfig.VERSION_NAME, latestVersionName),
                         onClick = {
                             onClose()
                             navController.navigate("settings")
@@ -372,7 +372,7 @@ fun AccountSettings(
                     )
                 )
 
-                if (BuildConfig.UPDATER_AVAILABLE && latestVersionName != BuildConfig.BASE_VERSION_NAME) {
+                if (BuildConfig.UPDATER_AVAILABLE && Updater.isUpdateAvailable(BuildConfig.VERSION_NAME, latestVersionName)) {
                     val releaseInfo = Updater.getCachedLatestRelease()
                     val downloadUrl = releaseInfo?.let { Updater.getDownloadUrlForCurrentVariant(it) }
                     if (downloadUrl != null) {

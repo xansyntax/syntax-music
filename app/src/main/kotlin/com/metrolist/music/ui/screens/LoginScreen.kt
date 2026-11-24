@@ -121,13 +121,19 @@ fun LoginScreen(
         val view = webView ?: return null
         var hasAuthCookie = false
         var hasVisitorData = false
-        repeat(20) {
+        repeat(25) { attempt ->
             val cm = CookieManager.getInstance().apply { flush() }
-            val cookie = listOf(
-                cm.getCookie("https://music.youtube.com").orEmpty(),
+            val mergedCookies = linkedMapOf<String, String>()
+            listOf(
                 cm.getCookie("https://www.youtube.com").orEmpty(),
-            ).filter { it.isNotBlank() }.joinToString("; ")
-            val cookieMap = runCatching { parseCookieString(cookie) }.getOrDefault(emptyMap())
+                cm.getCookie("https://music.youtube.com").orEmpty(),
+            ).filter { it.isNotBlank() }.forEach { raw ->
+                runCatching { parseCookieString(raw) }.getOrDefault(emptyMap()).forEach { (k, v) ->
+                    if (k.isNotBlank() && v.isNotBlank()) mergedCookies[k] = v
+                }
+            }
+            val cookie = mergedCookies.entries.joinToString("; ") { "${it.key}=${it.value}" }
+            val cookieMap = mergedCookies
             val visitorDataDeferred = CompletableDeferred<String?>()
             val dataSyncIdDeferred = CompletableDeferred<String?>()
             val authUserDeferred = CompletableDeferred<String?>()
@@ -164,12 +170,14 @@ fun LoginScreen(
                 }
             hasAuthCookie = "SAPISID" in cookieMap || "__Secure-3PAPISID" in cookieMap || "__Secure-1PAPISID" in cookieMap
             val visitorData = pageAuthData?.visitorData
+            val cleanDataSyncId = pageAuthData?.dataSyncId.orEmpty().substringBefore("||").trim()
             hasVisitorData = !visitorData.isNullOrBlank()
-            if (hasAuthCookie && pageAuthData != null && !visitorData.isNullOrBlank()) {
+            if (hasAuthCookie && pageAuthData != null && !visitorData.isNullOrBlank() && (cleanDataSyncId.isNotEmpty() || attempt >= 6)) {
+                delay(400)
                 return AuthData(
                     cookie = cookie,
                     visitorData = visitorData,
-                    dataSyncId = pageAuthData.dataSyncId.orEmpty().substringBefore("||"),
+                    dataSyncId = cleanDataSyncId,
                     authUser = pageAuthData.authUser.filter(Char::isDigit).ifBlank { "0" },
                 )
             }
@@ -185,13 +193,29 @@ fun LoginScreen(
 
     suspend fun finalizeLogin(authData: AuthData) {
         loginStage = LoginStage.Completing
+        val prevCookie = YouTube.cookie
+        val prevVisitorData = YouTube.visitorData
+        val prevDataSyncId = YouTube.dataSyncId
+        val prevAuthUser = YouTube.authUser
+
         YouTube.cookie = authData.cookie
         YouTube.visitorData = authData.visitorData
         YouTube.dataSyncId = authData.dataSyncId
         YouTube.authUser = authData.authUser
 
         try {
-            val accountInfo = YouTube.accountInfo().getOrThrow()
+            var lastError: Throwable? = null
+            var accountInfo: com.metrolist.innertube.models.AccountInfo? = null
+            for (retry in 0..2) {
+                val res = YouTube.accountInfo()
+                if (res.isSuccess) {
+                    accountInfo = res.getOrThrow()
+                    break
+                }
+                lastError = res.exceptionOrNull()
+                delay(700L * (retry + 1))
+            }
+            val validAccountInfo = accountInfo ?: throw (lastError ?: IllegalStateException("Account verification failed"))
             val saved =
                 withContext(Dispatchers.IO) {
                     context.safeDataStoreEdit { settings ->
@@ -199,9 +223,9 @@ fun LoginScreen(
                         settings[VisitorDataKey] = authData.visitorData
                         settings[DataSyncIdKey] = authData.dataSyncId
                         settings[InnerTubeAuthUserKey] = authData.authUser
-                        settings[AccountNameKey] = accountInfo.name
-                        settings[AccountEmailKey] = accountInfo.email.orEmpty()
-                        settings[AccountChannelHandleKey] = accountInfo.channelHandle.orEmpty()
+                        settings[AccountNameKey] = validAccountInfo.name
+                        settings[AccountEmailKey] = validAccountInfo.email.orEmpty()
+                        settings[AccountChannelHandleKey] = validAccountInfo.channelHandle.orEmpty()
                     }
                 }
             check(saved) { "Failed to persist account data" }
@@ -224,6 +248,10 @@ fun LoginScreen(
         } catch (exception: CancellationException) {
             throw exception
         } catch (throwable: Exception) {
+            YouTube.cookie = prevCookie
+            YouTube.visitorData = prevVisitorData
+            YouTube.dataSyncId = prevDataSyncId
+            YouTube.authUser = prevAuthUser
             Timber.e(throwable, "Login: Failed to validate or save the selected YouTube channel")
             reportException(throwable)
             errorMessage =

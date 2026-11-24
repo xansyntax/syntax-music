@@ -16,14 +16,14 @@ android {
         applicationId = "com.xansyntax.music"
         minSdk = 26
         targetSdk = 36
-        versionCode = 130
-        versionName = "1.3.0"
+        versionCode = 140
+        versionName = "1.4.0"
         base.archivesName.set("Syntax-Music-v$versionName")
 
         buildConfigField("String", "BASE_VERSION_NAME", "\"13.7.0\"")
         buildConfigField("String", "ARCHITECTURE", "\"universal\"")
         buildConfigField("boolean", "CAST_AVAILABLE", "false")
-        buildConfigField("boolean", "UPDATER_AVAILABLE", "false")
+        buildConfigField("boolean", "UPDATER_AVAILABLE", "true")
         buildConfigField("String", "LASTFM_API_KEY", "\"\"")
         buildConfigField("String", "LASTFM_SECRET", "\"\"")
         buildConfigField("long", "DISCORD_APP_ID", "0L")
@@ -33,10 +33,19 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = rootProject.file("syntax-release.jks")
+            storePassword = "syntaxmusic123"
+            keyAlias = "syntaxmusic"
+            keyPassword = "syntaxmusic123"
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
