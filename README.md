@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>Liquid Glass Android music &amp; video client with 64-bit 10-Band ISO Parametric DSP &amp; Pure Dynamic Color</strong><br/>
-  <a href="https://github.com/xansyntax/syntax-music/releases/latest">Latest Release: v1.5.0</a>
+  <a href="https://github.com/xansyntax/syntax-music/releases/latest">Latest Release: v1.6.0</a>
 </p>
 
 ---
